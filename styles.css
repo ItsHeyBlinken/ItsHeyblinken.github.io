@@ -6,8 +6,14 @@ body {
     flex-direction: column;
 }
 
-img {
+#logo {
     width: 15%;
+    height: auto;
+    border-radius: 10%;
+}
+
+section img {
+    width: 50%;
     height: auto;
     border-radius: 10%;
 }
@@ -35,6 +41,7 @@ img {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -61,10 +68,26 @@ img {
     padding: 2em;
 }
 
+section:first-child {
+    width: 100%;
+    padding: 5px; 
+}
+
+section:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    flex: 1; 
+}
+
 #welcome-section h1 {
     font-size: 36px;
     margin-bottom: 10px;
     color: #fff;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -99,15 +122,34 @@ img {
     #welcome-section {
         height: auto;
         padding: 1em;
+        padding-top: 60px;
     }
     #navbar {
         padding: 0.5em;
+        flex-direction: column; /* added for mobile responsiveness */
+        position: relative;
     }
     #navbar ul {
-        flex-direction: column;}
+        flex-direction: column;
+    }
     #navbar li {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+    .project-tile {
+        width: 100%;
+        margin-bottom: 10px; /* reduced margin for mobile devices */
+        flex-direction: column;
+    }
+    .project-tile:nth-child(even) {
+        margin-left: 0; /* remove left margin for even-numbered tiles */
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column; /* added for mobile responsiveness */
+    }
+    footer div {
+        flex-direction: column; /* added for mobile responsiveness */
     }
 }
 
@@ -120,6 +162,7 @@ img {
 
 footer {
     display: flex;
+    width: 100%;
     height: auto;
     background: #313a49;
     padding: 20px;
