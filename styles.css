@@ -33,7 +33,7 @@ section img {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #313a49;
     color: #fff;
     padding: 1em;
     text-align: center;
@@ -69,7 +69,7 @@ section img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #313a49;
+    background-image: url(./images/Desk\ 5.jpg);
     padding: 2em;
 }
 
@@ -98,6 +98,9 @@ main {
 #projects {
     padding: 2em;
     color: #fff;
+    background-image: url('./images/Code\ 1.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .project-intro {
@@ -105,6 +108,14 @@ main {
     font-weight: bold;
     margin-bottom: 20px;
     color: #333;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 50%;
+    background-color: #313a49;
 }
 
 .project-tile {
@@ -117,6 +128,19 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
     background-color: #313a49;
+}
+
+.welcome {
+    background-color: #313a49;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 50%;
 }
 
 .project-tile img {
