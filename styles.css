@@ -25,7 +25,7 @@ section img {
 
 #projects p {
     font-size: 1.5em;
-    font-family: 'Comic Sans MS', sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #navbar {
@@ -171,7 +171,7 @@ main {
 
 #welcome-section p {
     font-size: 24px;
-    font-family: 'Comic Sans MS', sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     text-align: center;
     color: #fff;
     width: 70%;
