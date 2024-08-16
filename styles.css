@@ -98,7 +98,7 @@ main {
 #projects {
     padding: 2em;
     color: #fff;
-    background-image: url('./images/Code\ 1.jpg');
+    background:  linear-gradient(to bottom, #e5ebea, #313a49);
     background-size: cover;
     background-position: center;
 }
@@ -183,7 +183,6 @@ footer {
     height: auto;
     background: #313a49;
     padding: 20px;
-    border-top: 1px solid #d8e1d2;
     box-shadow: 0 0 10px #d8e1d2;
     text-align: center;
 }
