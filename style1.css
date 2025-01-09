@@ -34,7 +34,7 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; /* Spread the items apart */
+    justify-content: space-between; /* Spread the items apart */
     width: 100%; /* Ensure the ul takes the full width */
 }
 
