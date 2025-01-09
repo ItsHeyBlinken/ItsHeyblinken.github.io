@@ -50,7 +50,7 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Spread the items apart */
+    justify-content: space-evenly; /* Spread the items apart */
     width: 100%; /* Ensure the ul takes the full width */
 }
 
@@ -73,7 +73,7 @@ body {
 
 main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 75px;
     background-color: #313a49;
     border-radius: 8px;
 }
