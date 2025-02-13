@@ -1,68 +1,111 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bytes By Blinken Media</title>
+    <meta name="description" content="Bytes By Blinken Media - Professional web development firm specializing in custom websites and templates. Transform your online presence with our expert team.">
+    <meta name="keywords" content="web development, website templates, custom websites, web design, responsive design">
+    <meta name="author" content="Bytes By Blinken">
+    <meta property="og:title" content="Bytes By Blinken Media - Professional Web Development">
+    <meta property="og:description" content="Create your perfect website with our expert web development team. Custom solutions and premium templates available.">
+    <meta property="og:image" content="./images/Logo.png">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://bytesbyblinken.com">
+    <title>Bytes By Blinken Media | Professional Web Development Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./images/Logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',    // Dark blue
+                        secondary: '#1E293B',  // Slate blue
+                        accent: '#3B82F6',     // Bright blue
+                        highlight: '#60A5FA',  // Light blue
+                        muted: '#94A3B8',      // Gray blue
+                        light: '#F8FAFC'       // Off white
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <img id="navbar-logo" src="./images/Logo.png" alt="Bytes By Blinken Logo">
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                    <a href="./templates.html">Templates</a>
-                </li>
-            </ul>
+            <div>
+                <a href="./index.html">
+                    <img id="navbar-logo" src="./images/Logo.png" alt="Bytes By Blinken Logo">
+                </a>
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                        <a href="./templates.html">Templates</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+
     <main>
-        <section class="welcome" id="welcome-section">
-            <div>
-                <img id="welcome-img" src="./images/Desk 1.jpg" alt="desk photo">
+        <section class="welcome-section">
+            <div class="card">
+                <img src="./images/Desk 1.jpg" alt="Modern workspace setup with computer and accessories">
             </div>
-            <div class="welcome-intro">
+            <div class="card">
                 <h1>Bytes By Blinken Media</h1>
-                <br>
-                <p>A Web Development Firm committed to carving out your personal space on the world wide web. </p>
-                <p>Our team of developers are here to help you create a website that is as unique as you are.</p>
+                <div class="intro-text">
+                    <p>Unlock Your Web Presence with Bytes By Blinken Media!    
+                        <br>
+                        <br>
+                        Let our team of seasoned web developers craft a digital experience that mirrors your distinct identity and resonates with your audience.
+                    </p>
+                </div>
             </div>
-            <div>
-                <img id="welcome-img" src="./images/Desk 2.jpg" alt="desk photo">
+            <div class="card">
+                <img src="./images/Desk 2.jpg" alt="Professional workspace with modern equipment">
             </div>
         </section>
+
         <section class="content">
-            <div>
-                <h2>We have lots of templates to choose from.</h2>
-                <br>
-                <p style="font-size: 24px; font-style:italic">From SLEEK and MODERN to CLASSIC and TIMELESS.<p>
-                <p>Our templates are designed to be easy to use and easy to customize.</p>
+            <div class="service-intro">
+                
+                <h2>Unlock Your Web Presence with Our Premium Templates</h2>
+                <p class="highlight">Explore a diverse range of templates, from sleek and modern to classic and timeless designs.</p>
+                <p>Each template is crafted for ease of use and complete customization, ensuring your unique vision shines through.</p>
             </div>
-            <div>
-                <img id="content-img" src="./images/Desk 3.jpg" alt="Guy at laptop">
+            
+            <div class="image-container">
+                <img id="content-img" 
+                     src="./images/Desk 3.jpg" 
+                     alt="Web developer working on custom website design" 
+                     loading="lazy">
             </div>
-            <div>
-                <h2>Whatever your dreams. We will make them a reality.</h2>
-                <br>
-                <P>Our Team of trained Web Developers are here to serve you.</P>
-                <p>Templates are not always the best choice, so we also offer custom built websites to your specific requirements.</p>
-                <p>Just send us an email to get started at :  <strong>BytesByBlinken@gmail.com</strong></p>
-                <p>One of our Developers will reach out within 48 hours.  Guaranteed</p>
+            
+            <div class="custom-solutions">
+                <h2>Tailored Web Solutions Just for You</h2>
+                <p>Our expert web developers are eager to bring your vision to life.</p>
+                <p>Looking for something unique? We specialize in crafting custom websites that perfectly match your needs and aspirations.</p>
+                <address>
+                    Contact us: <a href="mailto:BytesByBlinken@gmail.com">BytesByBlinken@gmail.com</a>
+                </address>
+                <p class="guarantee">Response guaranteed within 48 hours</p>
             </div>
-            <a href="./templates.html"><button>View Templates</button></a>
+            
+            <div class="cta-container">
+                <a href="./templates.html">
+                    <button type="button">View Templates</button>
+                </a>
+            </div>
         </section>
     </main>
+
     <footer>
         <div>
-            <p><strong>Copyright &copy;  2025  BytesByBlinken</strong></p>
-        </div>
-        <div>
+            <p>Copyright &copy; 2025 BytesByBlinken</p>
             <img id="footer-logo" src="./images/Logo.png" alt="Bytes By Blinken Logo">
-        </div>
-        <div>
             <p>Contact Us @ BytesByBlinken@gmail.com</p>
         </div>
     </footer>

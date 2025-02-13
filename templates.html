@@ -3,68 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our collection of professional website templates. From business sites to portfolios, find the perfect template for your needs.">
+    <meta name="keywords" content="website templates, responsive templates, business templates, portfolio templates, HTML templates">
+    <meta name="author" content="Bytes By Blinken">
+    <meta property="og:title" content="Website Templates - Bytes By Blinken">
+    <meta property="og:description" content="Professional website templates for your next project">
+    <meta property="og:image" content="./images/Logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F172A',    // Dark blue
+                        secondary: '#1E293B',  // Slate blue
+                        accent: '#3B82F6',     // Bright blue
+                        highlight: '#60A5FA',  // Light blue
+                        muted: '#94A3B8',      // Gray blue
+                        light: '#F8FAFC'       // Off white
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="style1.css">
-    <title>Templates</title>
+    <title>Website Templates - Bytes By Blinken</title>
 </head>
-<body>
+<body class="bg-primary text-light">
     <header>
-        <nav id="navbar">
-            <img id="navbar-logo" src="./images/Logo.png" alt="Bytes By Blinken Logo">
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                    <a href="./templates.html">Templates</a>
-                </li>
-            </ul>
+        <nav id="navbar" class="fixed top-0 left-0 w-full bg-secondary/95 backdrop-blur-md border-b border-muted shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <img id="navbar-logo" src="./images/Logo.png" alt="Bytes By Blinken Logo" class="w-14 h-auto">
+                <ul class="flex space-x-6">
+                    <li>
+                        <a href="./index.html" class="text-light hover:text-accent transition-colors">Home</a>
+                        <a href="./templates.html" class="text-light hover:text-accent transition-colors">Templates</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <h1>Templates</h1>
-        <p>Here are some of the templates we offer:</p>
-        <div class="gallery">
-            <div class="gallery-item">
-                <a href="./Site Templates/Aofie Conleavy/index.html"><button class="gallery-button">Aofie Conleavy</button></a>
-                <img src="./Site Templates/Aofie Conleavy/Aolfieimg.png" alt="Aofie Conleavy Template">
+    <main class="container mx-auto px-4 pt-24">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-accent mb-4">Professional Website Templates</h1>
+            <p class="text-muted max-w-2xl mx-auto mb-8">Browse our collection of responsive, modern templates designed for various industries and purposes:</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="region" aria-label="Template gallery">
+            <div class="bg-secondary rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <img src="./Site Templates/Aofie Conleavy/Aolfieimg.png" 
+                     alt="Preview of Aofie Conleavy template - Personal blog design" 
+                     class="w-full h-48 object-cover border-b-2 border-accent"
+                     loading="lazy">
+                <a href="./Site Templates/Aofie Conleavy/index.html" 
+                   aria-label="View Aofie Conleavy template"
+                   class="block">
+                    <button class="w-full py-4 bg-accent hover:bg-highlight transition-colors text-light font-bold">
+                        Aofie Conleavy
+                    </button>
+                </a>
             </div>
-            <div class="gallery-item">
-                <a href="./Site Templates/Broadway/index.html"><button class="gallery-button">Broadway</button></a>
-                <img src="./Site Templates/Broadway/bwayimg.png" alt="Broadway Template">
+            <div class="bg-secondary rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <img src="./Site Templates/Broadway/bwayimg.png" alt="Preview of Broadway template - Professional business design" loading="lazy" class="w-full h-48 object-cover border-b-2 border-accent">
+                <a href="./Site Templates/Broadway/index.html" aria-label="View Broadway template" class="block">
+                    <button class="w-full py-4 bg-accent hover:bg-highlight transition-colors text-light font-bold">
+                        Broadway
+                    </button>
+                </a>
             </div>
-            <div class="gallery-item">
-                <a href="./Site Templates/flexbox-business-site-starting/Example.html"><button class="gallery-button">Business</button></a>
-                <img src="./Site Templates/flexbox-business-site-starting/businessimg.png" alt="Business Template">
+            <div class="bg-secondary rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <img src="./Site Templates/flexbox-business-site-starting/businessimg.png" alt="Preview of Business template - Modern corporate layout" loading="lazy" class="w-full h-48 object-cover border-b-2 border-accent">
+                <a href="./Site Templates/flexbox-business-site-starting/Example.html" aria-label="View Business template" class="block">
+                    <button class="w-full py-4 bg-accent hover:bg-highlight transition-colors text-light font-bold">
+                        Business
+                    </button>
+                </a>
             </div>
-            <div class="gallery-item">
-                <a href="./Site Templates/fotomatic_broken/fotomatic_broken/index.html"><button class="gallery-button">FotoMatic</button></a>
-                <img src="./Site Templates/fotomatic_broken/fotomaticimg.png" alt="FotoMatic Template">
+            <div class="bg-secondary rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <img src="./Site Templates/fotomatic_broken/fotomaticimg.png" alt="Preview of FotoMatic template - Photography portfolio design" loading="lazy" class="w-full h-48 object-cover border-b-2 border-accent">
+                <a href="./Site Templates/fotomatic_broken/fotomatic_broken/index.html" aria-label="View FotoMatic template" class="block">
+                    <button class="w-full py-4 bg-accent hover:bg-highlight transition-colors text-light font-bold">
+                        FotoMatic
+                    </button>
+                </a>
             </div>
-            <div class="gallery-item">
-                <a href="./Site Templates/Paint Store/index.html"><button class="gallery-button">Paint Store</button></a>
-                <img src="./Site Templates/Paint Store/paintimg.png" alt="Paint Store Template">
+            <div class="bg-secondary rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <img src="./Site Templates/Paint Store/paintimg.png" alt="Preview of Paint Store template - E-commerce design" loading="lazy" class="w-full h-48 object-cover border-b-2 border-accent">
+                <a href="./Site Templates/Paint Store/index.html" aria-label="View Paint Store template" class="block">
+                    <button class="w-full py-4 bg-accent hover:bg-highlight transition-colors text-light font-bold">
+                        Paint Store
+                    </button>
+                </a>
             </div>
-            <div class="gallery-item">
-                <a href="./Site Templates/responsive-club-starting/starting/index.html"><button class="gallery-button">Running Club</button></a>
-                <img src="./Site Templates/responsive-club-starting/runclubimg.png" alt="Running Club Template">
+            <div class="bg-secondary rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <img src="./Site Templates/responsive-club-starting/runclubimg.png" alt="Preview of Running Club template - Sports and fitness design" loading="lazy" class="w-full h-48 object-cover border-b-2 border-accent">
+                <a href="./Site Templates/responsive-club-starting/starting/index.html" aria-label="View Running Club template" class="block">
+                    <button class="w-full py-4 bg-accent hover:bg-highlight transition-colors text-light font-bold">
+                        Running Club
+                    </button>
+                </a>
             </div>
-            <div class="gallery-item">
-                <a href="./Site Templates/Tea Cozy/index.html"><button class="gallery-button">Tea Cozy</button></a>
-                <img src="./Site Templates/Tea Cozy/teacozyimg.png" alt="Tea Cozy Template">
+            <div class="bg-secondary rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <img src="./Site Templates/Tea Cozy/teacozyimg.png" alt="Preview of Tea Cozy template - Restaurant and cafe design" loading="lazy" class="w-full h-48 object-cover border-b-2 border-accent">
+                <a href="./Site Templates/Tea Cozy/index.html" aria-label="View Tea Cozy template" class="block">
+                    <button class="w-full py-4 bg-accent hover:bg-highlight transition-colors text-light font-bold">
+                        Tea Cozy
+                    </button>
+                </a>
             </div>
-            <div class="gallery-item">
-                <a href="./Site Templates/The Summit/index.html"><button class="gallery-button">The Summit</button></a>
-                <img src="./Site Templates/The Summit/summitimg.png" alt="The Summit Template">
+            <div class="bg-secondary rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                <img src="./Site Templates/The Summit/summitimg.png" alt="Preview of The Summit template - Travel and tourism design" loading="lazy" class="w-full h-48 object-cover border-b-2 border-accent">
+                <a href="./Site Templates/The Summit/index.html" aria-label="View The Summit template" class="block">
+                    <button class="w-full py-4 bg-accent hover:bg-highlight transition-colors text-light font-bold">
+                        The Summit
+                    </button>
+                </a>
             </div>
         </div>
     </main>
-    <footer>
-        <div>
-            <p><strong>Copyright &copy;  2025  BytesByBlinken</strong></p>
-        </div>
-        <div>
-            <img id="footer-logo" src="./images/Logo.png" alt="Bytes By Blinken Logo">
-        </div>
-        <div>
-            <p>Contact Us @ BytesByBlinken@gmail.com</p>
+    <footer class="bg-secondary mt-16 py-8">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8 items-center">
+            <div class="text-center">
+                <p class="font-bold">Copyright &copy; 2025 BytesByBlinken</p>
+            </div>
+            <div class="text-center">
+                <img id="footer-logo" src="./images/Logo.png" alt="Bytes By Blinken Logo" class="w-24 mx-auto">
+            </div>
+            <div class="text-center">
+                <p>Contact Us @ BytesByBlinken@gmail.com</p>
+            </div>
         </div>
     </footer>
 </body>
