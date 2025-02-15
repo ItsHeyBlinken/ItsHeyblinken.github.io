@@ -193,4 +193,39 @@ footer div {
     .gallery-item {
         @apply break-inside-avoid;
     }
+}/* Import the same font as style1.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Define a similar color scheme to style1.css */
+:root {
+  --primary-color: #0F172A;    /* Dark blue */
+  --secondary-color: #1E293B;  /* Slate blue */
+  --accent-color: #3B82F6;     /* Bright blue */
+  --highlight-color: #60A5FA;  /* Light blue */
+  --muted-color: #94A3B8;      /* Gray blue */
+  --light-color: #F8FAFC;      /* Off white */
+}
+
+/* Update the body styles to match style1.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Update the navbar styles to match style1.css */
+#navbar {
+  position: relative;
+  width: 100%;
+  background-color: var(--secondary-color);
+  padding: 1rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid var(--muted-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
 }
