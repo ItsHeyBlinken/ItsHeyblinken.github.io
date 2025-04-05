@@ -1,167 +1,532 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>House Store</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColorCraft | Professional Color Design Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style-new.css">
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <div class="image-container logo-small">
-      <img src="https://content.codecademy.com/courses/freelance-1/unit-6/logo-sm.png">
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">
+        <span class="logo-icon"><i class="fas fa-palette"></i></span>
+        <span class="logo-text">ColorCraft</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#color-theory">Color Theory</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="btn btn-small">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <div class="image-container logo-big">
-      <img src="https://content.codecademy.com/courses/freelance-1/unit-6/logo-lg.png">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Tools</a></li>
-        <li><a href="#">Lumber</a></li>
-        <li><a href="#">Paint</a></li>
-        <li><a href="#">Garden</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <!-- Banner -->
-  <div id="banner">
-    <h1>PAINTING IS SCARY</h1>
-    <p>But it doesn't have to be! Let our handy Virtual Paint Department help guide you through the process of choosing a color. Know the hue? You know what to do. Click the order button and we'll get the paint to you.</p>
-  </div>
-
-  <!-- Color Guide -->
-  <div id="color-guide">
-    <div class="introduction">
-      <h2>Color Guide</h2>
-      <p>Here at HouseStore, we take color seriously. In each of the following sections, well explore our base colors in swatches that incrementally change three values: <strong>Hue</strong>, <strong>Saturation</strong> and <strong>Lightness</strong>. You'll be able to pick from a wide variety of colors that all work well with each other because they <strong>stem from the same value.</strong></p>
-    </div>
-
-    <!-- Red Swatches -->
-    <div class="color reds">
-      <div class="information">
-        <h3>Reds</h3>
-        <p>Firetrucks, lipstick, fresh berries &mdash; red is a color with power, emotion, intensity. For this reason we recommend using reds as accent colors. Red is particularly suited to kitchens, as it is said to evoke hunger!</p><p>Our base red is <span class="base-color">HSL (350, 100, 50)</span></p>
-        <div class="image-container">
-          <img src="	https://content.codecademy.com/courses/freelance-1/unit-6/reds.png">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Transform Your Space with <span class="highlight">Color</span></h1>
+        <p class="hero-subtitle">Professional color consultation and design services to create harmonious, inspiring environments for homes and businesses.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get a Consultation</a>
+          <a href="#portfolio" class="btn btn-outline">View Our Work</a>
         </div>
       </div>
-      <div class="swatches">
-        <h4>Lightness</h4>
-        <div class="swatch lightness">
-          <div class="color-1"></div>
-          <div class="color-2"></div>
-          <div class="color-3"></div>
-          <div class="color-4"></div>
-          <div class="color-5"></div>
-        </div>
-        <h4>Saturation</h4>
-        <div class="swatch saturation">
-          <div class="color-1"></div>
-          <div class="color-2"></div>
-          <div class="color-3"></div>
-          <div class="color-4"></div>
-          <div class="color-5"></div>
-        </div>
-        <h4>Hue</h4>
-        <div class="swatch hue">
-          <div class="color-1"></div>
-          <div class="color-2"></div>
-          <div class="color-3"></div>
-          <div class="color-4"></div>
-          <div class="color-5"></div>
-        </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1615529328331-f8917597711f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Color swatches and design tools">
       </div>
     </div>
+    <div class="color-bar">
+      <div class="color-segment" style="background-color: #FF5252;"></div>
+      <div class="color-segment" style="background-color: #FFAB40;"></div>
+      <div class="color-segment" style="background-color: #FFEB3B;"></div>
+      <div class="color-segment" style="background-color: #66BB6A;"></div>
+      <div class="color-segment" style="background-color: #29B6F6;"></div>
+      <div class="color-segment" style="background-color: #7E57C2;"></div>
+    </div>
+  </section>
 
-    <!-- Green Swatches -->
-    <div class="color greens">
-      <div class="information">
-        <h3>Greens</h3>
-        <p>They say that geniuses choose green &mdash; we think any of these verdant colors will look smart! Deck your halls like a lush outdoor space, adorn your rooms with emerald, or just make your houseguests green with envy!</p>
-        <p>Our base green is <span class="base-color">HSL (130, 100, 50)</span></p>
-        <div class="image-container">
-          <img src="	https://content.codecademy.com/courses/freelance-1/unit-6/greens.png">
-        </div>
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Services</span>
+        <h2>Expert Color <span class="highlight">Solutions</span></h2>
+        <p>We offer comprehensive color design services tailored to your specific needs and preferences.</p>
       </div>
-      <div class="swatches">
-        <h4>Lightness</h4>
-        <div class="swatch lightness">
-          <div class="color-1"></div>
-          <div class="color-2"></div>
-          <div class="color-3"></div>
-          <div class="color-4"></div>
-          <div class="color-5"></div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3>Residential Consultation</h3>
+          <p>Transform your living spaces with personalized color schemes that reflect your style and enhance your home's architecture.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
-        <h4>Saturation</h4>
-        <div class="swatch saturation">
-          <div class="color-1"></div>
-          <div class="color-2"></div>
-          <div class="color-3"></div>
-          <div class="color-4"></div>
-          <div class="color-5"></div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3>Commercial Design</h3>
+          <p>Create impactful environments for your business with strategic color choices that reinforce your brand and influence customer behavior.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
-        <h4>Hue</h4>
-        <div class="swatch hue">
-          <div class="color-1"></div>
-          <div class="color-2"></div>
-          <div class="color-3"></div>
-          <div class="color-4"></div>
-          <div class="color-5"></div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-paint-roller"></i>
+          </div>
+          <h3>Color Matching</h3>
+          <p>Precise color matching services to recreate specific hues or develop custom colors for your unique project requirements.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-swatchbook"></i>
+          </div>
+          <h3>Color Palette Creation</h3>
+          <p>Development of comprehensive color palettes for branding, interior design, or product lines with detailed specifications.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Blue Swatches -->
-    <div class="color blues">
-      <div class="information">
-        <h3>Blues</h3>
-        <p>Blues dont give us the blues &mdash; in fact, blue is one of the most popular colors in home interiors, and for good reason! Energizing like a summer sky, calming like a lakeshore, light as mist or deep as indigo, blue can do it all.</p>
-        <p>Our base blue is <span class="base-color">HSL (220, 100, 50)</span></p>
-        <div class="image-container">
-          <img src="	https://content.codecademy.com/courses/freelance-1/unit-6/blues.png">
+  <!-- Color Theory Section -->
+  <section id="color-theory" class="color-theory-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Color Theory</span>
+        <h2>Understanding <span class="highlight">Color</span></h2>
+        <p>Explore the fundamental principles of color theory that guide our design process.</p>
+      </div>
+      
+      <div class="color-theory-content">
+        <div class="color-wheel">
+          <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Color wheel">
+        </div>
+        
+        <div class="color-principles">
+          <div class="principle">
+            <h3>Color Harmony</h3>
+            <p>Color harmony is about creating visual balance through strategic color combinations. We use complementary, analogous, triadic, and other color schemes to create pleasing and effective designs.</p>
+          </div>
+          
+          <div class="principle">
+            <h3>Color Psychology</h3>
+            <p>Colors evoke emotional and psychological responses. We leverage this understanding to create environments that support your goals, whether it's promoting relaxation, stimulating creativity, or encouraging action.</p>
+          </div>
+          
+          <div class="principle">
+            <h3>Color Context</h3>
+            <p>Colors are perceived differently depending on their surroundings. We consider lighting, adjacent colors, and spatial context to ensure colors appear as intended in your specific environment.</p>
+          </div>
         </div>
       </div>
-      <div class="swatches">
-        <h4>Lightness</h4>
-        <div class="swatch lightness">
-          <div class="color-1"></div>
-          <div class="color-2"></div>
-          <div class="color-3"></div>
-          <div class="color-4"></div>
-          <div class="color-5"></div>
+      
+      <div class="color-attributes">
+        <div class="attribute">
+          <h3>Hue</h3>
+          <p>The pure color itself (red, blue, green, etc.)</p>
+          <div class="attribute-visual hue-visual">
+            <div style="background-color: hsl(0, 100%, 50%);"></div>
+            <div style="background-color: hsl(30, 100%, 50%);"></div>
+            <div style="background-color: hsl(60, 100%, 50%);"></div>
+            <div style="background-color: hsl(120, 100%, 50%);"></div>
+            <div style="background-color: hsl(240, 100%, 50%);"></div>
+            <div style="background-color: hsl(300, 100%, 50%);"></div>
+          </div>
         </div>
-        <h4>Saturation</h4>
-        <div class="swatch saturation">
-          <div class="color-1"></div>
-          <div class="color-2"></div>
-          <div class="color-3"></div>
-          <div class="color-4"></div>
-          <div class="color-5"></div>
+        
+        <div class="attribute">
+          <h3>Saturation</h3>
+          <p>The intensity or purity of the color</p>
+          <div class="attribute-visual saturation-visual">
+            <div style="background-color: hsl(220, 100%, 50%);"></div>
+            <div style="background-color: hsl(220, 80%, 50%);"></div>
+            <div style="background-color: hsl(220, 60%, 50%);"></div>
+            <div style="background-color: hsl(220, 40%, 50%);"></div>
+            <div style="background-color: hsl(220, 20%, 50%);"></div>
+            <div style="background-color: hsl(220, 0%, 50%);"></div>
+          </div>
         </div>
-        <h4>Hue</h4>
-        <div class="swatch hue">
-          <div class="color-1"></div>
-          <div class="color-2"></div>
-          <div class="color-3"></div>
-          <div class="color-4"></div>
-          <div class="color-5"></div>
+        
+        <div class="attribute">
+          <h3>Lightness</h3>
+          <p>The brightness or darkness of the color</p>
+          <div class="attribute-visual lightness-visual">
+            <div style="background-color: hsl(350, 100%, 90%);"></div>
+            <div style="background-color: hsl(350, 100%, 70%);"></div>
+            <div style="background-color: hsl(350, 100%, 50%);"></div>
+            <div style="background-color: hsl(350, 100%, 30%);"></div>
+            <div style="background-color: hsl(350, 100%, 10%);"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Work</span>
+        <h2>Recent <span class="highlight">Projects</span></h2>
+        <p>Explore our diverse portfolio of color design projects across various spaces and styles.</p>
+      </div>
+      
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Modern living room with carefully selected color palette">
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <span class="portfolio-category">Residential</span>
+              <h3>Modern Minimalist Home</h3>
+              <a href="#" class="portfolio-link">View Project</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Office space with strategic color design">
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <span class="portfolio-category">Commercial</span>
+              <h3>Creative Agency Office</h3>
+              <a href="#" class="portfolio-link">View Project</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="branding">
+          <img src="https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Brand color palette development">
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <span class="portfolio-category">Branding</span>
+              <h3>Eco-Friendly Product Line</h3>
+              <a href="#" class="portfolio-link">View Project</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Kitchen with custom color scheme">
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <span class="portfolio-category">Residential</span>
+              <h3>Contemporary Kitchen Redesign</h3>
+              <a href="#" class="portfolio-link">View Project</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Retail store color design">
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <span class="portfolio-category">Commercial</span>
+              <h3>Boutique Retail Space</h3>
+              <a href="#" class="portfolio-link">View Project</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" data-category="branding">
+          <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Brand identity color palette">
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <span class="portfolio-category">Branding</span>
+              <h3>Tech Startup Identity</h3>
+              <a href="#" class="portfolio-link">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="ColorCraft design team">
+        </div>
+        <div class="about-text">
+          <span class="section-tag">About Us</span>
+          <h2>The <span class="highlight">ColorCraft</span> Story</h2>
+          <p>Founded in 2015, ColorCraft is a team of passionate color specialists with backgrounds in interior design, graphic design, and color psychology. We believe that color is one of the most powerful tools in design, capable of transforming spaces, influencing emotions, and communicating messages.</p>
+          <p>Our approach combines scientific understanding of color theory with artistic sensibility and practical application. We work closely with each client to understand their unique needs, preferences, and objectives, developing customized color solutions that achieve their specific goals.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">200+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">8</span>
+              <span class="stat-label">Design Awards</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2>What Our <span class="highlight">Clients</span> Say</h2>
+        <p>Hear from clients who have transformed their spaces with our color design services.</p>
+      </div>
+      
+      <div class="testimonials-slider">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"Working with ColorCraft transformed our home in ways we never imagined. Their understanding of how colors interact with our space's architecture and lighting created a harmonious flow throughout our home that feels both cohesive and unique to each room."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&h=100&q=80" alt="Sarah Johnson">
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <p>Residential Client</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"The ColorCraft team's strategic approach to our office redesign resulted in a space that not only looks beautiful but actually enhances our team's productivity and creativity. Their understanding of color psychology made a measurable difference in our work environment."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&h=100&q=80" alt="Michael Chen">
+            <div class="author-info">
+              <h4>Michael Chen</h4>
+              <p>Design Studio Owner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <span class="section-tag">Get In Touch</span>
+          <h2>Start Your <span class="highlight">Color Journey</span></h2>
+          <p>Ready to transform your space with the power of color? Contact us to schedule a consultation or learn more about our services.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Visit Us</h3>
+                <p>123 Design Avenue, Suite 200<br>San Francisco, CA 94107</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>hello@colorcraft.studio</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>(555) 123-4567</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="residential">Residential Consultation</option>
+                <option value="commercial">Commercial Design</option>
+                <option value="color-matching">Color Matching</option>
+                <option value="palette">Color Palette Creation</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Tell us about your project" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer>
-    <strong>All set? Click below to order.</strong>
-    <p>Most colors can be delivered to your door within 48 hours. We'll reach out if your color needs some extra attention, which could delay shipment.</p>
-    <a href="#" class="button">Order My Paint</a>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#" class="logo">
+            <span class="logo-icon"><i class="fas fa-palette"></i></span>
+            <span class="logo-text">ColorCraft</span>
+          </a>
+          <p>Professional color design for spaces that inspire.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#color-theory">Color Theory</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Residential Consultation</a></li>
+            <li><a href="#">Commercial Design</a></li>
+            <li><a href="#">Color Matching</a></li>
+            <li><a href="#">Color Palette Creation</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-newsletter">
+          <h3>Color Inspiration</h3>
+          <p>Subscribe to our newsletter for color trends, tips, and inspiration.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 ColorCraft Design Studio. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="color-bar">
+      <div class="color-segment" style="background-color: #FF5252;"></div>
+      <div class="color-segment" style="background-color: #FFAB40;"></div>
+      <div class="color-segment" style="background-color: #FFEB3B;"></div>
+      <div class="color-segment" style="background-color: #66BB6A;"></div>
+      <div class="color-segment" style="background-color: #29B6F6;"></div>
+      <div class="color-segment" style="background-color: #7E57C2;"></div>
+    </div>
   </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    
+    mobileMenuToggle.addEventListener('click', function() {
+      this.classList.toggle('active');
+      mainNav.classList.toggle('active');
+    });
+    
+    // Portfolio filters
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        // Get filter value
+        const filterValue = this.getAttribute('data-filter');
+        
+        // Filter portfolio items
+        portfolioItems.forEach(item => {
+          if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+    
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          mobileMenuToggle.classList.remove('active');
+          mainNav.classList.remove('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
