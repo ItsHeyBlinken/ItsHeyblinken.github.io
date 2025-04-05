@@ -1,65 +1,468 @@
-
-
-
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <title>South Village Run Club</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  </head>
-
-  <body>
-    <div class="bar">
-      <ul>
-        <a href=""><li>Events</li></a>
-        <a href=""><li>Results</li></a>
-        <a href=""><li>Partnering Restaurants</li></a>
-      </ul>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit Trekkers | Hiking & Outdoor Adventure Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">
+        <i class="fas fa-mountain"></i>
+        <span>Summit Trekkers</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#adventures">Adventures</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#join" class="btn btn-small">Join Us</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </header>
 
-    <div class="intro">
-      <h1>South Village Run Club</h1>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Explore. Connect. Thrive.</h1>
+      <p class="hero-subtitle">Join our community of outdoor enthusiasts for unforgettable hiking adventures and lasting friendships.</p>
+      <div class="hero-cta">
+        <a href="#join" class="btn btn-primary">Become a Member</a>
+        <a href="#schedule" class="btn btn-outline">View Schedule</a>
+      </div>
     </div>
+    <div class="overlay"></div>
+  </section>
 
-    <div class="summary">
-      <h2>Meet up. Work out. Celebrate.</h2>
-      <p>Come join our vibrant community whose focus is training hard and enjoying local post-workout cuisine - guilt-free!</p>
-      <p>South Village Run Club is a free MeetUp group sponsored by <a href="">City Shoes</a>.</p>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Us</span>
+        <h2>More Than Just a <span class="highlight">Hiking Club</span></h2>
+        <p>Summit Trekkers is a community of passionate outdoor enthusiasts who share a love for nature, adventure, and connection.</p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <p>Founded in 2018, Summit Trekkers brings together people of all ages and experience levels who share a passion for exploring the great outdoors. Our club organizes regular hiking trips, from gentle nature walks to challenging mountain ascents, creating opportunities for members to challenge themselves, discover beautiful landscapes, and forge meaningful connections.</p>
+          <p>What makes Summit Trekkers special is our emphasis on community. Every adventure concludes with a social gathering at a local restaurant or café, where members can refuel, share stories, and strengthen friendships in a relaxed setting.</p>
+          <div class="about-features">
+            <div class="feature">
+              <i class="fas fa-hiking"></i>
+              <h3>Weekly Hikes</h3>
+              <p>Regular adventures for all skill levels</p>
+            </div>
+            <div class="feature">
+              <i class="fas fa-users"></i>
+              <h3>Inclusive Community</h3>
+              <p>Welcoming environment for all ages</p>
+            </div>
+            <div class="feature">
+              <i class="fas fa-utensils"></i>
+              <h3>Social Gatherings</h3>
+              <p>Post-hike meals at local establishments</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Group of hikers at summit">
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="photos">
-      <img src="https://static-assets.codecademy.com/Paths/front-end-career-path/responsive-club-website/tunnel-runners.jpg" />
-      <img src="https://static-assets.codecademy.com/Paths/front-end-career-path/responsive-club-website/meetup-wine.jpg" />
-      <img src="https://static-assets.codecademy.com/Paths/front-end-career-path/responsive-club-website/runners-grayscale.jpg" />
+  <!-- Adventures Section -->
+  <section id="adventures" class="adventures-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Adventures</span>
+        <h2>Explore the <span class="highlight">Great Outdoors</span></h2>
+        <p>From gentle nature walks to challenging mountain ascents, we offer adventures for every experience level.</p>
+      </div>
+      
+      <div class="adventures-grid">
+        <div class="adventure-card">
+          <div class="adventure-image">
+            <img src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Beginner friendly trail">
+            <div class="difficulty beginner">Beginner</div>
+          </div>
+          <div class="adventure-content">
+            <h3>Forest Trails</h3>
+            <p>Gentle walks through scenic woodland paths, perfect for beginners and families. These 2-3 hour hikes feature minimal elevation gain and plenty of natural beauty.</p>
+            <div class="adventure-details">
+              <span><i class="fas fa-clock"></i> 2-3 hours</span>
+              <span><i class="fas fa-mountain"></i> 100-200m elevation</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="adventure-card">
+          <div class="adventure-image">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Intermediate mountain trail">
+            <div class="difficulty intermediate">Intermediate</div>
+          </div>
+          <div class="adventure-content">
+            <h3>Mountain Paths</h3>
+            <p>Moderately challenging hikes with rewarding views. These 4-5 hour adventures include significant elevation gain and varied terrain, suitable for those with some hiking experience.</p>
+            <div class="adventure-details">
+              <span><i class="fas fa-clock"></i> 4-5 hours</span>
+              <span><i class="fas fa-mountain"></i> 400-600m elevation</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="adventure-card">
+          <div class="adventure-image">
+            <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Advanced summit hike">
+            <div class="difficulty advanced">Advanced</div>
+          </div>
+          <div class="adventure-content">
+            <h3>Summit Challenges</h3>
+            <p>Challenging full-day expeditions to reach breathtaking summits. These adventures require good fitness levels and previous hiking experience, but offer unforgettable views and a sense of achievement.</p>
+            <div class="adventure-details">
+              <span><i class="fas fa-clock"></i> 6-8 hours</span>
+              <span><i class="fas fa-mountain"></i> 800-1200m elevation</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="testimonial">
-      <h1>"I build my weeknight plans around their events. I can exercise and meet new people every week!"</h1>
-      <p>-Bryce R. - financial advisor/frequent runner since 2018</p>
+  <!-- Testimonial Section -->
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="testimonial">
+        <div class="quote-icon">
+          <i class="fas fa-quote-left"></i>
+        </div>
+        <blockquote>
+          <p>Summit Trekkers has completely transformed my weekends. I've discovered incredible landscapes I never knew existed, challenged myself physically, and made lifelong friends who share my passion for the outdoors.</p>
+          <cite>
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&h=100&q=80" alt="Sarah Mitchell">
+            <div>
+              <strong>Sarah Mitchell</strong>
+              <span>Member since 2019</span>
+            </div>
+          </cite>
+        </blockquote>
+      </div>
     </div>
+  </section>
 
-    <div class="photos">
-      <img src="https://static-assets.codecademy.com/Paths/front-end-career-path/responsive-club-website/coffeshop.jpg" />
-      <img src="https://static-assets.codecademy.com/Paths/front-end-career-path/responsive-club-website/marathon-runners.jpg" />
-      <img src="https://static-assets.codecademy.com/Paths/front-end-career-path/responsive-club-website/hangouts.jpg" />
+  <!-- Schedule Section -->
+  <section id="schedule" class="schedule-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Upcoming Hikes</span>
+        <h2>Join Our Next <span class="highlight">Adventure</span></h2>
+        <p>Check out our schedule of upcoming hikes and social gatherings.</p>
+      </div>
+      
+      <div class="schedule-grid">
+        <div class="schedule-card">
+          <div class="schedule-date">
+            <span class="day">15</span>
+            <span class="month">JUN</span>
+          </div>
+          <div class="schedule-content">
+            <div class="difficulty beginner">Beginner</div>
+            <h3>Riverside Nature Trail</h3>
+            <p>A gentle 3-hour walk along the scenic river path, perfect for beginners and families. We'll observe local wildlife and enjoy the peaceful surroundings.</p>
+            <div class="schedule-details">
+              <span><i class="fas fa-clock"></i> 9:00 AM - 12:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Riverside Park Entrance</span>
+              <span><i class="fas fa-utensils"></i> Lunch at River Café</span>
+            </div>
+            <a href="#" class="btn btn-outline">Register</a>
+          </div>
+        </div>
+        
+        <div class="schedule-card">
+          <div class="schedule-date">
+            <span class="day">22</span>
+            <span class="month">JUN</span>
+          </div>
+          <div class="schedule-content">
+            <div class="difficulty intermediate">Intermediate</div>
+            <h3>Eagle Peak Trail</h3>
+            <p>A moderately challenging 5-hour hike with stunning valley views. This trail features some steep sections and varied terrain, suitable for those with some hiking experience.</p>
+            <div class="schedule-details">
+              <span><i class="fas fa-clock"></i> 8:00 AM - 1:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Eagle Peak Trailhead</span>
+              <span><i class="fas fa-utensils"></i> Lunch at Mountain Brew</span>
+            </div>
+            <a href="#" class="btn btn-outline">Register</a>
+          </div>
+        </div>
+        
+        <div class="schedule-card">
+          <div class="schedule-date">
+            <span class="day">29</span>
+            <span class="month">JUN</span>
+          </div>
+          <div class="schedule-content">
+            <div class="difficulty advanced">Advanced</div>
+            <h3>Mount Horizon Summit</h3>
+            <p>A challenging full-day expedition to reach the breathtaking Mount Horizon summit. This adventure requires good fitness levels and previous hiking experience.</p>
+            <div class="schedule-details">
+              <span><i class="fas fa-clock"></i> 7:00 AM - 3:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Mount Horizon Base</span>
+              <span><i class="fas fa-utensils"></i> Dinner at Summit Steakhouse</span>
+            </div>
+            <a href="#" class="btn btn-outline">Register</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="meetup">
-      <h1>Come join the fun!</h1>
-      <img src="https://static-assets.codecademy.com/Paths/front-end-career-path/responsive-club-website/runners-church.jpg" />
-      <h1>We meet every evening in the city square at 7PM!</h1>
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Photo Gallery</span>
+        <h2>Capture the <span class="highlight">Moments</span></h2>
+        <p>Relive some of our most memorable adventures through our photo gallery.</p>
+      </div>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Mountain view">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Hikers on trail">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Group at summit">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1527254432234-a9d3bd556f5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Forest trail">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1445307806294-bff7f67ff225?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Waterfall view">
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1539183204366-63a0589187ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Post-hike meal">
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="bar">
-      <ul>
-        <a href=""><li>Events</li></a>
-        <a href=""><li>Results</li></a>
-        <a href=""><li>Partnering Restaurants</li></a>
-      </ul>
+  <!-- Join Section -->
+  <section id="join" class="join-section">
+    <div class="container">
+      <div class="join-content">
+        <div class="join-text">
+          <span class="section-tag">Become a Member</span>
+          <h2>Ready to <span class="highlight">Join Us</span>?</h2>
+          <p>Becoming a member of Summit Trekkers is easy and free! Fill out the form to join our community and start your outdoor adventure journey.</p>
+          <div class="join-benefits">
+            <div class="benefit">
+              <i class="fas fa-check-circle"></i>
+              <span>Access to all scheduled hikes</span>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-check-circle"></i>
+              <span>Invitations to social gatherings</span>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-check-circle"></i>
+              <span>Member-only special events</span>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-check-circle"></i>
+              <span>Discounts at partner restaurants</span>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-check-circle"></i>
+              <span>Monthly newsletter with hiking tips</span>
+            </div>
+          </div>
+        </div>
+        <div class="join-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="experience">Hiking Experience</label>
+              <select id="experience" name="experience" required>
+                <option value="" disabled selected>Select your experience level</option>
+                <option value="beginner">Beginner - New to hiking</option>
+                <option value="intermediate">Intermediate - Some hiking experience</option>
+                <option value="advanced">Advanced - Experienced hiker</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="interests">What interests you most about joining? (Optional)</label>
+              <textarea id="interests" name="interests" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Join Summit Trekkers</button>
+          </form>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </body>
+  <!-- Partner Section -->
+  <section class="partner-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Partners</span>
+        <h2>Local <span class="highlight">Establishments</span> We Love</h2>
+        <p>After every hike, we gather at one of these fantastic local restaurants to refuel and socialize.</p>
+      </div>
+      
+      <div class="partner-grid">
+        <div class="partner-card">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Mountain Brew Café">
+          <h3>Mountain Brew Café</h3>
+          <p>Cozy café with excellent coffee and hearty breakfast options. Perfect for early morning meetups.</p>
+          <div class="partner-details">
+            <span><i class="fas fa-map-marker-alt"></i> 123 Pine Street</span>
+            <span><i class="fas fa-tag"></i> 10% discount for members</span>
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Trailhead Tavern">
+          <h3>Trailhead Tavern</h3>
+          <p>Rustic pub with craft beers and comfort food. The perfect spot to relax after a challenging hike.</p>
+          <div class="partner-details">
+            <span><i class="fas fa-map-marker-alt"></i> 456 Oak Avenue</span>
+            <span><i class="fas fa-tag"></i> Free appetizer for groups</span>
+          </div>
+        </div>
+        
+        <div class="partner-card">
+          <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Summit Steakhouse">
+          <h3>Summit Steakhouse</h3>
+          <p>Upscale restaurant with amazing steaks and views. Our go-to spot after completing challenging summit hikes.</p>
+          <div class="partner-details">
+            <span><i class="fas fa-map-marker-alt"></i> 789 Summit Road</span>
+            <span><i class="fas fa-tag"></i> 15% off dinner menu</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <a href="#" class="logo">
+            <i class="fas fa-mountain"></i>
+            <span>Summit Trekkers</span>
+          </a>
+          <p>A community of outdoor enthusiasts exploring nature together since 2018.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Meetup"><i class="fab fa-meetup"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#adventures">Adventures</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#join">Join Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Hiking Safety Tips</a></li>
+            <li><a href="#">Gear Recommendations</a></li>
+            <li><a href="#">Trail Maps</a></li>
+            <li><a href="#">Weather Updates</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter for the latest hiking schedules and tips.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 Summit Trekkers. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    
+    mobileMenuToggle.addEventListener('click', function() {
+      this.classList.toggle('active');
+      mainNav.classList.toggle('active');
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          mobileMenuToggle.classList.remove('active');
+          mainNav.classList.remove('active');
+        }
+      });
+    });
+    
+    // Gallery lightbox functionality could be added here
+  </script>
+</body>
 </html>
