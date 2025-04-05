@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,100 +13,222 @@
     <meta property="og:url" content="http://www.stressfree-events.com/home.html">
     <title>Stress Free Events and Weddings</title>
     <link rel="stylesheet" href="styles1.css">
-    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-    <div>
-        <a href="" target="_blank">
-            <button>Book Your Consultation Today</button>
-        </a>
-    </div>
-    <div>
-        <img src="./Assets/logo.png" alt="Stress Free Logo">
-    </div>
-    <div>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-<!--             <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="about.html">About</a></li>          -->      
-        </ul>
-    </nav>
-    </div>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="./Assets/logo.png" alt="Stress Free Logo" class="logo">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <!-- <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="#consultation" class="btn btn-primary">Book Consultation</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span class="hamburger"></span>
+            </button>
+        </div>
     </header>
     <main>
-        <section>
-            <article>
-                <img class="heading" src="./Assets/ss7.jpg" alt="wedding photo">
-                <h1 class="title">Let us bring the wedding of your dreams to life...</h1>
-                <p class="title">With a collective two decades of expertise in event planning, our team ensures that once you join our Stress-Free couples, you and your future spouse can unwind and embrace the role of guests at your own wedding.</p>
-            </article>
+        <section class="hero-section">
+            <div class="hero-image">
+                <img src="./Assets/ss7.jpg" alt="wedding photo">
+                <div class="overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <h1>Let us bring the wedding of your dreams to life</h1>
+                <p class="lead">With a collective two decades of expertise in event planning, our team ensures that once you join our Stress-Free couples, you and your future spouse can unwind and embrace the role of guests at your own wedding.</p>
+                <a href="#consultation" class="btn btn-light">Start Planning Your Dream Wedding</a>
+            </div>
         </section>
-        <section>
-            <article>
-<!--                 <a href="https://513445.17hats.com/p#/scheduling/zhbhdhxrvhxvptzhndsdnwxckzbnhwnv" target="_blank">
-                    <button>Book Your Consultation Today</button>
-                </a> -->
-                <img src="./Assets/cplswng.jpg" alt="hedgerow">
-                <h2 class="article">Unforgettable Moments...</h2>
-                <p class="article">We specialize in curating seamless and memorable experiences for couples who envision a stress-free celebration of their love. Our focus is on crafting unforgettable events, ensuring that the journey towards your special day is filled with joy and excitement, while we take care of all the intricate details. Whether it's orchestrating the perfect ceremony, coordinating with vendors, or selecting the ideal venue, our dedicated team is committed to creating a uniquely tailored and stress-free wedding experience that reflects the essence of your love story.</p>
-            </article>        
-            <article>
-                <a href="" target="_blank">
-                    <button>Book Your Consultation Today</button>
-                </a>
-                <img src="./Assets/carkiss.jpg" alt="spring flowers">
-                <h2 class="article">Our Services Include:</h2>
-                <ul>
-                    <li style="font-weight: bold; font-size: larger;" >Planning & Coordination</li>
-                    <li style="font-weight: bold; font-size: larger;" >Vendor Negotiations</li>
-                    <li style="font-weight: bold; font-size: larger;" >Location Selection</li>
-                    <br>
-<!--                     <li style="font-weight: bold;">*See Services Tab for More Details*</li> -->
-                </ul>
-            </article>
-            <article>
-<!--                 <a href="https://513445.17hats.com/p#/scheduling/zhbhdhxrvhxvptzhndsdnwxckzbnhwnv" target="_blank">
-                    <button>Book Your Consultation Today</button>
-                </a> -->
-                <img src="./Assets/ss.jpg" alt="Hoya">
-                <h2 class="article">Crafting Your Dream Wedding</h2>
-                <p class="article">When planning your wedding, it's not just about the logistics and details; it's about infusing the entire event with the essence of who you are. <i>'Crafting Your Dream Wedding'</i> speaks to the intentionality and care we put into every aspect, ensuring that each element resonates with your unique personality. We believe that your wedding day should be a true expression of your style, preferences, and love story, creating an experience that feels authentic and memorable for both you and your guests.</p>
-            </article>
+
+        <section class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Unforgettable Moments</h2>
+                    <div class="divider"><span></span></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="./Assets/cplswng.jpg" alt="Couple swinging" class="rounded-image">
+                    </div>
+                    <div class="about-text">
+                        <p>We specialize in curating seamless and memorable experiences for couples who envision a stress-free celebration of their love. Our focus is on crafting unforgettable events, ensuring that the journey towards your special day is filled with joy and excitement, while we take care of all the intricate details.</p>
+                        <p>Whether it's orchestrating the perfect ceremony, coordinating with vendors, or selecting the ideal venue, our dedicated team is committed to creating a uniquely tailored and stress-free wedding experience that reflects the essence of your love story.</p>
+                        <a href="services.html" class="btn btn-outline">Explore Our Services</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <article>
-                <blockquote class="blockquote" cite="#"><q>Lisa and her team were unbelievably remarkable at making our wedding day perfect!  <p style="font-size: medium;">She helped us coordinate with every single vendor, joined us on tastings, set up meetings, and helped us coordinate every single detail you could imagine. She and her team truly went above and beyond for us and have become a second family. They absolutely create a stress free experience allowing you to embrace every beautiful moment of your special day! I did not have a worry in mind the day of my wedding because I knew Lisa was handling everything. I cannot recommend Stress Free Events and Weddings enough!</p>  
-                </q><p>- Jennifer & Matt</p></blockquote>
-                <br>
-                <br>   
-            </article>
-        </section>        
+
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <div class="divider"><span></span></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Planning & Coordination</h3>
+                        <p>Comprehensive planning services from initial concept to day-of coordination, ensuring every detail is perfectly executed.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Vendor Negotiations</h3>
+                        <p>Expert negotiation with vendors to secure the best services at optimal prices, saving you time and money.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location Selection</h3>
+                        <p>Assistance in finding the perfect venue that aligns with your vision, budget, and guest requirements.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="services.html" class="btn btn-primary">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="vision-section">
+            <div class="container">
+                <div class="vision-content">
+                    <div class="vision-text">
+                        <h2>Crafting Your Dream Wedding</h2>
+                        <div class="divider"><span></span></div>
+                        <p>When planning your wedding, it's not just about the logistics and details; it's about infusing the entire event with the essence of who you are. <em>Crafting Your Dream Wedding</em> speaks to the intentionality and care we put into every aspect, ensuring that each element resonates with your unique personality.</p>
+                        <p>We believe that your wedding day should be a true expression of your style, preferences, and love story, creating an experience that feels authentic and memorable for both you and your guests.</p>
+                    </div>
+                    <div class="vision-image">
+                        <img src="./Assets/ss.jpg" alt="Wedding couple" class="rounded-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Couples Say</h2>
+                    <div class="divider"><span></span></div>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <blockquote>
+                            Lisa and her team were unbelievably remarkable at making our wedding day perfect! She helped us coordinate with every single vendor, joined us on tastings, set up meetings, and helped us coordinate every single detail you could imagine. She and her team truly went above and beyond for us and have become a second family. They absolutely create a stress free experience allowing you to embrace every beautiful moment of your special day! I did not have a worry in mind the day of my wedding because I knew Lisa was handling everything. I cannot recommend Stress Free Events and Weddings enough!
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Jennifer & Matt</h4>
+                                <p>Married June 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="consultation" class="consultation-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Begin Your Stress-Free Journey</h2>
+                    <div class="divider"><span></span></div>
+                    <p>Schedule a complimentary consultation to discuss your vision and how we can help make your dream wedding a reality.</p>
+                </div>
+                <div class="consultation-form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="wedding-date" name="wedding-date" placeholder="Wedding Date (if known)">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your vision" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Book Your Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./Assets/logo.png" alt="Stress Free Logo" class="logo">
+                    <p>Making your special day truly stress-free</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Dallas-Fort Worth Area</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@stressfree-events.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Stress-Free Events and Weddings. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
-<footer>
-    <div>
-        <a href="" target="_blank">
-            <button>Book Your Consultation Today</button>
-        </a>
-    </div>
-    <div>
-        <img src="./Assets/logo.png" alt="Stress Free Logo">
-    </div>
-<!--     <div>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="about.html">About</a></li>               
-            </ul>
-        </nav>
-    </div>  -->
-    <div>
-        <p><strong>&copy; 2024 - Stress-Free Events and Weddings</strong></p>
-    </div>
-</footer>
 </html>
