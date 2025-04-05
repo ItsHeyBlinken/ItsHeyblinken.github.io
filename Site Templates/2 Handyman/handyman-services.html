@@ -6,78 +6,260 @@
     <meta name="description" content="Professional handyman services for home repairs and maintenance">
     <title>FixIt Handyman Services</title>
     <link rel="stylesheet" href="handyman-services.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div>
-            <a href="#contact">
-                <button>Schedule Service</button>
-            </a>
-        </div>
-        <div>
-            <img src="images/handyman-logo.png" alt="FixIt Logo">
-        </div>
-        <nav>
-            <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about-us">About</a></li>
-            <li><a href="#contact-info">Contact</a></li>
-
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        
-
-        <section id="hero">
-
-            <img src="images/handyman-hero.jpg" alt="Handyman at Work">
-            <h1>Your Home Repair Experts</h1>
-            <p>Quality repairs and maintenance for your home.</p>
-        </section>
-
-        <section id="about-us">
-            <h2>About Us</h2>
-            <p>With over 20 years of experience, FixIt Handyman Services provides reliable home repair and maintenance solutions. Our skilled technicians are committed to quality workmanship and customer satisfaction.</p>
-        </section>
-
-        <section id="services">
-            <article>
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Plumbing Repairs</li>
-                    <li>Electrical Work</li>
-                    <li>Carpentry & Woodwork</li>
-                    <li>General Home Maintenance</li>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="Logo.png" alt="FixIt Logo" id="logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#contact-info">Contact</a></li>
                 </ul>
-            </article>
+            </nav>
+            <div class="cta-button">
+                <a href="#contact" class="btn btn-primary">Schedule Service</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="overlay"></div>
+            <img src="photo1.png" alt="Handyman at Work">
+            <div class="hero-content container">
+                <h1>Your Home Repair Experts</h1>
+                <p class="subtitle">Quality repairs and maintenance for your home.</p>
+                <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+            </div>
         </section>
 
-        <section id="testimonials">
-            <blockquote>
-                "FixIt Handyman Services saved the day with our plumbing emergency. Highly recommend!"
-                <p>- Mark & Susan H.</p>
-            </blockquote>
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Professional handyman services for all your home repair and maintenance needs</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>Plumbing Repairs</h3>
+                        <p>From leaky faucets to pipe replacements, we handle all your plumbing needs with expertise.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Electrical Work</h3>
+                        <p>Safe and reliable electrical repairs, installations, and upgrades for your home.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>Carpentry & Woodwork</h3>
+                        <p>Custom carpentry solutions, furniture repairs, and woodworking services.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>General Maintenance</h3>
+                        <p>Regular home maintenance services to keep your property in top condition year-round.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact-info">
-            <h2>Contact Us</h2>
-            <p>Phone: (555) 789-1234</p>
-            <p>Email: info@fixit.com</p>
-            <p>Address: 234 Repair Road, Your City</p>
+        <section id="about-us" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="section-header">
+                        <h2>About Us</h2>
+                        <p>Trusted home repair experts with over 20 years of experience</p>
+                    </div>
+                    <div class="about-text">
+                        <p>With over 20 years of experience, FixIt Handyman Services provides reliable home repair and maintenance solutions. Our skilled technicians are committed to quality workmanship and customer satisfaction.</p>
+                        <p>We take pride in our attention to detail and our ability to solve even the most challenging home repair problems efficiently and effectively.</p>
+                        <ul class="about-features">
+                            <li><i class="fas fa-check-circle"></i> Licensed & Insured Professionals</li>
+                            <li><i class="fas fa-check-circle"></i> Quality Workmanship Guarantee</li>
+                            <li><i class="fas fa-check-circle"></i> Transparent Pricing</li>
+                            <li><i class="fas fa-check-circle"></i> Prompt & Reliable Service</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary">Learn More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Customers Say</h2>
+                    <p>Hear from our satisfied customers about their experience with FixIt Handyman Services</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "FixIt Handyman Services saved the day with our plumbing emergency. They arrived quickly, fixed the issue professionally, and left our home clean. Highly recommend!"
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Mark & Susan H.</h4>
+                                <p>Satisfied Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-info" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <p>Reach out to schedule a service or get a free quote</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>(555) 789-1234</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@fixit.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>234 Repair Road, Your City</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Hours</h3>
+                                <p>Mon-Fri: 8am-6pm</p>
+                                <p>Sat: 9am-3pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form" id="contact">
+                        <h3>Request a Service</h3>
+                        <form id="service-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Select Service</option>
+                                    <option value="plumbing">Plumbing Repairs</option>
+                                    <option value="electrical">Electrical Work</option>
+                                    <option value="carpentry">Carpentry & Woodwork</option>
+                                    <option value="maintenance">General Maintenance</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Describe your project" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Schedule Service</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
 
-    <footer>
-        <div>
-            <p>&copy; 2024 FixIt Handyman Services</p>
-            <p>234 Repair Road, Your City</p>
-            <p>Phone: (555) 789-1234</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Logo.png" alt="FixIt Logo" class="footer-logo-img">
+                    <p>Your trusted partner for all home repair and maintenance needs.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contact-info">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 234 Repair Road, Your City</p>
+                    <p><i class="fas fa-phone"></i> (555) 789-1234</p>
+                    <p><i class="fas fa-envelope"></i> info@fixit.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FixIt Handyman Services. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
