@@ -6,79 +6,260 @@
     <meta name="description" content="Professional automotive repair and maintenance services">
     <title>AutoCare Center</title>
     <link rel="stylesheet" href="automotive-repair.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div>
-            <a href="#contact">
-                <button>Book Appointment</button>
-            </a>
-        </div>
-        <div>
-            <img src="images/Logo.png" alt="AutoCare Center Logo" id="logo">
-        </div>
-        <nav>
-            <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about-us">About</a></li>
-            <li><a href="#contact-info">Contact</a></li>
-
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        
-
-        <section id="hero">
-            <img src="images/photo1.png" alt="Auto Repair Shop">
-            <h1>Your Trusted Auto Care Experts</h1>
-            <h2>Quality repairs and maintenance you can count on.</h2>
-        </section>
-
-        <section id="about-us" style="text-align: center;">
-            <h2>About Us</h2>
-            <p>With over 20 years of experience, AutoCare Center is your trusted partner for all your automotive needs. Our certified technicians provide top-quality service using the latest tools and technology.</p>
-            <p>We are committed to ensuring your vehicle runs smoothly and safely. Whether you need a routine check-up or a major repair, we have you covered.</p>
-            <p>Visit us today and experience the difference!</p>
-        </section>
-
-        <section id="services">
-            <article>
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Engine Diagnostics & Repair</li>
-                    <li>Brake System Services</li>
-                    <li>Transmission Services</li>
-                    <li>Preventive Maintenance</li>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/Logo.png" alt="AutoCare Center Logo" id="logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#contact-info">Contact</a></li>
                 </ul>
-            </article>
+            </nav>
+            <div class="cta-button">
+                <a href="#contact" class="btn btn-primary">Book Appointment</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="overlay"></div>
+            <img src="images/photo1.png" alt="Auto Repair Shop">
+            <div class="hero-content container">
+                <h1>Your Trusted Auto Care Experts</h1>
+                <p class="subtitle">Quality repairs and maintenance you can count on.</p>
+                <a href="#contact" class="btn btn-primary">Schedule Service</a>
+            </div>
         </section>
 
-        <section id="testimonials">
-            <blockquote>
-                "AutoCare Center has been maintaining my vehicles for years. Their service is always top-notch!"
-                <p>- Michael R.</p>
-            </blockquote>
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Professional auto repair and maintenance services to keep your vehicle running at its best</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Engine Diagnostics & Repair</h3>
+                        <p>Advanced diagnostic technology to identify and fix engine issues quickly and efficiently.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-car-battery"></i>
+                        </div>
+                        <h3>Brake System Services</h3>
+                        <p>Complete brake inspection, repair, and replacement services for your safety on the road.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-oil-can"></i>
+                        </div>
+                        <h3>Transmission Services</h3>
+                        <p>Expert transmission maintenance, fluid changes, and repairs for smooth operation.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Preventive Maintenance</h3>
+                        <p>Regular maintenance services to prevent costly repairs and extend your vehicle's life.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact-info" style="text-align: center;">
-            <h2>Contact Us</h2>
-            <p>Phone: (555) 987-6543</p>
-            <p>Email: info@autocare.com</p>
-            <p>Address: 456 Auto Lane, Your City</p>
+        <section id="about-us" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="section-header">
+                        <h2>About Us</h2>
+                        <p>Trusted automotive experts with over 20 years of experience</p>
+                    </div>
+                    <div class="about-text">
+                        <p>With over 20 years of experience, AutoCare Center is your trusted partner for all your automotive needs. Our certified technicians provide top-quality service using the latest tools and technology.</p>
+                        <p>We are committed to ensuring your vehicle runs smoothly and safely. Whether you need a routine check-up or a major repair, we have you covered.</p>
+                        <ul class="about-features">
+                            <li><i class="fas fa-check-circle"></i> ASE Certified Technicians</li>
+                            <li><i class="fas fa-check-circle"></i> State-of-the-Art Equipment</li>
+                            <li><i class="fas fa-check-circle"></i> Warranty on All Services</li>
+                            <li><i class="fas fa-check-circle"></i> Competitive Pricing</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary">Learn More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Customers Say</h2>
+                    <p>Hear from our satisfied customers about their experience with AutoCare Center</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "AutoCare Center has been maintaining my vehicles for years. Their service is always top-notch and their prices are fair. I wouldn't trust my car with anyone else!"
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Michael R.</h4>
+                                <p>Loyal Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-info" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <p>Reach out to schedule an appointment or ask any questions</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>(555) 987-6543</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@autocare.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>456 Auto Lane, Your City</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Hours</h3>
+                                <p>Mon-Fri: 8am-6pm</p>
+                                <p>Sat: 9am-3pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Schedule an Appointment</h3>
+                        <form id="appointment-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Select Service</option>
+                                    <option value="engine">Engine Repair</option>
+                                    <option value="brakes">Brake Service</option>
+                                    <option value="transmission">Transmission Service</option>
+                                    <option value="maintenance">Preventive Maintenance</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Additional Details" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
 
-    <footer>
-        <div>
-            <p>&copy; 2024 AutoCare Center</p>
-            <p>456 Auto Lane, Your City</p>
-            <p>Phone: (555) 987-6543</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/Logo.png" alt="AutoCare Center Logo" class="footer-logo-img">
+                    <p>Your trusted partner for all automotive repair and maintenance needs.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contact-info">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 456 Auto Lane, Your City</p>
+                    <p><i class="fas fa-phone"></i> (555) 987-6543</p>
+                    <p><i class="fas fa-envelope"></i> info@autocare.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoCare Center. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
