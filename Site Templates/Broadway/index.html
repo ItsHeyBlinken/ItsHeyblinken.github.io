@@ -1,64 +1,389 @@
-
-
 <!DOCTYPE html>
-<html>
-  
-  <head>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
-    <link href='style.css' rel='stylesheet' type='text/css'/>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Perfect | Digital Marketing Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style-new.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="#">
+          <span class="logo-text">Pixel<span class="highlight">Perfect</span></span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#services" class="active">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
 
-  <body>
-    
-    <header>
-        <nav>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>We craft digital <span class="highlight">experiences</span> that drive results</h1>
+        <p class="hero-subtitle">Strategic marketing solutions for businesses that want to stand out in the digital landscape</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#work" class="btn btn-secondary">View Our Work</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Services</span>
+        <h2>What We <span class="highlight">Offer</span></h2>
+        <p>Comprehensive digital marketing solutions tailored to your business goals</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3>Design</h3>
+          <p>We create visually stunning, user-focused designs that elevate your brand and engage your audience.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Development</h3>
+          <p>Our developers build responsive, high-performance websites and applications using cutting-edge technologies.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3>Marketing</h3>
+          <p>Strategic digital marketing campaigns that increase visibility, drive traffic, and convert visitors into customers.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Portfolio</span>
+        <h2>Recent <span class="highlight">Projects</span></h2>
+        <p>A showcase of our best work across various industries</p>
+      </div>
+      
+      <div class="work-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="marketing">Marketing</button>
+      </div>
+      
+      <div class="work-grid">
+        <div class="work-item">
+          <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="E-commerce Website">
+          <div class="work-overlay">
+            <div class="work-info">
+              <span class="work-category">Web Design</span>
+              <h3>Luxury Fashion E-commerce</h3>
+              <a href="#" class="work-link">View Project</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="work-item">
+          <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Brand Identity">
+          <div class="work-overlay">
+            <div class="work-info">
+              <span class="work-category">Branding</span>
+              <h3>Tech Startup Rebrand</h3>
+              <a href="#" class="work-link">View Project</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="work-item">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Marketing Campaign">
+          <div class="work-overlay">
+            <div class="work-info">
+              <span class="work-category">Marketing</span>
+              <h3>Product Launch Campaign</h3>
+              <a href="#" class="work-link">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="work-cta">
+        <a href="#" class="btn btn-secondary">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Approach</span>
+        <h2>How We <span class="highlight">Work</span></h2>
+        <p>Our proven process ensures consistent results for every project</p>
+      </div>
+      
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Discovery</h3>
+            <p>We start by understanding your business, goals, target audience, and competitors to develop a strategic foundation.</p>
+          </div>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Strategy</h3>
+            <p>Based on our findings, we create a comprehensive strategy that outlines the approach, timeline, and expected outcomes.</p>
+          </div>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Creation</h3>
+            <p>Our team of specialists brings the strategy to life through design, development, content creation, and implementation.</p>
+          </div>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Launch & Optimize</h3>
+            <p>After launch, we continuously monitor performance and make data-driven optimizations to maximize results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <span class="section-tag">About Us</span>
+          <h2>We're a team of <span class="highlight">digital experts</span></h2>
+          <p>Pixel Perfect is a full-service digital marketing agency founded in 2015. We're a team of strategists, designers, developers, and marketers passionate about helping businesses succeed online.</p>
+          <p>What sets us apart is our data-driven approach and commitment to delivering measurable results. We don't just create beautiful designs – we create solutions that drive business growth.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">150+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">45+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">12</span>
+              <span class="stat-label">Industry Awards</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Our Team">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <span class="section-tag">Get In Touch</span>
+          <h2>Let's discuss your <span class="highlight">project</span></h2>
+          <p>Ready to take your digital presence to the next level? Contact us today to schedule a free consultation.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Location</h3>
+                <p>123 Digital Avenue, Suite 200<br>San Francisco, CA 94107</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>hello@pixelperfect.agency</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>(555) 123-4567</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="design">Web Design</option>
+                <option value="development">Web Development</option>
+                <option value="marketing">Digital Marketing</option>
+                <option value="branding">Branding</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#">
+            <span class="logo-text">Pixel<span class="highlight">Perfect</span></span>
+          </a>
+          <p>Creating digital experiences that drive results</p>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Quick Links</h3>
           <ul>
-            <li> About </li> <li> Work </li> <li> Team </li> <li> Contact </li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </nav>
-    </header>
-
-    <main>
-      <div class="jumbotron">
-        <div class="container">  
-          <h1>We are Broadway</h1>
-          <a href="#" class="btn-main"> Get Started </a>
+        </div>
+        
+        <div class="footer-services">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">SEO Optimization</a></li>
+            <li><a href="#">Content Marketing</a></li>
+            <li><a href="#">Social Media</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter for digital marketing tips and insights.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
         </div>
       </div>
-    </main>
-
-    <section class="supporting">
-      <div class="container">
-        
-        <div class="col">
-          <img src="https://content.codecademy.com/projects/broadway/design.svg">
-          <h2>Design</h2>
-          <p>Make your projects look great and interact beautifully.</p>
-          <a href="#"> Learn More</a><br>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 Pixel Perfect. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
         </div>
-        
-        <div class="col">
-          <img src="https://content.codecademy.com/projects/broadway/develop.svg">
-          <h2>Develop</h2>
-          <p>Use modern tools to turn your design into a web site</p>
-          <a href="#"> Learn More</a><br>
-        </div>
-        
-        <div class="col">
-          <img src="https://content.codecademy.com/projects/broadway/deploy.svg">
-          <h2>Deploy</h2>
-          <p>Use modern tools to turn your design into a web site</p>
-          <a href="#"> Learn More</a><br>
-        </div>
-        
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <footer>
-      <div class="container">
-        <p>&copy; Broadway 2017</p>
-      </div>
-    </footer>
+  <script>
+    // Mobile menu toggle
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const mainNav = document.querySelector('.main-nav');
     
-  </body>
+    mobileToggle.addEventListener('click', function() {
+      this.classList.toggle('active');
+      mainNav.classList.toggle('active');
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          mobileToggle.classList.remove('active');
+          mainNav.classList.remove('active');
+        }
+      });
+    });
+    
+    // Portfolio filters
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        // Filter logic would go here in a real implementation
+      });
+    });
+  </script>
+</body>
 </html>
