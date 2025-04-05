@@ -6,76 +6,319 @@
     <meta name="description" content="Professional real estate services for buying and selling properties">
     <title>Premier Real Estate</title>
     <link rel="stylesheet" href="real-estate-agent.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div>
-            <a href="#contact">
-                <button>Schedule Consultation</button>
-            </a>
-        </div>
-        <div>
-            <img src="images/real-estate-logo.png" alt="Premier Real Estate Logo">
-        </div>
-        <nav>
-            <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#listings">Listings</a></li>
-            <li><a href="#about-us">About</a></li>
-            <li><a href="#contact-info">Contact</a></li>
-
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        
-
-        <section id="hero">
-
-            <img src="images/real-estate-hero.jpg" alt="Luxury Home">
-            <h1>Your Dream Home Awaits</h1>
-            <p>Experience personalized real estate services that make buying or selling your home seamless and stress-free.</p>
-        </section>
-
-        <section id="about-us">
-            <h2>About Us</h2>
-            <p>With over 15 years of experience, Premier Real Estate is your trusted partner for all your property needs. Our team of dedicated professionals provides personalized service to help you buy or sell your home.</p>
-        </section>
-
-        <section id="services">
-            <article>
-                <h2>Our Services</h2>
-                <ul>
-                    <li>Property Listings & Showings</li>
-                    <li>Market Analysis & Pricing</li>
-                    <li>Negotiation & Closing</li>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="Logo.png" alt="Premier Real Estate Logo" id="logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#listings">Listings</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#contact-info">Contact</a></li>
                 </ul>
-            </article>
+            </nav>
+            <div class="cta-button">
+                <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="overlay"></div>
+            <img src="photo1.png" alt="Luxury Home">
+            <div class="hero-content container">
+                <h1>Your Dream Home Awaits</h1>
+                <p class="subtitle">Experience personalized real estate services that make buying or selling your home seamless and stress-free.</p>
+                <a href="#contact" class="btn btn-primary">Find Your Home</a>
+            </div>
         </section>
 
-        <section id="testimonials">
-            <blockquote>
-                "Working with Premier Real Estate was an absolute pleasure. They made the entire process smooth and stress-free!"
-                <p>- Sarah & John D.</p>
-            </blockquote>
+        <section id="listings" class="listings-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Listings</h2>
+                    <p>Explore our selection of premium properties in desirable locations</p>
+                </div>
+                <div class="listings-grid">
+                    <div class="listing-card">
+                        <div class="listing-image">
+                            <span class="listing-badge">For Sale</span>
+                            <img src="photo1.png" alt="Luxury Home">
+                        </div>
+                        <div class="listing-details">
+                            <h3>Modern Luxury Villa</h3>
+                            <p class="listing-price">$1,250,000</p>
+                            <div class="listing-features">
+                                <span><i class="fas fa-bed"></i> 4 Beds</span>
+                                <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 3,200 sqft</span>
+                            </div>
+                            <p class="listing-address"><i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, Your City</p>
+                            <a href="#" class="btn btn-secondary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <div class="listing-image">
+                            <span class="listing-badge">For Sale</span>
+                            <img src="photo1.png" alt="Family Home">
+                        </div>
+                        <div class="listing-details">
+                            <h3>Spacious Family Home</h3>
+                            <p class="listing-price">$850,000</p>
+                            <div class="listing-features">
+                                <span><i class="fas fa-bed"></i> 5 Beds</span>
+                                <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 2,800 sqft</span>
+                            </div>
+                            <p class="listing-address"><i class="fas fa-map-marker-alt"></i> 456 Family Avenue, Your City</p>
+                            <a href="#" class="btn btn-secondary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="listing-card">
+                        <div class="listing-image">
+                            <span class="listing-badge listing-badge-rent">For Rent</span>
+                            <img src="photo1.png" alt="Downtown Apartment">
+                        </div>
+                        <div class="listing-details">
+                            <h3>Downtown Apartment</h3>
+                            <p class="listing-price">$2,500/mo</p>
+                            <div class="listing-features">
+                                <span><i class="fas fa-bed"></i> 2 Beds</span>
+                                <span><i class="fas fa-bath"></i> 2 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 1,200 sqft</span>
+                            </div>
+                            <p class="listing-address"><i class="fas fa-map-marker-alt"></i> 789 Urban Street, Your City</p>
+                            <a href="#" class="btn btn-secondary btn-sm">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="#" class="btn btn-primary">View All Listings</a>
+                </div>
+            </div>
         </section>
 
-        <section id="contact-info">
-            <h2>Contact Us</h2>
-            <p>Phone: (555) 123-4567</p>
-            <p>Email: info@premierrealestate.com</p>
-            <p>Address: 123 Main Street, Your City</p>
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Professional real estate services tailored to your needs</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Property Listings & Showings</h3>
+                        <p>Comprehensive property listings with professional photography and virtual tours. Personalized showings scheduled at your convenience.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Market Analysis & Pricing</h3>
+                        <p>Detailed market analysis to determine the optimal listing price for your property or to help you make competitive offers.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Negotiation & Closing</h3>
+                        <p>Expert negotiation to secure the best terms and guide you through the closing process with ease and confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="section-header">
+                        <h2>About Us</h2>
+                        <p>Your trusted real estate partner with over 15 years of experience</p>
+                    </div>
+                    <div class="about-text">
+                        <p>With over 15 years of experience, Premier Real Estate is your trusted partner for all your property needs. Our team of dedicated professionals provides personalized service to help you buy or sell your home.</p>
+                        <p>We understand that buying or selling a property is one of the most significant decisions in your life, and we're committed to making the process as smooth and stress-free as possible.</p>
+                        <ul class="about-features">
+                            <li><i class="fas fa-check-circle"></i> Licensed Real Estate Professionals</li>
+                            <li><i class="fas fa-check-circle"></i> Local Market Expertise</li>
+                            <li><i class="fas fa-check-circle"></i> Personalized Service</li>
+                            <li><i class="fas fa-check-circle"></i> Transparent Communication</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary">Meet Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Clients Say</h2>
+                    <p>Hear from our satisfied clients about their experience with Premier Real Estate</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "Working with Premier Real Estate was an absolute pleasure. They made the entire process smooth and stress-free! Their knowledge of the local market and negotiation skills helped us find our dream home at a great price."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Sarah & John D.</h4>
+                                <p>Home Buyers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-info" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <p>Reach out to schedule a consultation or learn more about our services</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@premierrealestate.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>123 Main Street, Your City</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Hours</h3>
+                                <p>Mon-Fri: 9am-6pm</p>
+                                <p>Sat: 10am-4pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form" id="contact">
+                        <h3>Schedule a Consultation</h3>
+                        <form id="consultation-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Select Service</option>
+                                    <option value="buying">Buying a Property</option>
+                                    <option value="selling">Selling a Property</option>
+                                    <option value="renting">Renting a Property</option>
+                                    <option value="investment">Investment Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Additional Details" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Schedule Consultation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
 
-    <footer>
-        <div>
-            <p>&copy; 2024 Premier Real Estate</p>
-            <p>123 Main Street, Your City</p>
-            <p>Phone: (555) 123-4567</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Logo.png" alt="Premier Real Estate Logo" class="footer-logo-img">
+                    <p>Your trusted partner for all your real estate needs.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#listings">Listings</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contact-info">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Your City</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@premierrealestate.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premier Real Estate. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+    </script>
 </body>
+</html>
