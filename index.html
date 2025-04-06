@@ -14,6 +14,7 @@
     <title>Bytes By Blinken Media | Professional Web Development Solutions</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="./images/Logo.png">
     <script>
         tailwind.config = {
@@ -55,36 +56,70 @@
     <main class="container mx-auto px-4 pt-28 flex-grow">
         <section class="py-16">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                <div class="bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 transform hover:-translate-y-2">
-                    <img src="./images/Desk 1.jpg" alt="Modern workspace setup with computer and accessories" class="w-full h-64 object-cover">
-                </div>
-                <div class="bg-secondary rounded-xl overflow-hidden shadow-xl p-8 border border-white/5 md:transform md:scale-110">
-                    <h1 class="text-4xl font-bold text-accent mb-6 relative">
-                        <span class="relative z-10">Bytes By Blinken Media</span>
-                        <span class="absolute -bottom-2 left-0 w-16 h-1 bg-accent opacity-70"></span>
-                    </h1>
-                    <div class="intro-text text-lg">
-                        <p class="mb-4">Unlock Your Web Presence with Bytes By Blinken Media!</p>
-                        <p class="text-muted">Let our team of seasoned web developers craft a digital experience that mirrors your distinct identity and resonates with your audience.</p>
+                <div class="bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 transform hover:-translate-y-2 group">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/Desk 1.jpg" alt="Modern workspace setup with computer and accessories" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex items-end p-4">
+                            <p class="text-light text-sm font-medium">Modern workspaces for modern solutions</p>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 transform hover:-translate-y-2">
-                    <img src="./images/Desk 2.jpg" alt="Professional workspace with modern equipment" class="w-full h-64 object-cover">
+                <div class="bg-secondary rounded-xl overflow-hidden shadow-xl p-8 border border-white/5 md:transform md:scale-110 relative z-10">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-accent/20 to-highlight/20 rounded-xl blur opacity-30"></div>
+                    <div class="relative">
+                        <h1 class="text-4xl font-bold text-accent mb-6 relative animate-fadeIn">
+                            <span class="relative z-10">Bytes By Blinken Media</span>
+                            <span class="absolute -bottom-2 left-0 w-16 h-1 bg-accent opacity-70"></span>
+                        </h1>
+                        <div class="intro-text text-lg">
+                            <p class="mb-4 animate-slideUp">Stunning Websites That Drive Results</p>
+                            <p class="text-muted animate-slideUp animation-delay-200">We transform your vision into a captivating digital experience that engages visitors and converts them into customers.</p>
+                        </div>
+                        <div class="mt-6 flex justify-center gap-4 animate-fadeIn animation-delay-400">
+                            <a href="./templates.html" class="inline-flex items-center gap-2 text-accent hover:text-highlight transition-colors">
+                                <span>Explore Templates</span>
+                                <i class="fas fa-arrow-right text-sm"></i>
+                            </a>
+                            <a href="mailto:BytesByBlinken@gmail.com" class="inline-flex items-center gap-2 text-accent hover:text-highlight transition-colors">
+                                <span>Get Started</span>
+                                <i class="fas fa-envelope text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 transform hover:-translate-y-2 group">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/Desk 2.jpg" alt="Professional workspace with modern equipment" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-500 flex items-end p-4">
+                            <p class="text-light text-sm font-medium">Professional equipment for professional results</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="py-16 border-t border-white/10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-light inline-block relative">
+                    Our <span class="text-accent">Services</span>
+                    <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-accent to-highlight"></span>
+                </h2>
+                <p class="text-muted mt-6 max-w-2xl mx-auto">Elevate your online presence with our expert web solutions</p>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-secondary/80 rounded-xl p-8 shadow-lg border border-white/5 backdrop-blur-sm">
+                <div class="bg-secondary/80 rounded-xl p-8 shadow-lg border border-white/5 backdrop-blur-sm transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="flex items-center justify-center w-16 h-16 rounded-full bg-accent/20 mb-6 mx-auto">
+                        <i class="fas fa-layer-group text-2xl text-accent"></i>
+                    </div>
                     <h2 class="text-2xl font-bold mb-6 text-accent relative inline-block">
                         Premium Templates
                         <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-accent opacity-70"></span>
                     </h2>
-                    <p class="text-muted mb-4">Explore a diverse range of templates, from sleek and modern to classic and timeless designs.</p>
-                    <p class="mb-4 text-muted">Each template is crafted for ease of use and complete customization, ensuring your unique vision shines through.</p>
-                    <p class="mb-4 text-muted">Whether you're a small business, a creative professional, or an entrepreneur, our templates are designed to elevate your online presence.</p>
-                    <p class="text-muted">Experience the perfect blend of aesthetics and functionality with Bytes By Blinken Media.</p>
+                    <p class="text-muted mb-4">Launch your website in days, not months, with our professionally designed templates.</p>
+                    <p class="mb-4 text-muted">Each template features modern design, responsive layouts, and SEO-friendly code that works across all devices.</p>
+                    <p class="mb-4 text-muted">Easily customizable to match your brand with no coding knowledge required—just add your content and go live.</p>
+                    <p class="text-muted">From business sites to portfolios and e-commerce, we have the perfect template for your needs.</p>
                 </div>
 
                 <div class="flex items-center justify-center">
@@ -100,49 +135,188 @@
                     </div>
                 </div>
 
-                <div class="bg-secondary/80 rounded-xl p-8 shadow-lg border border-white/5 backdrop-blur-sm">
+                <div class="bg-secondary/80 rounded-xl p-8 shadow-lg border border-white/5 backdrop-blur-sm transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="flex items-center justify-center w-16 h-16 rounded-full bg-accent/20 mb-6 mx-auto">
+                        <i class="fas fa-code text-2xl text-accent"></i>
+                    </div>
                     <h2 class="text-2xl font-bold mb-6 text-accent relative inline-block">
-                        Tailored Solutions
+                        Custom Development
                         <span class="absolute -bottom-2 left-0 w-12 h-0.5 bg-accent opacity-70"></span>
                     </h2>
-                    <p class="mb-4 text-muted">Our expert web developers are eager to bring your vision to life.</p>
-                    <p class="mb-4 text-muted">Looking for something unique? We specialize in crafting custom websites that perfectly match your needs and aspirations.</p>
-                    <p class="mb-4 text-muted">From concept to launch, our team is dedicated to delivering a website that not only looks stunning but also performs flawlessly.</p>
-                    <p class="text-muted">With a focus on user experience, SEO, and cutting-edge design, we ensure your website stands out in the digital landscape.</p>
+                    <p class="mb-4 text-muted">Need something uniquely yours? Our expert developers create custom websites tailored to your exact specifications.</p>
+                    <p class="mb-4 text-muted">We combine stunning design with powerful functionality to create websites that not only look amazing but drive real business results.</p>
+                    <p class="mb-4 text-muted">Our development process includes thorough planning, regular updates, and meticulous testing to ensure your site performs flawlessly.</p>
+                    <p class="text-muted">Every custom project includes SEO optimization, analytics integration, and responsive design as standard features.</p>
                 </div>
             </div>
 
-            <div class="mt-16 text-center">
-                <a href="./templates.html" class="inline-block">
-                    <button type="button" class="bg-accent hover:bg-highlight text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
-                        <span class="relative z-10">View Templates</span>
-                        <span class="absolute top-0 left-0 w-0 h-full bg-highlight transition-all duration-500 group-hover:w-full -z-1"></span>
-                    </button>
-                </a>
+            <!-- How It Works Section -->
+            <div class="mt-24">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-light inline-block relative">
+                        How It <span class="text-accent">Works</span>
+                        <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-accent to-highlight"></span>
+                    </h2>
+                    <p class="text-muted mt-6 max-w-2xl mx-auto">Your journey to a stunning website in four simple steps</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="bg-secondary/60 rounded-xl p-6 shadow-lg border border-white/5 backdrop-blur-sm relative text-center">
+                        <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
+                            <span class="text-accent font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-light mb-3">Choose a Template</h3>
+                        <p class="text-muted">Browse our collection and select a template that fits your business needs, or opt for a custom design.</p>
+                    </div>
+
+                    <div class="bg-secondary/60 rounded-xl p-6 shadow-lg border border-white/5 backdrop-blur-sm relative text-center">
+                        <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
+                            <span class="text-accent font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-light mb-3">Share Your Content</h3>
+                        <p class="text-muted">Provide your text, images, logo, and any specific requirements for your website.</p>
+                    </div>
+
+                    <div class="bg-secondary/60 rounded-xl p-6 shadow-lg border border-white/5 backdrop-blur-sm relative text-center">
+                        <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
+                            <span class="text-accent font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-light mb-3">Review & Refine</h3>
+                        <p class="text-muted">We'll create your site and collaborate with you on revisions until it's exactly what you want.</p>
+                    </div>
+
+                    <div class="bg-secondary/60 rounded-xl p-6 shadow-lg border border-white/5 backdrop-blur-sm relative text-center">
+                        <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
+                            <span class="text-accent font-bold">4</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-light mb-3">Launch</h3>
+                        <p class="text-muted">Your website goes live, complete with hosting setup and basic SEO optimization.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="mt-12 text-center">
-                <address class="not-italic mb-2">
-                    Contact us: <a href="mailto:BytesByBlinken@gmail.com" class="text-accent hover:text-highlight transition-colors">BytesByBlinken@gmail.com</a>
-                </address>
-                <p class="text-muted text-sm">Response guaranteed within 48 hours</p>
+            <!-- Testimonials Section -->
+            <div class="mt-24">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-light inline-block relative">
+                        Client <span class="text-accent">Success Stories</span>
+                        <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-accent to-highlight"></span>
+                    </h2>
+                    <p class="text-muted mt-6 max-w-2xl mx-auto">Real results from businesses like yours</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-secondary/60 rounded-xl p-6 shadow-lg border border-white/5 backdrop-blur-sm relative">
+                        <div class="absolute -top-5 -left-5 text-5xl text-accent opacity-20">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-muted mb-6 relative z-10">"Within a month of launching our new website, our online inquiries increased by 64%. The team understood exactly what we needed—a site that looks professional but also converts visitors into customers. The ROI has been incredible."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mr-4">
+                                <span class="text-accent font-bold">RL</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-light">Rebecca Lewis</h4>
+                                <p class="text-sm text-muted">Founder, Coastal Realty Group</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-secondary/60 rounded-xl p-6 shadow-lg border border-white/5 backdrop-blur-sm relative">
+                        <div class="absolute -top-5 -left-5 text-5xl text-accent opacity-20">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="text-muted mb-6 relative z-10">"We needed a website that could handle our product catalog and integrate with our inventory system. Not only did they deliver exactly what we needed, but they also suggested improvements we hadn't even considered. Our online sales are up 42% year-over-year."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mr-4">
+                                <span class="text-accent font-bold">MT</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-light">Michael Torres</h4>
+                                <p class="text-sm text-muted">Operations Manager, TechGear</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center bg-secondary/40 rounded-xl p-10 backdrop-blur-sm border border-white/5 max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-light mb-4">Ready to Get Your Business Online?</h3>
+                <p class="text-muted mb-8 max-w-2xl mx-auto">Simply choose a template, send us your content and images, and we'll handle the rest. Affordable rates with quick turnaround times.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="./templates.html" class="inline-block">
+                        <button type="button" class="bg-accent hover:bg-highlight text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group w-full sm:w-auto">
+                            <span class="relative z-10">Browse Templates</span>
+                            <span class="absolute top-0 left-0 w-0 h-full bg-highlight transition-all duration-500 group-hover:w-full -z-1"></span>
+                        </button>
+                    </a>
+                    <a href="mailto:BytesByBlinken@gmail.com?subject=Website%20Project%20Inquiry&body=Hi%20there%2C%0A%0AI'm%20interested%20in%20getting%20a%20website%20for%20my%20business.%0A%0ABusiness%20name%3A%20%0AType%20of%20business%3A%20%0AWebsite%20needs%3A%20%0APreferred%20template%20(if%20any)%3A%20%0ATimeline%3A%20%0A%0AThank%20you!" class="inline-block">
+                        <button type="button" class="bg-transparent border-2 border-accent hover:border-highlight text-accent hover:text-highlight font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg relative overflow-hidden w-full sm:w-auto">
+                            <span class="relative z-10">Start Your Project</span>
+                        </button>
+                    </a>
+                </div>
+                <p class="text-muted text-sm mt-6">Most projects completed within 1-2 weeks. Email us at <a href="mailto:BytesByBlinken@gmail.com" class="text-accent hover:text-highlight transition-colors">BytesByBlinken@gmail.com</a> — Response guaranteed within 24 hours</p>
             </div>
         </section>
     </main>
 
-    <footer class="bg-secondary mt-16 py-8 relative overflow-hidden">
+    <footer class="bg-secondary mt-16 py-12 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent to-transparent opacity-50"></div>
-        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8 items-center">
-            <div class="text-center">
-                <p class="font-bold">Copyright &copy; 2025 BytesByBlinken</p>
+
+        <!-- Footer Wave SVG -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-none transform rotate-180">
+            <svg class="relative block w-full h-12" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-primary"></path>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-12 items-start mb-8 px-2">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">
+                        <span class="text-light relative inline-block">About<br>Us</span>
+                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-accent"></span>
+                    </h3>
+                    <p class="text-muted mb-4 leading-relaxed">We create websites that don't just look good—they work hard for your business. Our focus is on design that converts visitors into customers.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <img id="footer-logo" src="./images/Logo.png" alt="Bytes By Blinken Logo" class="w-24 mx-auto mb-4">
+                    <p class="text-muted">Websites that work as hard as you do</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">
+                        <span class="text-light relative inline-block">Contact<br>Us</span>
+                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-accent"></span>
+                    </h3>
+                    <address class="not-italic text-muted">
+                        <p class="mb-2 flex items-center">
+                            <i class="fas fa-envelope mr-3 text-accent"></i>
+                            <a href="mailto:BytesByBlinken@gmail.com" class="hover:text-accent transition-colors">BytesByBlinken@gmail.com</a>
+                        </p>
+                        <p class="mb-2 flex items-center">
+                            <i class="fas fa-clock mr-3 text-accent"></i>
+                            Response within 48 hours
+                        </p>
+                    </address>
+                </div>
             </div>
-            <div class="text-center">
-                <img id="footer-logo" src="./images/Logo.png" alt="Bytes By Blinken Logo" class="w-24 mx-auto">
-            </div>
-            <div class="text-center">
-                <address class="not-italic">
-                    Contact us: <a href="mailto:BytesByBlinken@gmail.com" class="text-accent hover:text-highlight transition-colors">BytesByBlinken@gmail.com</a>
-                </address>
+
+            <div class="border-t border-white/10 pt-6 text-center">
+                <p class="text-muted text-sm">&copy; 2025 Bytes By Blinken Media. All rights reserved.</p>
             </div>
         </div>
     </footer>
