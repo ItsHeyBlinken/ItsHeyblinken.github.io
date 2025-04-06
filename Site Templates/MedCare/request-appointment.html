@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request an appointment with MedCare's experienced healthcare professionals.">
+    <title>Request Appointment - MedCare</title>
+    <link rel="stylesheet" href="medcare.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <!-- Top Bar with Social Media Links -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <a href="tel:+15551234567"><i class="fas fa-phone"></i> (555) 123-4567</a>
+                    <a href="mailto:info@medcare.example"><i class="fas fa-envelope"></i> info@medcare.example</a>
+                </div>
+                <div class="social-media-bar">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Main navigation">
+            <div class="logo">
+                <a href="medcare.html"><i class="fas fa-heartbeat"></i> MedCare</a>
+            </div>
+
+            <!-- Mobile menu toggle -->
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-menu">
+                <span class="sr-only">Menu</span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul id="main-menu">
+                <li><a href="medcare.html">Home</a></li>
+                <li><a href="medcare.html#services">Services</a></li>
+                <li><a href="medcare.html#staff">Our Staff</a></li>
+                <li><a href="medcare.html#testimonials">Testimonials</a></li>
+                <li><a href="request-appointment.html" aria-current="page">Appointments</a></li>
+                <li><a href="medcare.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="appointments" aria-labelledby="appointments-heading">
+            <div class="section-header">
+                <h1 id="appointments-heading">Request an Appointment</h1>
+                <p class="section-subtitle">Fill out the form below to schedule your visit</p>
+            </div>
+
+            <form class="appointment-form" aria-labelledby="form-heading">
+                <h3 id="form-heading">Appointment Details</h3>
+
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required aria-required="true" placeholder="(555) 123-4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth <span class="required">*</span></label>
+                    <input type="date" id="dob" name="dob" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Needed <span class="required">*</span></label>
+                    <select id="service" name="service" required aria-required="true">
+                        <option value="">Select a service</option>
+                        <option value="general">General Checkup</option>
+                        <option value="pediatric">Pediatric Care</option>
+                        <option value="geriatric">Geriatric Care</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Date <span class="required">*</span></label>
+                    <input type="date" id="date" name="date" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <select id="time" name="time">
+                        <option value="">Select a time</option>
+                        <option value="morning">Morning (8AM - 12PM)</option>
+                        <option value="afternoon">Afternoon (12PM - 4PM)</option>
+                        <option value="evening">Evening (4PM - 6PM)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Please describe your symptoms or reason for visit"></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="new-patient" name="new-patient">
+                    <label for="new-patient">I am a new patient</label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="insurance" name="insurance">
+                    <label for="insurance">I will be using insurance</label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required aria-required="true">
+                    <label for="terms">I agree to the <a href="#">privacy policy</a> <span class="required">*</span></label>
+                </div>
+
+                <button type="submit" class="cta-button primary">Submit Request</button>
+                <p class="form-note"><span class="required">*</span> Required fields</p>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h3>Contact Us</h3>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Medical Drive, Suite 100<br>Healthcare City, HC 12345</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+15551234567">(555) 123-4567</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@medcare.example">info@medcare.example</a></p>
+                </address>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="medcare.html">Home</a></li>
+                    <li><a href="medcare.html#services">Services</a></li>
+                    <li><a href="medcare.html#staff">Our Staff</a></li>
+                    <li><a href="medcare.html#testimonials">Testimonials</a></li>
+                    <li><a href="request-appointment.html">Appointments</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-hours">
+                <h3>Hours of Operation</h3>
+                <ul class="hours-list">
+                    <li><span>Monday - Friday:</span> 8:00 AM - 5:00 PM</li>
+                    <li><span>Saturday:</span> 9:00 AM - 1:00 PM</li>
+                    <li><span>Sunday:</span> Closed</li>
+                </ul>
+                <div class="emergency-info">
+                    <h4><i class="fas fa-ambulance"></i> Emergency?</h4>
+                    <p>For emergencies, please call 911 or visit your nearest emergency room.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2023 MedCare. All rights reserved.</p>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

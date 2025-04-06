@@ -3,129 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MedCare - Quality healthcare services for you and your family. Book appointments online with our experienced medical professionals.">
     <title>MedCare - Healthcare Professionals</title>
     <link rel="stylesheet" href="medcare.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
+        <!-- Top Bar with Social Media Links -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <a href="tel:+15551234567"><i class="fas fa-phone"></i> (555) 123-4567</a>
+                    <a href="mailto:info@medcare.example"><i class="fas fa-envelope"></i> info@medcare.example</a>
+                </div>
+                <div class="social-media-bar">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
         <nav aria-label="Main navigation">
-            <div class="logo">MedCare</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i> MedCare
+            </div>
+
+            <!-- Mobile menu toggle -->
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-menu">
+                <span class="sr-only">Menu</span>
+                <span class="hamburger"></span>
+            </button>
+
+            <ul id="main-menu">
+                <li><a href="#home" aria-current="page">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#staff">Our Staff</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#appointments">Appointments</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="home" class="hero" aria-labelledby="hero-heading">
             <div class="hero-content">
-                <h1 id="hero-heading">Quality Healthcare Close to Home</h1>
-                <p>Compassionate care for you and your family</p>
-                <a href="#appointments" class="cta-button">Book an Appointment</a>
+                <h1 id="hero-heading">Quality Healthcare <span class="highlight">Close to Home</span></h1>
+                <p>Compassionate care for you and your family with state-of-the-art facilities</p>
+                <div class="hero-buttons">
+                    <a href="request-appointment.html" class="cta-button primary">Book an Appointment</a>
+                    <a href="#services" class="cta-button secondary">Our Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-text">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-text">Happy Patients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-text">Specialists</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="services" class="services" aria-labelledby="services-heading">
-            <h2 id="services-heading">Our Services</h2>
+            <div class="section-header">
+                <h2 id="services-heading">Our Services</h2>
+                <p class="section-subtitle">Comprehensive healthcare solutions for all ages</p>
+            </div>
+
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="images/service1.jpg" alt="General checkup">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <img src="images/service1.jpg" alt="Doctor performing general checkup on a patient">
                     <h3>General Medicine</h3>
-                    <p>Comprehensive health assessments and preventive care</p>
+                    <p>Comprehensive health assessments, preventive care, and management of acute and chronic conditions for patients of all ages.</p>
+                    <a href="#appointments" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
+
                 <div class="service-card">
-                    <img src="images/service2.jpg" alt="Pediatric care">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <img src="images/service2.jpg" alt="Pediatrician examining a child patient">
                     <h3>Pediatrics</h3>
-                    <p>Specialized care for infants, children, and adolescents</p>
+                    <p>Specialized care for infants, children, and adolescents including well-child visits, vaccinations, and treatment of childhood illnesses.</p>
+                    <a href="#appointments" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
+
                 <div class="service-card">
-                    <img src="images/service3.jpg" alt="Senior patient care">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <img src="images/service3.jpg" alt="Doctor consulting with senior patient">
                     <h3>Geriatrics</h3>
-                    <p>Personalized care for our senior patients</p>
+                    <p>Personalized care for our senior patients focusing on maintaining quality of life, managing multiple conditions, and preventive health strategies.</p>
+                    <a href="#appointments" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <img src="images/service4.jpg" alt="Cardiologist examining heart monitor results">
+                    <h3>Cardiology</h3>
+                    <p>Specialized diagnosis and treatment of heart conditions including heart disease, hypertension, and cholesterol management.</p>
+                    <a href="#appointments" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
 
         <section id="staff" class="staff" aria-labelledby="staff-heading">
-            <h2 id="staff-heading">Meet Our Team</h2>
+            <div class="section-header">
+                <h2 id="staff-heading">Meet Our Team</h2>
+                <p class="section-subtitle">Experienced healthcare professionals dedicated to your wellbeing</p>
+            </div>
+
             <div class="staff-grid">
                 <div class="staff-card">
-                    <img src="images/doctor1.jpg" alt="Dr. Sarah Johnson">
-                    <h3>Dr. Sarah Johnson</h3>
-                    <p>General Practitioner</p>
+                    <div class="staff-image-container">
+                        <img src="images/doctor1.jpg" alt="Dr. Sarah Johnson smiling in professional attire">
+                        <div class="social-links">
+                            <a href="#" aria-label="Dr. Sarah Johnson's LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Email Dr. Sarah Johnson"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="staff-title">General Practitioner</p>
+                        <p class="staff-bio">Dr. Johnson has over 10 years of experience in family medicine. She specializes in preventive care and chronic disease management.</p>
+                        <p class="credentials"><i class="fas fa-graduation-cap"></i> MD, University of Washington</p>
+                    </div>
                 </div>
+
                 <div class="staff-card">
-                    <img src="images/doctor2.jpg" alt="Dr. Michael Chen">
-                    <h3>Dr. Michael Chen</h3>
-                    <p>Pediatric Specialist</p>
+                    <div class="staff-image-container">
+                        <img src="images/doctor2.jpg" alt="Dr. Michael Chen in white coat with stethoscope">
+                        <div class="social-links">
+                            <a href="#" aria-label="Dr. Michael Chen's LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Email Dr. Michael Chen"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Dr. Michael Chen</h3>
+                        <p class="staff-title">Pediatric Specialist</p>
+                        <p class="staff-bio">Dr. Chen is passionate about children's health and has specialized training in pediatric care, including developmental assessments.</p>
+                        <p class="credentials"><i class="fas fa-graduation-cap"></i> MD, Johns Hopkins University</p>
+                    </div>
                 </div>
+
                 <div class="staff-card">
-                    <img src="images/nurse.jpg" alt="Nurse Emily Wilson">
-                    <h3>Emily Wilson, RN</h3>
-                    <p>Registered Nurse</p>
+                    <div class="staff-image-container">
+                        <img src="images/nurse.jpg" alt="Nurse Emily Wilson in scrubs smiling">
+                        <div class="social-links">
+                            <a href="#" aria-label="Emily Wilson's LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Email Emily Wilson"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Emily Wilson, RN</h3>
+                        <p class="staff-title">Registered Nurse</p>
+                        <p class="staff-bio">Emily has 8 years of nursing experience and specializes in patient education and preventive care coordination.</p>
+                        <p class="credentials"><i class="fas fa-graduation-cap"></i> BSN, University of California</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-cta">
+                <p>Our entire team is committed to providing you with the highest quality care.</p>
+                <a href="request-appointment.html" class="cta-button primary">Schedule a Consultation</a>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+            <div class="section-header">
+                <h2 id="testimonials-heading">Patient Testimonials</h2>
+                <p class="section-subtitle">What our patients say about their experience</p>
+            </div>
+
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Dr. Johnson has been our family doctor for years. She always takes the time to listen and explain everything thoroughly. I never feel rushed during appointments."</p>
+                    <div class="testimonial-author">
+                        <img src="images/patient1.jpg" alt="Patient testimonial author">
+                        <div>
+                            <h4>Jennifer Adams</h4>
+                            <p>Patient since 2018</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"My son was terrified of doctor visits until we found Dr. Chen. His approach with children is amazing, and now my son actually looks forward to his checkups!"</p>
+                    <div class="testimonial-author">
+                        <img src="images/patient2.jpg" alt="Patient testimonial author">
+                        <div>
+                            <h4>Robert Martinez</h4>
+                            <p>Patient since 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"The entire staff at MedCare is exceptional. From the front desk to the nurses and doctors, everyone is professional, kind, and truly cares about patient wellbeing."</p>
+                    <div class="testimonial-author">
+                        <img src="images/patient3.jpg" alt="Patient testimonial author">
+                        <div>
+                            <h4>Susan Thompson</h4>
+                            <p>Patient since 2019</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="appointments" class="appointments" aria-labelledby="appointments-heading">
-            <h2 id="appointments-heading">Book an Appointment</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
+            <div class="section-header">
+                <h2 id="appointments-heading">Book an Appointment</h2>
+                <p class="section-subtitle">Schedule your visit online - it's quick and easy</p>
+            </div>
+            <div class="appointment-layout">
+                <div class="appointment-cta">
+                    <p>Ready to schedule your visit? Click below to request an appointment.</p>
+                    <a href="request-appointment.html" class="cta-button primary">Request Appointment</a>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for health tips and clinic updates.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
+                            <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                    <div class="accessibility">
+                        <a href="#" class="accessibility-link"><i class="fas fa-universal-access"></i> Accessibility Statement</a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="service">Service Needed</label>
-                    <select id="service" name="service">
-                        <option value="general">General Checkup</option>
-                        <option value="pediatric">Pediatric Care</option>
-                        <option value="geriatric">Geriatric Care</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="date">Preferred Date</label>
-                    <input type="date" id="date" name="date" required>
-                </div>
-                <button type="submit" class="submit-button">Request Appointment</button>
-            </form>
+            </div>
         </section>
     </main>
 
     <footer id="contact">
         <div class="footer-content">
-            <div class="contact-info">
+            <div class="footer-section contact-info">
                 <h3>Contact Us</h3>
-                <p>123 Medical Drive, Suite 100</p>
-                <p>Healthcare City, HC 12345</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Email: info@medcare.example</p>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Medical Drive, Suite 100<br>Healthcare City, HC 12345</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+15551234567">(555) 123-4567</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@medcare.example">info@medcare.example</a></p>
+                </address>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
-            <div class="hours">
-                <h3>Office Hours</h3>
-                <p>Monday-Friday: 8am - 5pm</p>
-                <p>Saturday: 9am - 1pm</p>
-                <p>Sunday: Closed</p>
+
+            <div class="footer-section footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#staff">Our Staff</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#appointments">Appointments</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-hours">
+                <h3>Hours of Operation</h3>
+                <ul class="hours-list">
+                    <li><span>Monday - Friday:</span> 8:00 AM - 5:00 PM</li>
+                    <li><span>Saturday:</span> 9:00 AM - 1:00 PM</li>
+                    <li><span>Sunday:</span> Closed</li>
+                </ul>
+                <div class="emergency-info">
+                    <h4><i class="fas fa-ambulance"></i> Emergency?</h4>
+                    <p>For emergencies, please call 911 or visit your nearest emergency room.</p>
+                </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2023 MedCare. All rights reserved.</p>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2023 MedCare. All rights reserved.</p>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
         </div>
     </footer>
+
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
