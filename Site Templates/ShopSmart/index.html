@@ -10,38 +10,99 @@
 <body>
 
     <header>
-        <!-- Navigation Bar -->
+        <!-- Navigation Bar with Mobile Menu Toggle -->
         <nav>
             <div class="logo">ShopSmart</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="category.html">Shop</a></li>
-                <!-- <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li> -->
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-            <div class="search-bar">
-                <input type="text" placeholder="Search products...">
-                <button type="submit">Search</button>
-            </div>
-            <button id="theme-toggle-button" class="theme-switch" aria-label="Toggle theme">
-                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                  <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.166 7.758a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
-                </svg>
-                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                  <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-3.51 1.713-6.635 4.43-8.589a.75.75 0 01.811.161z" clip-rule="evenodd" />
-                </svg>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
+
+            <!-- Navigation Links -->
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="category.html" class="dropdown-toggle">Shop <span class="dropdown-icon">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="category.html?category=clothing">Clothing</a></li>
+                            <li><a href="category.html?category=accessories">Accessories</a></li>
+                            <li><a href="category.html?category=home">Home Goods</a></li>
+                            <li><a href="category.html?category=shoes">Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search products...">
+                        <button type="submit">Search</button>
+                    </div>
+
+                    <div class="nav-icons">
+                        <a href="#" class="wishlist-icon" aria-label="Wishlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+                            </svg>
+                        </a>
+                        <a href="cart.html" class="cart-icon" aria-label="Shopping Cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                            </svg>
+                            <span class="cart-count">2</span>
+                        </a>
+                        <button id="theme-toggle-button" class="theme-switch" aria-label="Toggle theme">
+                            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.166 7.758a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+                            </svg>
+                            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                              <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-3.51 1.713-6.635 4.43-8.589a.75.75 0 01.811.161z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero Section with Carousel -->
         <section class="hero">
-            <h1>Welcome to ShopSmart</h1>
-            <p>Your Destination for Modern Style & Quality Goods.</p>
-            <a href="category.html" class="cta-button">Shop Collections</a>
-            <!-- Placeholder for hero image/slider -->
+            <div class="hero-carousel">
+                <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                    <div class="carousel-content">
+                        <h1>Welcome to ShopSmart</h1>
+                        <p>Your Destination for Modern Style & Quality Goods.</p>
+                        <a href="category.html" class="cta-button">Shop Collections</a>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1607083206968-13611e3d76db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                    <div class="carousel-content">
+                        <h1>Summer Collection</h1>
+                        <p>Discover our latest arrivals for the season.</p>
+                        <a href="category.html" class="cta-button">Shop Now</a>
+                    </div>
+                </div>
+                <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+                    <div class="carousel-content">
+                        <h1>Special Offers</h1>
+                        <p>Limited time discounts on selected items.</p>
+                        <a href="category.html" class="cta-button">View Deals</a>
+                    </div>
+                </div>
+                <button class="carousel-control prev" aria-label="Previous slide">&lt;</button>
+                <button class="carousel-control next" aria-label="Next slide">&gt;</button>
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+                    <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+                    <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+                </div>
+            </div>
         </section>
 
         <!-- Featured Products / Product Grid -->
@@ -60,43 +121,136 @@
             <div class="products">
                 <!-- Product cards will go here -->
                 <article class="product-card">
-                    <a href="product-detail.html">
-                        <img src="https://placehold.co/400x400/EFEFEF/AAAAAA&text=Stylish+Tee" alt="Stylish Tee">
-                        <div class="product-info">
+                    <div class="product-image">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Men's Graphic Tee">
+                        </a>
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="1" aria-label="Quick view">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product-detail.html">
                             <h3>Men's Graphic Tee</h3>
+                        </a>
+                        <div class="product-meta">
                             <p class="price">$29.99</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★<span class="empty-star">★</span></span>
+                                <span class="rating-count">(42)</span>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     <button class="add-to-cart-button">Add to Cart</button>
                 </article>
                 <article class="product-card">
-                    <a href="product-detail.html">
-                        <img src="https://placehold.co/400x400/DDEEFF/999999&text=Leather+Watch" alt="Leather Watch">
-                        <div class="product-info">
+                    <div class="product-image">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Classic Leather Watch">
+                        </a>
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="2" aria-label="Quick view">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product-detail.html">
                             <h3>Classic Leather Watch</h3>
+                        </a>
+                        <div class="product-meta">
                             <p class="price">$149.50</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(28)</span>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     <button class="add-to-cart-button">Add to Cart</button>
                 </article>
                 <article class="product-card">
-                    <a href="product-detail.html">
-                        <img src="https://placehold.co/400x400/FFF0E0/BBBBBB&text=Cozy+Mug" alt="Cozy Mug">
-                        <div class="product-info">
+                    <div class="product-image">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Ceramic Coffee Mug">
+                        </a>
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="3" aria-label="Quick view">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <a href="product-detail.html">
                             <h3>Ceramic Coffee Mug</h3>
+                        </a>
+                        <div class="product-meta">
                             <p class="price">$15.00</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★<span class="empty-star">★</span></span>
+                                <span class="rating-count">(56)</span>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                     <button class="add-to-cart-button">Add to Cart</button>
                 </article>
                 <article class="product-card">
-                    <a href="product-detail.html">
-                        <img src="https://placehold.co/400x400/E0F0E0/AAAAAA&text=Running+Shoes" alt="Running Shoes">
-                        <div class="product-info">
-                            <h3>Trail Running Shoes</h3>
-                            <p class="price">$85.75</p>
+                    <div class="product-image">
+                        <a href="product-detail.html">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Trail Running Shoes">
+                        </a>
+                        <div class="product-badge">Sale</div>
+                        <div class="product-actions">
+                            <button class="quick-view-btn" data-product="4" aria-label="Quick view">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                                    <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+                                </svg>
+                            </button>
                         </div>
-                    </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="product-detail.html">
+                            <h3>Trail Running Shoes</h3>
+                        </a>
+                        <div class="product-meta">
+                            <p class="price"><span class="original-price">$99.99</span> $85.75</p>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(19)</span>
+                            </div>
+                        </div>
+                    </div>
                     <button class="add-to-cart-button">Add to Cart</button>
                 </article>
                 <!-- Add more product card placeholders -->
@@ -135,13 +289,87 @@
             </div>
             <div class="footer-section">
                 <h4>Follow Us</h4>
-                <!-- Add social media links/icons -->
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Pinterest" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0a12 12 0 00-4.373 23.178c-.01-.937-.004-2.062.236-3.082l1.73-7.324s-.43-.859-.43-2.133c0-2 1.16-3.484 2.61-3.484 1.23 0 1.82.922 1.82 2.023 0 1.23-.79 3.074-1.2 4.781-.34 1.438.72 2.602 2.14 2.602 2.56 0 4.28-3.277 4.28-7.172 0-2.953-2-5.164-5.62-5.164-4.1 0-6.65 3.055-6.65 6.465 0 1.172.34 2 .89 2.637.25.297.28.414.2.754-.07.258-.22.883-.29 1.13-.09.343-.37.465-.68.336-1.9-.773-2.78-2.852-2.78-5.188 0-3.86 3.26-8.48 9.72-8.48 5.2 0 8.61 3.762 8.61 7.8 0 5.34-2.97 9.32-7.34 9.32-1.47 0-2.86-.793-3.33-1.692l-.9 3.585c-.33 1.188-1.22 2.672-1.81 3.578A12 12 0 1012 0z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
         <p class="copyright">&copy; 2024 ShopSmart. All rights reserved.</p>
     </footer>
 
-    <!-- Add link to JavaScript file if needed -->
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal" id="quick-view-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="product-detail quick-view-product">
+                <div class="product-gallery">
+                    <img src="" alt="Product Image" id="modal-product-image">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title" id="modal-product-title"></h2>
+                    <p class="product-price" id="modal-product-price"></p>
+                    <div class="product-rating" id="modal-product-rating">
+                        <span class="stars"></span>
+                        <span class="rating-count"></span>
+                    </div>
+                    <p class="product-description" id="modal-product-description"></p>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label for="modal-size-select">Size:</label>
+                            <select name="size" id="modal-size-select">
+                                <option value="s">Small</option>
+                                <option value="m" selected>Medium</option>
+                                <option value="l">Large</option>
+                                <option value="xl">X-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label for="modal-color-select">Color:</label>
+                            <select name="color" id="modal-color-select">
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                                <option value="blue">Blue</option>
+                                <option value="red">Red</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="quantity-selector">
+                        <label for="modal-quantity">Quantity:</label>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus" aria-label="Decrease quantity">-</button>
+                            <input type="number" id="modal-quantity" name="quantity" value="1" min="1">
+                            <button class="quantity-btn plus" aria-label="Increase quantity">+</button>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="add-to-cart-button-detail">Add to Cart</button>
+                        <button class="view-details-button">View Full Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
     <script src="script.js"></script>
 </body>
 </html>
