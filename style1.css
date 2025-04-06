@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
+    /* Restore original variable names */
     --primary-color: #111827;    /* Dark gray-blue */
     --secondary-color: #1F2937;  /* Darker gray-blue */
     --accent-color: #6366F1;     /* Indigo */
@@ -9,11 +10,16 @@
     --light-color: #F9FAFB;      /* Off white */
     --text-light: #F3F4F6;       /* Light gray */
     --shadow-color: rgba(0, 0, 0, 0.1);
+    --border-color: rgba(156, 163, 175, 0.2); /* Restore border */
+    --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Restore shadow */
+
     --transition-speed: 0.3s;
-    --header-height: 64px;       /* 4rem/16px header height */
-    --border-radius: 12px;       /* Consistent border radius */
-    --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --header-height: 64px;
+    --border-radius: 12px;
+    /* Removed theme-transition */
 }
+
+/* Removed body.light-theme rule */
 
 body {
     font-family: 'Inter', sans-serif;
@@ -23,6 +29,7 @@ body {
     padding: 0;
     line-height: 1.6;
     letter-spacing: 0.01em;
+    /* Removed transition: var(--theme-transition); */
 }
 
 #navbar {
@@ -30,10 +37,10 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(31, 41, 55, 0.95); /* Semi-transparent background */
+    background-color: rgba(31, 41, 55, 0.95); /* Restore original semi-transparent */
     padding: 1rem 2rem;
     text-align: center;
-    border-bottom: 1px solid rgba(156, 163, 175, 0.2);
+    border-bottom: 1px solid var(--border-color);
     backdrop-filter: blur(10px); /* Modern blur effect */
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px var(--shadow-color);
@@ -41,7 +48,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    transition: all var(--transition-speed) ease;
+    transition: all var(--transition-speed) ease; /* Remove theme transition */
 }
 
 #navbar-logo {
@@ -67,7 +74,7 @@ body {
 #navbar a {
     color: var(--light-color);
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Remove theme transition */
     padding: 0.75rem 1.25rem;
     position: relative;
     font-weight: 500;
@@ -110,6 +117,7 @@ main h1 {
     padding-top: 1rem;
     position: relative;
     z-index: 1;
+    /* Removed transition: var(--theme-transition); */
 }
 
 main p {
@@ -117,6 +125,7 @@ main p {
     color: var(--muted-color);
     max-width: 800px;
     margin: 0 auto 2rem;
+    /* Removed transition: var(--theme-transition); */
 }
 
 .gallery {
@@ -132,9 +141,9 @@ main p {
     background-color: var(--secondary-color);
     border-radius: var(--border-radius);
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Remove theme transition */
     box-shadow: var(--card-shadow);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Restore original border */
     position: relative;
 }
 
@@ -165,7 +174,7 @@ main p {
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Remove theme transition */
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -179,7 +188,7 @@ main p {
     width: 0%;
     height: 100%;
     background-color: var(--highlight-color);
-    transition: all 0.5s ease;
+    transition: all 0.5s ease; /* Remove theme transition */
     z-index: -1;
 }
 
@@ -195,9 +204,10 @@ footer {
     background-color: var(--secondary-color);
     padding: 2rem;
     margin-top: 4rem;
-    border-top: 1px solid rgba(156, 163, 175, 0.2);
+    border-top: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
+    /* Removed transition: var(--theme-transition); */
 }
 
 footer::before {
