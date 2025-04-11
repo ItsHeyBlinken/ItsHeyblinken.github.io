@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bytes By Blinken Media - Pricing for web development services, maintenance and support packages.">
+    <meta name="keywords" content="web development pricing, website templates, custom websites, pricing plans, maintenance plans">
+    <meta name="author" content="Bytes By Blinken">
+    <meta property="og:title" content="Bytes By Blinken Media - Web Development Pricing">
+    <meta property="og:description" content="Explore our affordable web development pricing plans. Find the perfect package for your business needs.">
+    <meta property="og:image" content="./images/Logo.png">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://bytesbyblinken.com/pricing">
+    <title>Pricing Plans | Bytes By Blinken Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pricing.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="./images/Logo.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#111827',    // Dark gray-blue
+                        secondary: '#1F2937',  // Darker gray-blue
+                        accent: '#6366F1',     // Indigo
+                        highlight: '#818CF8',  // Light indigo
+                        muted: '#9CA3AF',      // Gray
+                        light: '#F9FAFB'       // Off white
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary text-light min-h-screen flex flex-col">
+    <header>
+        <nav id="navbar" class="fixed top-0 left-0 w-full bg-secondary/95 backdrop-blur-md border-b border-muted/20 shadow-lg z-50 transition-all duration-300">
+            <div class="container mx-auto px-4 py-3 flex flex-row justify-between items-center">
+                <a href="./index.html" class="transition-transform duration-300 hover:scale-105 flex items-center">
+                    <img id="navbar-logo" src="./images/Logo.png" alt="Bytes By Blinken Logo" class="w-10 h-auto">
+                </a>
+                <ul class="flex flex-row space-x-8 items-center">
+                    <li class="flex flex-row md:space-x-8 space-x-4">
+                        <a href="./index.html" class="text-light hover:text-accent transition-colors relative py-2 flex items-center after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-4/5">Home</a>
+                        <a href="./templates.html" class="text-light hover:text-accent transition-colors relative py-2 flex items-center after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-4/5">Templates</a>
+                        <a href="./pricing.html" class="text-accent transition-colors relative py-2 flex items-center after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-4/5 after:h-0.5 after:bg-accent after:transition-all">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 pt-28 flex-grow">
+        <!-- Hero Section -->
+        <section class="py-16">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl font-bold text-accent mb-6 relative animate-fadeIn">
+                    <span class="relative z-10">Transparent Pricing</span>
+                    <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-accent opacity-70"></span>
+                </h1>
+                <p class="text-muted text-lg mb-12 animate-slideUp">Choose the right plan for your business needs with our straightforward pricing options.</p>
+            </div>
+        </section>
+
+        <!-- Pricing Categories Navigation -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button class="pricing-nav-btn active" data-target="website-design">Website Design</button>
+            <button class="pricing-nav-btn" data-target="maintenance">Maintenance & Support</button>
+            <button class="pricing-nav-btn" data-target="bundles">Value Bundles</button>
+            <button class="pricing-nav-btn" data-target="ecommerce">E-commerce Solutions</button>
+        </div>
+
+        <!-- Website Design Only Section -->
+        <section id="website-design" class="pricing-section active py-12 border-t border-white/10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-light inline-block relative">
+                    Website <span class="text-accent">Design</span>
+                    <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-accent to-highlight"></span>
+                </h2>
+                <p class="text-muted mt-6 max-w-2xl mx-auto">Professional website design packages to fit every need</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <!-- Basic Site -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Basic Site</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$300</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 3 pages</li>
+                            <li><i class="fas fa-check"></i> Mobile-friendly design</li>
+                            <li><i class="fas fa-check"></i> Basic SEO setup</li>
+                            <li><i class="fas fa-check"></i> Contact form</li>
+                            <li><i class="fas fa-check"></i> Responsive layout</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:info@bytesbyblinken.com?subject=Basic%20Site%20Inquiry" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Standard Site -->
+                <div class="pricing-card pricing-popular">
+                    <div class="popular-tag">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Standard Site</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$550</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 5 pages</li>
+                            <li><i class="fas fa-check"></i> Custom layout design</li>
+                            <li><i class="fas fa-check"></i> Advanced contact form</li>
+                            <li><i class="fas fa-check"></i> SEO optimization</li>
+                            <li><i class="fas fa-check"></i> Social media integration</li>
+                            <li><i class="fas fa-check"></i> Google Analytics setup</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:info@bytesbyblinken.com?subject=Standard%20Site%20Inquiry" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Premium Site -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Premium Site</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$950</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 10 pages</li>
+                            <li><i class="fas fa-check"></i> Fully custom design</li>
+                            <li><i class="fas fa-check"></i> Animations & transitions</li>
+                            <li><i class="fas fa-check"></i> Advanced SEO setup</li>
+                            <li><i class="fas fa-check"></i> Content creation assistance</li>                            
+                            <li><i class="fas fa-check"></i> Premium contact forms</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:info@bytesbyblinken.com?subject=Premium%20Site%20Inquiry" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maintenance & Support Section -->
+        <section id="maintenance" class="pricing-section py-12 border-t border-white/10 hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-light inline-block relative">
+                    Maintenance & <span class="text-accent">Support</span>
+                    <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-accent to-highlight"></span>
+                </h2>
+                <p class="text-muted mt-6 max-w-2xl mx-auto">Keep your website up-to-date and running smoothly</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <!-- Monthly Maintenance -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Monthly Maintenance</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$50</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Small content updates</li>
+                            <li><i class="fas fa-check"></i> Bug fixes</li>
+                            <li><i class="fas fa-check"></i> Software updates</li>
+                            <li><i class="fas fa-check"></i> Regular backups</li>
+                            <li><i class="fas fa-check"></i> Monthly performance report</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:info@bytesbyblinken.com?subject=Monthly%20Maintenance%20Inquiry" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Yearly Maintenance -->
+                <div class="pricing-card pricing-popular">
+                    <div class="popular-tag">Best Value</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Yearly Maintenance</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$500</span>
+                        <span class="period">/year</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Monthly</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Design refreshes</li>
+                            <li><i class="fas fa-check"></i> SEO adjustments</li>
+                            <li><i class="fas fa-check"></i> Save $100 annually</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:info@bytesbyblinken.com?subject=Yearly%20Maintenance%20Inquiry" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- One-Time Updates -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">One-Time Updates</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$50</span>
+                        <span class="period">/hour</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Content updates</li>
+                            <li><i class="fas fa-check"></i> Feature additions</li>
+                            <li><i class="fas fa-check"></i> Layout changes</li>
+                            <li><i class="fas fa-check"></i> Plugin installations</li>
+                            <li><i class="fas fa-check"></i> Pay only for what you need</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:info@bytesbyblinken.com?subject=One-Time%20Update%20Inquiry" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Website + Maintenance Bundles Section -->
+        <section id="bundles" class="pricing-section py-12 border-t border-white/10 hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-light inline-block relative">
+                    Value <span class="text-accent">Bundles</span>
+                    <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-accent to-highlight"></span>
+                </h2>
+                <p class="text-muted mt-6 max-w-2xl mx-auto">Save with our website + maintenance bundle packages</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <!-- Basic Bundle -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Basic Bundle</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$675</span>
+                        <span class="period">save $25</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Basic Site</li>
+                            <li><i class="fas fa-check"></i> 1 year of maintenance</li>
+                            <li><i class="fas fa-check"></i> Up to 3 pages</li>
+                            <li><i class="fas fa-check"></i> Mobile-friendly design</li>
+                            <li><i class="fas fa-check"></i> Monthly content updates</li>
+                            <li><i class="fas fa-check"></i> Regular backups</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:info@bytesbyblinken.com?subject=Basic%20Bundle%20Inquiry" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Standard Bundle -->
+                <div class="pricing-card pricing-popular">
+                    <div class="popular-tag">Best Seller</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Standard Bundle</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$950</span>
+                        <span class="period">save $50</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Standard Site</li>
+                            <li><i class="fas fa-check"></i> 1 year of maintenance</li>
+                            <li><i class="fas fa-check"></i> Up to 5 pages</li>
+                            <li><i class="fas fa-check"></i> Custom layout design</li>
+                            <li><i class="fas fa-check"></i> SEO optimization</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Design refreshes</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:info@bytesbyblinken.com?subject=Standard%20Bundle%20Inquiry" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Premium Bundle -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Premium Bundle</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$1,350</span>
+                        <span class="period">save $50</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Premium Site</li>
+                            <li><i class="fas fa-check"></i> 1 year of maintenance</li>
+                            <li><i class="fas fa-check"></i> Up to 10 pages</li>
+                            <li><i class="fas fa-check"></i> Fully custom design</li>
+                            <li><i class="fas fa-check"></i> Animations & transitions</li>
+                            <li><i class="fas fa-check"></i> Advanced SEO setup</li>
+                            <li><i class="fas fa-check"></i> VIP priority support</li>
+                            <li><i class="fas fa-check"></i> Quarterly design refreshes</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:info@bytesbyblinken.com?subject=Premium%20Bundle%20Inquiry" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- E-commerce Website Packages Section -->
+        <section id="ecommerce" class="pricing-section py-12 border-t border-white/10 hidden">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-light inline-block relative">
+                    E-commerce <span class="text-accent">Solutions</span>
+                    <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-accent to-highlight"></span>
+                </h2>
+                <p class="text-muted mt-6 max-w-2xl mx-auto">Complete online store solutions to start selling your products or services</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <!-- Basic E-commerce Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Basic E-commerce</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$1,500</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 5 product listings</li>
+                            <li><i class="fas fa-check"></i> Streamlined shopping cart</li>
+                            <li><i class="fas fa-check"></i> SSL-secured checkout process</li>
+                            <li><i class="fas fa-check"></i> Fully responsive mobile design</li>
+                            <li><i class="fas fa-check"></i> Standard payment gateway</li>
+                            <li><i class="fas fa-check"></i> Professional product display</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:info@bytesbyblinken.com?subject=Basic%20E-commerce%20Inquiry" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Standard E-commerce Package -->
+                <div class="pricing-card pricing-popular">
+                    <div class="popular-tag">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Standard E-commerce</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$2,500</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 20 product listings</li>
+                            <li><i class="fas fa-check"></i> Custom brand-aligned design</li>
+                            <li><i class="fas fa-check"></i> Multiple payment gateway options</li>
+                            <li><i class="fas fa-check"></i> Inventory tracking system</li>
+                            <li><i class="fas fa-check"></i> Customized product categories</li>
+                            <li><i class="fas fa-check"></i> Customer review functionality</li>
+                            <li><i class="fas fa-check"></i> Comprehensive SEO optimization</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:info@bytesbyblinken.com?subject=Standard%20E-commerce%20Inquiry" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Premium E-commerce Package -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Premium E-commerce</h3>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$4,000</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Unlimited product capacity</li>
+                            <li><i class="fas fa-check"></i> Customer accounts with dashboards</li>
+                            <li><i class="fas fa-check"></i> Real-time order tracking system</li>
+                            <li><i class="fas fa-check"></i> Promotional tools & discount engine</li>
+                            <li><i class="fas fa-check"></i> Advanced inventory management</li>
+                            <li><i class="fas fa-check"></i> Multi-platform payment processing</li>
+                            <li><i class="fas fa-check"></i> Advanced SEO & marketing tools</li>
+                            <li><i class="fas fa-check"></i> Google Analytics & reporting</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:info@bytesbyblinken.com?subject=Premium%20E-commerce%20Inquiry" class="btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-12 border-t border-white/10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-light inline-block relative">
+                    Frequently Asked <span class="text-accent">Questions</span>
+                    <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-accent to-highlight"></span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
+                <div class="bg-secondary/60 rounded-xl p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-bold text-accent mb-3">How long does it take to build a website?</h3>
+                    <p class="text-muted">Most projects are completed within 1-2 weeks from receiving all required content and approvals. Complex projects may take longer.</p>
+                </div>
+
+                <div class="bg-secondary/60 rounded-xl p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-bold text-accent mb-3">Do I need to provide my own hosting?</h3>
+                    <p class="text-muted">No, all our packages include hosting setup and configuration, so you don't have to worry about technical details.</p>
+                </div>
+
+                <div class="bg-secondary/60 rounded-xl p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-bold text-accent mb-3">What happens after my maintenance plan expires?</h3>
+                    <p class="text-muted">You can renew your maintenance plan or switch to a different one. If you choose not to renew, your website will still function, but won't receive updates or support.</p>
+                </div>
+
+                <div class="bg-secondary/60 rounded-xl p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-bold text-accent mb-3">Can I upgrade my plan later?</h3>
+                    <p class="text-muted">Yes, you can upgrade your website or maintenance plan at any time. We'll apply a prorated credit for any unused portion of your current plan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-12">
+            <div class="text-center bg-secondary/40 rounded-xl p-10 backdrop-blur-sm border border-white/5 max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-light mb-4">Ready to Get Started?</h3>
+                <p class="text-muted mb-8 max-w-2xl mx-auto">Contact us today to discuss your project requirements and find the perfect plan for your business.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="mailto:info@bytesbyblinken.com?subject=Website%20Project%20Inquiry" class="inline-block">
+                        <button type="button" class="bg-accent hover:bg-highlight text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group w-full sm:w-auto">
+                            <span class="relative z-10">Contact Us Now</span>
+                            <span class="absolute top-0 left-0 w-0 h-full bg-highlight transition-all duration-500 group-hover:w-full -z-1"></span>
+                        </button>
+                    </a>
+                </div>
+                <p class="text-muted text-sm mt-6">Email us at <a href="mailto:info@bytesbyblinken.com" class="text-accent hover:text-highlight transition-colors">info@bytesbyblinken.com</a> — Response guaranteed within 48 hours</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add JavaScript for the tab functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navButtons = document.querySelectorAll('.pricing-nav-btn');
+            const pricingSections = document.querySelectorAll('.pricing-section');
+            
+            // Function to set active tab
+            function setActiveTab(targetId) {
+                // Remove active class from all buttons
+                navButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to target button
+                const targetButton = document.querySelector(`.pricing-nav-btn[data-target="${targetId}"]`);
+                if (targetButton) {
+                    targetButton.classList.add('active');
+                }
+                
+                // Hide all sections
+                pricingSections.forEach(section => {
+                    section.classList.add('hidden');
+                    section.classList.remove('active');
+                });
+                
+                // Show the target section
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.classList.remove('hidden');
+                    targetSection.classList.add('active');
+                }
+            }
+            
+            // Handle button clicks
+            navButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    setActiveTab(targetId);
+                    
+                    // Optionally update URL hash for bookmarking
+                    window.location.hash = targetId;
+                });
+            });
+            
+            // Check for hash in URL on page load
+            if (window.location.hash) {
+                const targetId = window.location.hash.substring(1);
+                if (document.getElementById(targetId)) {
+                    setActiveTab(targetId);
+                } else {
+                    setActiveTab('website-design'); // Default tab
+                }
+            } else {
+                setActiveTab('website-design'); // Default tab
+            }
+        });
+    </script>
+
+    <footer class="bg-secondary mt-16 py-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent to-transparent opacity-50"></div>
+
+        <!-- Footer Wave SVG -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-none transform rotate-180">
+            <svg class="relative block w-full h-12" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-primary"></path>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-12 items-start mb-8 px-2">
+                <div>
+                    <h3 style="margin: 1rem;" class="text-xl font-bold mb-6">
+                        <span class="text-light relative inline-block">About<br>Us</span>
+                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-accent"></span>
+                    </h3>
+                    <p class="text-muted mb-4 leading-relaxed mt-2">We create websites that don't just look good—they work hard for your business. Our focus is on design that converts visitors into customers.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <img id="footer-logo" src="./images/Logo.png" alt="Bytes By Blinken Logo" class="w-24 mx-auto mb-4">
+                    <p class="text-muted">Websites that work as hard as you do</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">
+                        <span class="text-light relative inline-block">Contact<br>Us</span>
+                        <span Class="absolute -bottom-1 left-0 w-full h-0.5 bg-accent"></span>
+                    </h3>
+                    <address class="not-italic text-muted">
+                        <p style="margin: 1rem;" class="mb-2 flex items-center">
+                            <i class="fas fa-envelope mr-3 text-accent"></i>
+                            <a href="mailto:info@bytesbyblinken.com" class="hover:text-accent transition-colors">info@bytesbyblinken.com</a>
+                        </p>
+                        <p style="margin: 1rem;" class="mb-2 flex items-center">
+                            <i class="fas fa-clock mr-3 text-accent"></i>
+                            Response within 48 hours
+                        </p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-6 text-center">
+                <p class="text-muted text-sm">&copy; 2025 Bytes By Blinken Media. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

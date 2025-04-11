@@ -1,0 +1,291 @@
+/* Pricing Page Specific Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Pricing Card Styles */
+.pricing-card {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.pricing-header {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pricing-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--light-color);
+    margin: 0;
+}
+
+.pricing-price {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pricing-price .price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    display: block;
+    line-height: 1.2;
+}
+
+.pricing-price .period {
+    font-size: 1rem;
+    color: var(--muted-color);
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.pricing-features {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.pricing-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-features li {
+    padding: 0.75rem 0;
+    color: var(--muted-color);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-features i {
+    color: var(--accent-color);
+    margin-right: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.pricing-action {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.pricing-action .btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.pricing-action .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--highlight-color);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.pricing-action .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-action .btn-primary:hover::before {
+    width: 100%;
+}
+
+/* Popular Plan Styles */
+.pricing-popular {
+    transform: scale(1.05);
+    border-color: rgba(99, 102, 241, 0.4);
+    z-index: 10;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-popular:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.popular-tag {
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: var(--border-radius);
+}
+
+/* Additional Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pricing-popular {
+    animation: pulse 3s infinite;
+}
+
+.pricing-popular:hover {
+    animation: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .pricing-popular {
+        transform: scale(1);
+        margin: 2rem 0;
+    }
+    
+    .pricing-popular:hover {
+        transform: translateY(-10px);
+    }
+}
+
+/* FAQ Section Styles */
+.faq-item {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-color: rgba(99, 102, 241, 0.2);
+}
+
+.faq-question {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 0.75rem;
+}
+
+.faq-answer {
+    color: var(--muted-color);
+    line-height: 1.6;
+}
+
+/* Utility Classes */
+.z-1 {
+    z-index: 1;
+}
+
+.-z-1 {
+    z-index: -1;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Pricing Navigation Buttons */
+.pricing-nav-btn {
+    background-color: var(--secondary-color);
+    color: var(--muted-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pricing-nav-btn:hover {
+    color: var(--light-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.pricing-nav-btn.active {
+    background-color: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.pricing-section {
+    transition: all 0.3s ease;
+    display: none; /* Hide all sections by default */
+}
+
+.pricing-section.hidden {
+    display: none;
+}
+
+.pricing-section.active {
+    display: block;
+}
+
+/* Animation for active section */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.pricing-section.active {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Responsive styles for navigation */
+@media (max-width: 768px) {
+    .pricing-nav-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-nav-btn {
+        flex: 1 0 calc(50% - 0.5rem);
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+} 
