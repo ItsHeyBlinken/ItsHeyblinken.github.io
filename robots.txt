@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the site
+Allow: /index.html
+Allow: /templates.html
+Allow: /pricing.html
+Allow: /images/
+Allow: /style.css
+Allow: /style1.css
+Allow: /pricing.css
+
+# Disallow template source files (keep templates discoverable but not the raw files)
+Disallow: /Site Templates/
+
+# Sitemap location
+Sitemap: https://builtbyblinken.com/sitemap.xml
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
