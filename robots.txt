@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Allow all search engines to crawl the site
+# Explicitly allow main pages
 Allow: /index.html
 Allow: /templates.html
 Allow: /pricing.html
@@ -10,11 +10,16 @@ Allow: /style.css
 Allow: /style1.css
 Allow: /pricing.css
 
-# Disallow template source files (keep templates discoverable but not the raw files)
+# Disallow template source files to avoid duplicate content issues
 Disallow: /Site Templates/
+
+# Prevent indexing of potential duplicate URLs
+Disallow: /*?
+Disallow: /*.php$
+Disallow: /*.asp$
 
 # Sitemap location
 Sitemap: https://builtbyblinken.com/sitemap.xml
 
-# Crawl delay (optional - helps with server load)
+# Crawl delay (helps with server load and prevents duplicate crawling)
 Crawl-delay: 1
