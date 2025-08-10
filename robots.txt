@@ -1,22 +1,23 @@
 User-agent: *
 Allow: /
 
-# Explicitly allow main pages
+# Explicitly allow main pages and assets
 Allow: /index.html
 Allow: /templates.html
 Allow: /pricing.html
+Allow: /sitemap.xml
+Allow: /robots.txt
 Allow: /images/
 Allow: /style.css
 Allow: /style1.css
 Allow: /pricing.css
 
-# Disallow template source files to avoid duplicate content issues
+# Block template source files completely to prevent indexing conflicts
 Disallow: /Site Templates/
-
-# Prevent indexing of potential duplicate URLs
-Disallow: /*?
-Disallow: /*.php$
-Disallow: /*.asp$
+User-agent: *
+Disallow: /Site Templates/*.html
+Disallow: /Site Templates/*.css
+Disallow: /Site Templates/*.js
 
 # Sitemap location
 Sitemap: https://builtbyblinken.com/sitemap.xml
