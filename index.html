@@ -32,6 +32,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="./images/Logo.png">
 
+    <!-- Google Analytics - Replace GA_MEASUREMENT_ID with your actual ID -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
@@ -283,34 +294,113 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-secondary/60 rounded-xl p-6 shadow-lg border border-white/5 backdrop-blur-sm relative">
+                    <div class="bg-secondary/60 rounded-xl p-6 shadow-lg border border-white/5 backdrop-blur-sm relative" itemscope itemtype="https://schema.org/Review">
                         <div class="absolute -top-5 -left-5 text-5xl text-accent opacity-20">
                             <i class="fas fa-quote-left"></i>
                         </div>
-                        <p class="text-muted mb-6 relative z-10">"Within a month of launching our new website, our online inquiries increased by 64%. The team understood exactly what we needed—a site that looks professional but also converts visitors into customers. The ROI has been incredible."</p>
+                        <p class="text-muted mb-6 relative z-10" itemprop="reviewBody">"Within a month of launching our new website, our online inquiries increased by 64%. The team understood exactly what we needed—a site that looks professional but also converts visitors into customers. The ROI has been incredible."</p>
+                        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" style="display: none;">
+                            <meta itemprop="ratingValue" content="5">
+                            <meta itemprop="bestRating" content="5">
+                        </div>
                         <div class="flex items-center">
                             <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mr-4">
                                 <span class="text-accent font-bold">RL</span>
                             </div>
-                            <div>
-                                <h4 class="font-bold text-light">Rebecca Lewis</h4>
+                            <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <h4 class="font-bold text-light" itemprop="name">Rebecca Lewis</h4>
                                 <p class="text-sm text-muted">Founder, Coastal Realty Group</p>
                             </div>
+                        <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness" style="display: none;">
+                            <span itemprop="name">BytesByBlinken Media</span>
+                        </div>
                         </div>
                     </div>
 
-                    <div class="bg-secondary/60 rounded-xl p-6 shadow-lg border border-white/5 backdrop-blur-sm relative">
+                    <div class="bg-secondary/60 rounded-xl p-6 shadow-lg border border-white/5 backdrop-blur-sm relative" itemscope itemtype="https://schema.org/Review">
                         <div class="absolute -top-5 -left-5 text-5xl text-accent opacity-20">
                             <i class="fas fa-quote-left"></i>
                         </div>
-                        <p class="text-muted mb-6 relative z-10">"We needed a website that could handle our product catalog and integrate with our inventory system. Not only did they deliver exactly what we needed, but they also suggested improvements we hadn't even considered. Our online sales are up 42% year-over-year."</p>
+                        <p class="text-muted mb-6 relative z-10" itemprop="reviewBody">"We needed a website that could handle our product catalog and integrate with our inventory system. Not only did they deliver exactly what we needed, but they also suggested improvements we hadn't even considered. Our online sales are up 42% year-over-year."</p>
+                        <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" style="display: none;">
+                            <meta itemprop="ratingValue" content="5">
+                            <meta itemprop="bestRating" content="5">
+                        </div>
                         <div class="flex items-center">
                             <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mr-4">
                                 <span class="text-accent font-bold">MT</span>
                             </div>
-                            <div>
-                                <h4 class="font-bold text-light">Michael Torres</h4>
+                            <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <h4 class="font-bold text-light" itemprop="name">Michael Torres</h4>
                                 <p class="text-sm text-muted">Operations Manager, TechGear</p>
+                            </div>
+                        <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness" style="display: none;">
+                            <span itemprop="name">BytesByBlinken Media</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="mt-24">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-light inline-block relative">
+                        Frequently Asked <span class="text-accent">Questions</span>
+                        <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-accent to-highlight"></span>
+                    </h2>
+                    <p class="text-muted mt-6 max-w-2xl mx-auto">Common questions about our web design services</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto" itemscope itemtype="https://schema.org/FAQPage">
+                    <div class="space-y-6">
+                        <div class="bg-secondary/60 rounded-xl p-6 border border-white/5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 class="text-xl font-bold text-light mb-3 cursor-pointer flex items-center justify-between" itemprop="name">
+                                How long does it take to build a custom website?
+                                <i class="fas fa-chevron-down text-accent"></i>
+                            </h3>
+                            <div class="text-muted" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">Most custom websites take 2-4 weeks to complete, depending on complexity and content readiness. Template-based sites can be delivered in 1-2 weeks. We'll provide a detailed timeline during our initial consultation.</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-secondary/60 rounded-xl p-6 border border-white/5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 class="text-xl font-bold text-light mb-3 cursor-pointer flex items-center justify-between" itemprop="name">
+                                What's included in your web design packages?
+                                <i class="fas fa-chevron-down text-accent"></i>
+                            </h3>
+                            <div class="text-muted" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">All packages include responsive design, SEO optimization, contact forms, social media integration, and basic analytics setup. Premium packages also include e-commerce functionality, advanced SEO, and ongoing maintenance.</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-secondary/60 rounded-xl p-6 border border-white/5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 class="text-xl font-bold text-light mb-3 cursor-pointer flex items-center justify-between" itemprop="name">
+                                Do you provide ongoing website maintenance?
+                                <i class="fas fa-chevron-down text-accent"></i>
+                            </h3>
+                            <div class="text-muted" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">Yes! We offer monthly and yearly maintenance packages that include security updates, content updates, performance monitoring, and technical support. This ensures your website stays secure and up-to-date.</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-secondary/60 rounded-xl p-6 border border-white/5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 class="text-xl font-bold text-light mb-3 cursor-pointer flex items-center justify-between" itemprop="name">
+                                Can you help with SEO and getting found on Google?
+                                <i class="fas fa-chevron-down text-accent"></i>
+                            </h3>
+                            <div class="text-muted" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">Absolutely! All our websites include basic SEO optimization with proper meta tags, structured data, and fast loading speeds. We also offer advanced SEO services including keyword research, content optimization, and local SEO setup.</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-secondary/60 rounded-xl p-6 border border-white/5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 class="text-xl font-bold text-light mb-3 cursor-pointer flex items-center justify-between" itemprop="name">
+                                What if I need changes after the website is complete?
+                                <i class="fas fa-chevron-down text-accent"></i>
+                            </h3>
+                            <div class="text-muted" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">We include 2 rounds of revisions in all packages, and offer unlimited minor tweaks for 30 days after launch. For ongoing changes, we provide affordable hourly rates or maintenance packages to keep your site updated.</div>
                             </div>
                         </div>
                     </div>
