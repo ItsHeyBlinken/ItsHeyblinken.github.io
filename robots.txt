@@ -12,12 +12,8 @@ Allow: /style.css
 Allow: /style1.css
 Allow: /pricing.css
 
-# Block template source files completely to prevent indexing conflicts
+# Block ALL template files completely to prevent indexing conflicts
 Disallow: /Site Templates/
-User-agent: *
-Disallow: /Site Templates/*.html
-Disallow: /Site Templates/*.css
-Disallow: /Site Templates/*.js
 
 # Sitemap location
 Sitemap: https://builtbyblinken.com/sitemap.xml
