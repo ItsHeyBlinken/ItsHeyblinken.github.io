@@ -22,16 +22,21 @@
 }
 
 body {
-    @apply bg-primary text-light min-h-screen flex flex-col;
     font-family: 'Inter', sans-serif;
     background-color: var(--primary-color);
     color: var(--light-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     line-height: 1.6;
     letter-spacing: 0.01em;
 }
 
 #footer-logo {
-    @apply w-24 mx-auto;
+    width: 6rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #logo {
@@ -129,7 +134,8 @@ main {
     padding-right: 2rem;
 }
 
-main h1 {
+/* Only apply when h1 is not using Tailwind text-* utilities (those need higher specificity) */
+main h1:not([class*="text-"]) {
     font-size: 2.5rem;
     color: var(--accent-color);
     text-align: center;
@@ -309,7 +315,7 @@ footer p {
         padding-top: 180px; /* Adjusted padding for mobile */
     }
 
-    main h1 {
+    main h1:not([class*="text-"]) {
         padding-top: 2rem;
     }
 
@@ -380,19 +386,26 @@ footer p {
     }
 }
 
-/* Add Tailwind utility classes for common patterns */
+/* Button and card patterns (plain CSS — no Tailwind @apply; works everywhere and satisfies CSS linters) */
 .btn {
-    @apply px-4 py-2 rounded-lg transition-all duration-300;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
 }
 
 .btn-primary {
-    @apply bg-accent text-light hover:bg-highlight;
+    background-color: var(--accent-color);
+    color: var(--light-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--highlight-color);
 }
 
 .card {
-    @apply bg-secondary rounded-lg shadow-lg p-6;
     background-color: var(--secondary-color);
     border-radius: var(--border-radius);
+    padding: 1.5rem;
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: var(--card-shadow);

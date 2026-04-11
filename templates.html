@@ -84,7 +84,7 @@
 </head>
 <body class="bg-primary text-light min-h-screen flex flex-col">
     <header>
-        <nav id="navbar" class="fixed top-0 left-0 w-full bg-secondary/95 backdrop-blur-md border-b border-muted/20 shadow-lg z-50 transition-all duration-300">
+        <nav id="navbar" class="fixed top-0 left-0 w-full bg-secondary/95 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/25 z-50 transition-all duration-300">
             <div class="container mx-auto px-4 py-3 flex flex-row justify-between items-center">
                 <a href="./index.html" class="transition-transform duration-300 hover:scale-105 flex items-center">
                     <img id="navbar-logo" src="./images/Logo.png" alt="BytesByBlinken Logo" class="w-10 h-auto">
@@ -100,13 +100,21 @@
         </nav>
     </header>
     <main class="container mx-auto px-4 pt-28 flex-grow">
-        <div class="text-center max-w-3xl mx-auto">
-            <h1 class="text-4xl font-bold text-accent mb-6 relative inline-block">
-                <span class="relative z-10">Professional Website Templates</span>
-                <span class="absolute -bottom-2 left-0 w-24 h-1 bg-accent opacity-70"></span>
-            </h1>
-            <p class="text-muted max-w-2xl mx-auto mb-12">Browse our collection of responsive, modern templates designed for various industries and purposes:</p>
-        </div>
+        <section class="pb-10 md:pb-14 min-w-0" aria-labelledby="templates-heading">
+            <div class="max-w-4xl mx-auto min-w-0 px-1 sm:px-0">
+                <div class="bg-secondary rounded-2xl overflow-hidden shadow-2xl shadow-indigo-500/15 border border-accent/30 ring-1 ring-white/10 relative">
+                    <div class="absolute -inset-px bg-gradient-to-br from-accent/25 via-transparent to-highlight/15 rounded-2xl blur-sm opacity-90 pointer-events-none" aria-hidden="true"></div>
+                    <div class="relative flex flex-col items-center text-center gap-y-6 md:gap-y-8 px-5 py-10 sm:px-8 sm:py-12 md:px-10 md:py-12 lg:px-12 lg:py-14">
+                        <h1 id="templates-heading" class="text-lg md:text-xl font-semibold uppercase tracking-[0.2em] text-highlight px-1">Templates</h1>
+                        
+                        <div class="w-full max-w-2xl flex flex-col gap-y-4 pt-2">
+                            <p class="text-muted text-lg md:text-xl leading-relaxed">Browse our collection of responsive, modern templates designed for various industries and purposes.</p>
+                            <p class="text-muted text-sm md:text-base leading-relaxed">Not sure which fits? <a href="mailto:services@bytesbyblinken.com?subject=Website%20help%20for%20%5BYour%20Business%20Name%5D&body=Hi%2C%0A%0AI%27d%20like%20help%20choosing%20a%20template%20or%20discussing%20a%20custom%20site.%0A%0A-%20Business%20name%3A%20%0A-%20What%20you%20do%3A%20%0A%0AIf%20you%27d%20rather%20talk%20on%20the%20phone%20first%2C%20say%20so%20here.%0A%0AThanks%21" class="text-accent hover:text-highlight transition-colors font-medium">Email us</a> a quick note—we reply within 48 hours, then we can schedule a call to go over details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="flex justify-center mb-8">
             <div class="inline-flex flex-wrap justify-center p-1 bg-secondary/50 backdrop-blur-sm rounded-lg shadow-inner max-w-4xl gap-1">
@@ -119,7 +127,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="template-gallery" role="region" aria-label="Template gallery">
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="small-business">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="small-business">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-primary/80 to-accent/50 flex items-center justify-center border-b-2 border-accent transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">AutoCare Center</span>
@@ -142,7 +150,7 @@
                 </a>
             </div>
 
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="small-business">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="small-business">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-orange-600/90 to-blue-600/50 flex items-center justify-center border-b-2 border-orange-500 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">FixIt Handyman</span>
@@ -165,7 +173,7 @@
                 </a>
             </div>
 
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="small-business">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="small-business">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-cyan-500/90 to-amber-400/50 flex items-center justify-center border-b-2 border-cyan-500 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">SparkleClean</span>
@@ -188,7 +196,7 @@
                 </a>
             </div>
 
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="small-business">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="small-business">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-green-600/90 to-amber-400/50 flex items-center justify-center border-b-2 border-green-500 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">GreenThumb</span>
@@ -211,7 +219,7 @@
                 </a>
             </div>
 
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-blue-900/90 to-blue-500/50 flex items-center justify-center border-b-2 border-blue-500 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">Premier Real Estate</span>
@@ -234,7 +242,7 @@
                 </a>
             </div>
 
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-purple-400/90 to-green-400/50 flex items-center justify-center border-b-2 border-purple-300 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">Dream Weddings</span>
@@ -256,7 +264,7 @@
                     </button>
                 </a>
             </div>
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="portfolio">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="portfolio">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-blue-800/90 to-orange-500/50 flex items-center justify-center border-b-2 border-orange-400 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">Alex Wanderlust</span>
@@ -279,7 +287,7 @@
                 </a>
             </div>
 
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-indigo-600/90 to-pink-500/50 flex items-center justify-center border-b-2 border-indigo-500 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">Pixel Perfect</span>
@@ -302,7 +310,7 @@
                 </a>
             </div>
 
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="portfolio">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="portfolio">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-indigo-600/90 to-sky-500/50 flex items-center justify-center border-b-2 border-indigo-500 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">CloudSync</span>
@@ -325,7 +333,7 @@
                 </a>
             </div>
 
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="portfolio">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="portfolio">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-indigo-500/90 to-pink-500/50 flex items-center justify-center border-b-2 border-indigo-400 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">ColorCraft</span>
@@ -348,7 +356,7 @@
                 </a>
             </div>
 
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="small-business">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="small-business">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-blue-600/90 to-green-500/50 flex items-center justify-center border-b-2 border-blue-400 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">Summit Trekkers</span>
@@ -371,7 +379,7 @@
                 </a>
             </div>
 
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="retail-ecommerce">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="retail-ecommerce">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-rose-600/90 to-slate-800/90 flex items-center justify-center border-b-2 border-rose-500 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">Vinyl Vault</span>
@@ -393,7 +401,7 @@
                     </button>
                 </a>
             </div>
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="small-business">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="small-business">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-blue-400/90 to-teal-400/90 flex items-center justify-center border-b-2 border-blue-300 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">OceanBreeze</span>
@@ -416,7 +424,7 @@
                 </a>
             </div>
            <!-- NEW ShopSmart Template Card START -->
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="retail-ecommerce">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="retail-ecommerce">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-sky-600/90 to-lime-400/50 flex items-center justify-center border-b-2 border-sky-500 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">ShopSmart</span>
@@ -441,7 +449,7 @@
             <!-- NEW ShopSmart Template Card END -->
 
             <!-- NEW MedCare Template Card START -->
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-blue-600/90 to-green-500/50 flex items-center justify-center border-b-2 border-blue-500 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">MedCare</span>
@@ -466,7 +474,7 @@
             <!-- NEW MedCare Template Card END -->
 
             <!-- NEW EduConnect Template Card START -->
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-blue-500/90 to-purple-500/50 flex items-center justify-center border-b-2 border-blue-400 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">EduConnect</span>
@@ -491,7 +499,7 @@
             <!-- NEW EduConnect Template Card END -->
 
             <!-- NEW LexCounsel Law Firm Template Card START -->
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-slate-700/90 to-blue-700/50 flex items-center justify-center border-b-2 border-slate-600 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">LexCounsel</span>
@@ -516,7 +524,7 @@
             <!-- NEW LexCounsel Law Firm Template Card END -->
 
             <!-- NEW FinConsult Accounting Template Card START -->
-            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
+            <div class="template-card bg-secondary rounded-xl overflow-hidden shadow-xl ring-1 ring-inset ring-white/10 transition-all duration-500 hover:shadow-2xl border border-white/5 group" data-category="professional">
                 <div class="relative overflow-hidden">
                     <div class="w-full h-56 bg-gradient-to-r from-blue-900/90 to-green-600/50 flex items-center justify-center border-b-2 border-green-600 transition-transform duration-700 group-hover:scale-105">
                         <span class="text-light text-xl font-bold">FinConsult</span>
@@ -554,22 +562,11 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-12 items-start mb-8 px-2">
                 <div>
-                    <h3 style="margin: 1rem;" class="text-xl font-bold mb-6">
+                    <h3 style="margin: 1rem;" class="text-xl font-bold mb-6 relative">
                         <span class="text-light relative inline-block">About<br>Us</span>
-
+                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-accent"></span>
                     </h3>
                     <p class="text-muted mb-4 leading-relaxed mt-2">We create websites that don't just look good—they work hard for your business. Our focus is on design that converts visitors into customers.</p>
-                    <div class="flex space-x-4 mt-6">
-                        <a href="#" class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition-all duration-300">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition-all duration-300">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent hover:bg-accent hover:text-white transition-all duration-300">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
                 </div>
 
                 <div class="text-center">
@@ -578,9 +575,9 @@
                 </div>
 
                 <div>
-                    <h3 class="text-xl font-bold mb-4">
+                    <h3 class="text-xl font-bold mb-4 relative">
                         <span class="text-light relative inline-block">Contact<br>Us</span>
-                        <span Class="absolute -bottom-1 left-0 w-full h-0.5 bg-accent"></span>
+                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-accent"></span>
                     </h3>
                     <address class="not-italic text-muted">
                         <p style="margin: 1rem;" class="mb-2 flex items-center">
@@ -596,7 +593,7 @@
             </div>
 
             <div class="border-t border-white/10 pt-6 text-center">
-                <p class="text-muted text-sm">&copy; 2025 BytesByBlinken Media. All rights reserved.</p>
+                <p class="text-muted text-sm">&copy; 2026 BytesByBlinken Media. All rights reserved.</p>
             </div>
         </div>
     </footer>
