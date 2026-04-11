@@ -1,0 +1,11 @@
+{
+  "name": "itsheyblinken-github-io",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/tailwind-input.css -o ./tailwind-built.css --minify",
+    "watch:css": "tailwindcss -i ./src/tailwind-input.css -o ./tailwind-built.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
