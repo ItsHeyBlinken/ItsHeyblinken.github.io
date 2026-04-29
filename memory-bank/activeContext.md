@@ -23,5 +23,6 @@
 
 ## Open / watch
 
+- **`pricing.html`** uses agency-style tier names (Launch / Growth / Signature), “Site Care” and “Complete packages” positioning, “Request a quote” CTAs, and “starting at” framing for ecommerce; keep copy and JSON-LD prices aligned when tiers change.
 - After HTML edits that add or change Tailwind classes, run **`npm run build:css`** and commit `tailwind-built.css` if not using a CI build step.
 - Adding new top-level HTML pages that use Tailwind requires adding them to `content` in `tailwind.config.js` and rebuilding.

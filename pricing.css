@@ -35,6 +35,17 @@
     margin: 0;
 }
 
+.pricing-subtitle {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--muted-color);
+    margin: 0.625rem 0 0 0;
+    line-height: 1.45;
+    max-width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .pricing-price {
     padding: 2rem 1.5rem;
     text-align: center;
@@ -71,8 +82,16 @@
     padding: 0.75rem 0;
     color: var(--muted-color);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    gap: 0.75rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* One flex child for all copy so inline <strong> does not become separate flex items */
+.pricing-features .pricing-feature-text {
+    flex: 1;
+    min-width: 0;
+    line-height: 1.5;
 }
 
 .pricing-features li:last-child {
@@ -81,8 +100,9 @@
 
 .pricing-features i {
     color: var(--accent-color);
-    margin-right: 0.75rem;
+    flex-shrink: 0;
     font-size: 0.875rem;
+    margin-top: 0.2em;
 }
 
 .pricing-action {
@@ -150,21 +170,6 @@
     top: 0;
     right: 0;
     border-bottom-left-radius: var(--border-radius);
-}
-
-/* Additional Animations */
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
-.pricing-popular {
-    animation: pulse 3s infinite;
-}
-
-.pricing-popular:hover {
-    animation: none;
 }
 
 /* Responsive Adjustments */
