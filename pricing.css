@@ -146,30 +146,46 @@
     width: 100%;
 }
 
-/* Popular Plan Styles */
+/* Popular Plan Styles — stronger agency treatment */
 .pricing-popular {
-    transform: scale(1.05);
-    border-color: rgba(99, 102, 241, 0.4);
+    transform: scale(1.04);
+    border-color: rgba(99, 102, 241, 0.55);
     z-index: 10;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    box-shadow:
+        0 20px 25px -5px rgba(0, 0, 0, 0.25),
+        0 10px 10px -5px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(99, 102, 241, 0.35),
+        0 0 40px -10px rgba(99, 102, 241, 0.4);
+    background-image: linear-gradient(180deg, rgba(99, 102, 241, 0.06) 0%, rgba(31, 41, 55, 0) 30%);
+}
+
+.pricing-popular .pricing-header {
+    background-color: rgba(99, 102, 241, 0.1);
+    border-bottom-color: rgba(99, 102, 241, 0.2);
+}
+
+.pricing-popular .pricing-title {
+    color: var(--highlight-color);
 }
 
 .pricing-popular:hover {
-    transform: scale(1.05) translateY(-10px);
+    transform: scale(1.04) translateY(-10px);
 }
 
 .popular-tag {
-    background-color: var(--accent-color);
+    background: linear-gradient(135deg, var(--accent-color), var(--highlight-color));
     color: white;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     padding: 0.5rem 1rem;
     position: absolute;
     top: 0;
     right: 0;
     border-bottom-left-radius: var(--border-radius);
+    box-shadow: 0 4px 10px -2px rgba(99, 102, 241, 0.5);
+    z-index: 2;
 }
 
 /* Responsive Adjustments */
@@ -229,31 +245,33 @@
     }
 }
 
-/* Pricing Navigation Buttons */
+/* Pricing Navigation Buttons — segmented control feel */
 .pricing-nav-btn {
-    background-color: var(--secondary-color);
+    background-color: transparent;
     color: var(--muted-color);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--border-radius);
+    border: 1px solid transparent;
+    padding: 0.7rem 1.25rem;
+    border-radius: 0.65rem;
     font-weight: 600;
-    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .pricing-nav-btn:hover {
     color: var(--light-color);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-color: rgba(99, 102, 241, 0.3);
+    background-color: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.08);
 }
 
 .pricing-nav-btn.active {
     background-color: var(--accent-color);
     color: white;
     border-color: var(--accent-color);
+    box-shadow: 0 8px 16px -6px rgba(99, 102, 241, 0.55);
 }
 
 .pricing-section {

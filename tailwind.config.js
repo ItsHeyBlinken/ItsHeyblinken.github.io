@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
+        display: ["Fraunces", "Georgia", "serif"],
       },
     },
   },

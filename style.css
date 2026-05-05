@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&display=swap');
 
 :root {
     --primary-color: #111827;    /* Dark gray-blue */
@@ -533,4 +534,548 @@ footer p {
     .card {
         max-width: 100%;
     }
+}
+
+/* ============================================================
+   AGENCY DESIGN SYSTEM
+   Display serif (Fraunces), eyebrow labels, oversized indices,
+   industry pills, stats, ghost buttons, comparison table.
+   Used across index.html, templates.html, pricing.html.
+   ============================================================ */
+
+/* Display serif heading */
+.font-display {
+    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+    letter-spacing: -0.02em;
+    font-feature-settings: "ss01", "ss02";
+}
+
+/* Eyebrow label (small caps tracked, with leading bar) */
+.eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--highlight-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    line-height: 1;
+}
+
+.eyebrow::before {
+    content: '';
+    width: 1.75rem;
+    height: 1px;
+    background-color: var(--highlight-color);
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.eyebrow.eyebrow-center::after {
+    content: '';
+    width: 1.75rem;
+    height: 1px;
+    background-color: var(--highlight-color);
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+/* Oversized faint section index (01, 02, 03 …) */
+.section-index {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(2.75rem, 6vw, 4.5rem);
+    font-weight: 600;
+    color: var(--accent-color);
+    opacity: 0.18;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    display: inline-block;
+}
+
+/* Soft radial gradient backdrop for hero / feature panels */
+.bg-gradient-soft {
+    background:
+        radial-gradient(ellipse at top left, rgba(99, 102, 241, 0.18), transparent 55%),
+        radial-gradient(ellipse at bottom right, rgba(129, 140, 248, 0.12), transparent 55%);
+}
+
+/* Subtle dotted grid backdrop (for hero decoration) */
+.bg-dot-grid {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 22px 22px;
+}
+
+/* Industry pills (used in industries-served strip) */
+.industry-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    background-color: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    color: var(--text-light);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.industry-pill i {
+    color: var(--accent-color);
+    font-size: 0.75rem;
+}
+
+.industry-pill:hover {
+    background-color: rgba(99, 102, 241, 0.15);
+    border-color: rgba(99, 102, 241, 0.45);
+    transform: translateY(-1px);
+}
+
+/* Stats bar */
+.stat-block {
+    text-align: center;
+    padding: 1.25rem 0.75rem;
+}
+
+.stat-number {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+    font-weight: 600;
+    color: var(--light-color);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    display: block;
+}
+
+.stat-number .stat-suffix {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: var(--muted-color);
+    margin-top: 0.625rem;
+    line-height: 1.4;
+    display: block;
+}
+
+/* Ghost / outlined button variant for agency CTAs */
+.btn-ghost {
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 1px solid rgba(99, 102, 241, 0.45);
+    padding: 0.85rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.btn-ghost:hover {
+    background-color: rgba(99, 102, 241, 0.1);
+    border-color: var(--accent-color);
+    color: var(--highlight-color);
+    transform: translateY(-1px);
+}
+
+/* Solid agency CTA (bigger than the .btn-primary in pricing.css) */
+.btn-cta {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.95rem 1.75rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 12px 24px -10px rgba(99, 102, 241, 0.5);
+    text-transform: none;
+    letter-spacing: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-cta:hover {
+    background-color: var(--highlight-color);
+    box-shadow: 0 18px 30px -10px rgba(99, 102, 241, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Process timeline connector */
+.process-step {
+    position: relative;
+}
+
+@media (min-width: 1024px) {
+    .process-timeline {
+        position: relative;
+    }
+    .process-timeline::before {
+        content: '';
+        position: absolute;
+        top: 1.75rem;
+        left: 8%;
+        right: 8%;
+        height: 2px;
+        background: linear-gradient(90deg,
+            rgba(99, 102, 241, 0) 0%,
+            rgba(99, 102, 241, 0.4) 15%,
+            rgba(129, 140, 248, 0.4) 50%,
+            rgba(99, 102, 241, 0.4) 85%,
+            rgba(99, 102, 241, 0) 100%);
+        z-index: 0;
+    }
+    .process-step {
+        z-index: 1;
+    }
+}
+
+/* Differentiator card (Why work with us) */
+.differentiator-card {
+    background-color: rgba(31, 41, 55, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--border-radius);
+    padding: 1.75rem;
+    transition: border-color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+    backdrop-filter: blur(6px);
+}
+
+.differentiator-card:hover {
+    border-color: rgba(99, 102, 241, 0.35);
+    transform: translateY(-3px);
+    background-color: rgba(31, 41, 55, 0.8);
+}
+
+.differentiator-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.75rem;
+    background-color: rgba(99, 102, 241, 0.15);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Pricing comparison table (used on pricing.html) */
+.compare-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: rgba(31, 41, 55, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    font-size: 0.95rem;
+}
+
+.compare-table thead th {
+    text-align: left;
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    color: var(--light-color);
+    background-color: rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.compare-table thead th.is-popular {
+    color: var(--highlight-color);
+    background-color: rgba(99, 102, 241, 0.12);
+}
+
+.compare-table tbody td {
+    padding: 0.95rem 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--muted-color);
+    vertical-align: top;
+}
+
+.compare-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.compare-table tbody td:first-child {
+    color: var(--light-color);
+    font-weight: 500;
+    width: 28%;
+}
+
+.compare-table .col-popular {
+    background-color: rgba(99, 102, 241, 0.06);
+    color: var(--text-light);
+}
+
+.compare-table .check {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.compare-table .dash {
+    color: rgba(156, 163, 175, 0.5);
+}
+
+@media (max-width: 768px) {
+    .compare-table {
+        font-size: 0.85rem;
+    }
+    .compare-table thead th,
+    .compare-table tbody td {
+        padding: 0.75rem 0.85rem;
+    }
+}
+
+/* Recent work / featured templates card on homepage */
+.work-card {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(99, 102, 241, 0.35);
+    box-shadow: 0 20px 30px -15px rgba(0, 0, 0, 0.5);
+}
+
+.work-card-visual {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.work-card-visual::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, 0.4) 100%);
+    pointer-events: none;
+}
+
+.work-card-body {
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.work-card-category {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--highlight-color);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.work-card-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--light-color);
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.work-card-desc {
+    font-size: 0.875rem;
+    color: var(--muted-color);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.work-card-link {
+    color: var(--accent-color);
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.work-card:hover .work-card-link {
+    color: var(--highlight-color);
+    gap: 0.6rem;
+}
+
+/* Decorative stacked-templates visual for hero */
+.hero-stack {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 5 / 4;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.hero-stack-card {
+    position: absolute;
+    border-radius: 0.875rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 25px 40px -15px rgba(0, 0, 0, 0.55);
+    overflow: hidden;
+    background-color: var(--secondary-color);
+}
+
+.hero-stack-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--gradient-from, #6366F1) 0%, var(--gradient-to, #818CF8) 100%);
+    opacity: 0.85;
+}
+
+.hero-stack-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background-image:
+        radial-gradient(circle at 0.65rem 0.65rem, rgba(255, 255, 255, 0.4) 0.18rem, transparent 0.2rem),
+        radial-gradient(circle at 1.25rem 0.65rem, rgba(255, 255, 255, 0.3) 0.18rem, transparent 0.2rem),
+        radial-gradient(circle at 1.85rem 0.65rem, rgba(255, 255, 255, 0.2) 0.18rem, transparent 0.2rem);
+}
+
+.hero-stack-card.card-back {
+    inset: 0 12% 18% 0;
+    --gradient-from: #1F2937;
+    --gradient-to: #312E81;
+    transform: rotate(-4deg);
+}
+
+.hero-stack-card.card-mid {
+    inset: 8% 5% 10% 8%;
+    --gradient-from: #4338CA;
+    --gradient-to: #818CF8;
+    transform: rotate(2deg);
+}
+
+.hero-stack-card.card-front {
+    inset: 18% 0 0 16%;
+    --gradient-from: #6366F1;
+    --gradient-to: #C4B5FD;
+    transform: rotate(-1deg);
+}
+
+@media (max-width: 768px) {
+    .hero-stack {
+        aspect-ratio: 5 / 3;
+        max-width: 22rem;
+    }
+}
+
+/* Responsive helpers */
+@media (max-width: 768px) {
+    .section-index {
+        font-size: 2.5rem;
+    }
+}
+
+/* ============================================================
+   TEMPLATES PAGE — filter bar, category sections, polished cards
+   ============================================================ */
+
+/* Filter buttons (segmented control feel) */
+.filter-btn {
+    padding: 0.55rem 1rem;
+    border-radius: 0.6rem;
+    color: var(--muted-color);
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    white-space: nowrap;
+}
+
+.filter-btn:hover {
+    color: var(--light-color);
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.filter-btn .filter-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.5rem;
+    height: 1.25rem;
+    padding: 0 0.4rem;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--muted-color);
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.filter-btn.active {
+    background-color: var(--accent-color);
+    color: white;
+    box-shadow: 0 4px 12px -4px rgba(99, 102, 241, 0.6);
+}
+
+.filter-btn.active .filter-count {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Category section (groups templates when filter = All) */
+.template-category {
+    transition: opacity 0.3s ease;
+}
+
+.template-category.is-hidden {
+    display: none;
+}
+
+/* Always-visible category chip on template card header */
+.template-card-chip {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 9999px;
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: var(--light-color);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
