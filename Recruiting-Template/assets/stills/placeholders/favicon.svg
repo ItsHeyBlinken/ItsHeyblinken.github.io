@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Recruiting profile favicon</title>
+  <rect width="64" height="64" rx="14" fill="#172554"/>
+  <circle cx="32" cy="26" r="10" fill="#dbeafe"/>
+  <path d="M14 52c4-14 10-20 18-20s14 6 18 20" fill="#2dd4bf"/>
+</svg>

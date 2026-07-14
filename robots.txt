@@ -5,6 +5,7 @@ Allow: /
 Allow: /index.html
 Allow: /templates.html
 Allow: /pricing.html
+Allow: /athlete-recruiting.html
 Allow: /sitemap.xml
 Allow: /robots.txt
 Allow: /images/

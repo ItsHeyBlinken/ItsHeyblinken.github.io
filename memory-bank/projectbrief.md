@@ -10,15 +10,17 @@
 ## Goals
 
 - Present services (custom sites, templates, pricing) clearly to small businesses.
+- Present managed athlete recruiting profiles clearly to student-athletes, families, and coaches as a specialty offering with separate pricing.
 - **Email-first contact:** primary CTA is email; copy reflects reply-within-48-hours then call scheduling.
 - Strong SEO and social previews (Open Graph, Twitter, structured data where present).
 - Professional, consistent UI across main pages.
 
 ## Scope (in)
 
-- Main site pages: `index.html`, `templates.html`, `pricing.html` with shared nav/footer patterns.
+- Main site pages: `index.html`, `templates.html`, `pricing.html`, `athlete-recruiting.html` with shared nav/footer patterns.
 - Custom CSS (`style.css`, `style1.css`, `pricing.css`) plus **built** Tailwind utilities (`tailwind-built.css`).
 - Optional `Site Templates/` demos — separate HTML showcases; not necessarily part of the same Tailwind build unless added to `tailwind.config.js` `content`.
+- Athlete profile fulfillment uses a separate source-only React scaffold outside this repository; the public sample demo is the scrubbed `Recruiting-Template/` folder (fictional athlete data only).
 
 ## Scope (out)
 

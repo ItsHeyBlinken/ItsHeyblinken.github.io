@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Rivers — Example Recruiting Packet (PDF Preview)</title>
+    <meta name="description" content="On-screen preview of how a printable one-page recruiting profile sheet PDF would look for a fictional example athlete.">
+    <meta name="robots" content="noindex, nofollow">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #80A1BA;
+            --secondary: #91C4C3;
+            --accent: #B4DEBD;
+            --cream: #FFF7DD;
+            --ink: #1f2937;
+            --muted: #6b7280;
+            --line: #e5e7eb;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--ink);
+            background: #d1d5db;
+            min-height: 100vh;
+            padding: 1.5rem 1rem 2.5rem;
+        }
+
+        .chrome {
+            max-width: 8.5in;
+            margin: 0 auto 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+
+        .chrome-note {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            color: #78350f;
+            border-radius: 10px;
+            padding: 0.65rem 0.9rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            flex: 1 1 16rem;
+        }
+
+        .chrome a {
+            color: #1d4ed8;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .sheet-wrap {
+            max-width: 8.5in;
+            margin: 0 auto;
+            filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.18));
+        }
+
+        /* Letter-sized printable sheet preview */
+        .sheet {
+            width: 100%;
+            min-height: 11in;
+            background: #fff;
+            padding: 0.5in 0.55in;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .pdf-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--primary);
+            background: rgba(128, 161, 186, 0.12);
+            border: 1px solid rgba(128, 161, 186, 0.35);
+            border-radius: 999px;
+            padding: 0.25rem 0.65rem;
+            width: fit-content;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 9999px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .name {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.85rem;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            margin-top: 0.2rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .top-grid {
+            display: grid;
+            grid-template-columns: 1.6in 1fr;
+            gap: 16px;
+            align-items: start;
+        }
+
+        .photo {
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            border-radius: 10px;
+            background: #e5e7eb;
+            border: 1px solid var(--line);
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .metric {
+            background: var(--cream);
+            border: 1px solid rgba(128, 161, 186, 0.25);
+            border-radius: 10px;
+            padding: 0.65rem 0.75rem;
+        }
+
+        .metric strong {
+            display: block;
+            font-size: 1.15rem;
+            color: var(--ink);
+            line-height: 1.2;
+        }
+
+        .metric span {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .section-title {
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 0.45rem;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .panel {
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 0.75rem 0.85rem;
+            background: #fff;
+        }
+
+        .rows {
+            list-style: none;
+        }
+
+        .rows li {
+            display: flex;
+            justify-content: space-between;
+            gap: 0.75rem;
+            padding: 0.35rem 0;
+            border-bottom: 1px solid #f3f4f6;
+            font-size: 0.88rem;
+        }
+
+        .rows li:last-child { border-bottom: none; }
+
+        .rows li span:first-child {
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        .rows li span:last-child {
+            font-weight: 600;
+            text-align: right;
+        }
+
+        .bullets {
+            list-style: none;
+            display: grid;
+            gap: 0.35rem;
+            font-size: 0.88rem;
+        }
+
+        .bullets li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: 700;
+            margin-right: 0.4rem;
+        }
+
+        .footer-bar {
+            margin-top: auto;
+            padding-top: 10px;
+            border-top: 2px solid var(--line);
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 0.78rem;
+            color: var(--muted);
+        }
+
+        .footer-bar strong { color: var(--ink); }
+
+        @media (max-width: 700px) {
+            .top-grid,
+            .two-col,
+            .metrics { grid-template-columns: 1fr; }
+            .sheet { min-height: auto; padding: 1.25rem; }
+        }
+
+        @media print {
+            body { background: #fff; padding: 0; }
+            .chrome { display: none; }
+            .sheet-wrap { filter: none; }
+            .sheet { box-shadow: none; min-height: auto; }
+        }
+    </style>
+</head>
+<body>
+    <div class="chrome">
+        <p class="chrome-note">PDF preview only — this is what a one-page recruiting profile sheet would look like. Fictional athlete data; nothing downloads.</p>
+        <a href="index.html">← Back to example profile</a>
+    </div>
+
+    <div class="sheet-wrap">
+        <article class="sheet" aria-label="Example printable recruiting profile sheet">
+            <span class="pdf-label">Example PDF profile sheet</span>
+
+            <header class="header">
+                <img class="logo" src="assets/stills/placeholders/logo-placeholder.svg" alt="">
+                <div>
+                    <div class="name">Jordan Rivers</div>
+                    <div class="subtitle">Women’s Volleyball · Class of 2028 · Outside Hitter / Defensive Specialist</div>
+                </div>
+            </header>
+
+            <div class="top-grid">
+                <img class="photo" src="assets/stills/placeholders/athlete-placeholder.svg" alt="Example athlete photo placeholder">
+                <div>
+                    <p class="section-title">Quick reference</p>
+                    <div class="metrics">
+                        <div class="metric"><strong>5'10"</strong><span>Height</span></div>
+                        <div class="metric"><strong>9'8"</strong><span>Approach jump</span></div>
+                        <div class="metric"><strong>7'6"</strong><span>Standing reach</span></div>
+                        <div class="metric"><strong>3.9</strong><span>Weighted GPA</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="two-col">
+                <div class="panel">
+                    <p class="section-title">Athletic profile</p>
+                    <ul class="rows">
+                        <li><span>Primary</span><span>Outside Hitter</span></li>
+                        <li><span>Secondary</span><span>Defensive Specialist</span></li>
+                        <li><span>School</span><span>Example Academy Varsity</span></li>
+                        <li><span>Club</span><span>Northstar VC 17U</span></li>
+                    </ul>
+                </div>
+                <div class="panel">
+                    <p class="section-title">Example season stats</p>
+                    <ul class="rows">
+                        <li><span>Matches</span><span>24</span></li>
+                        <li><span>Kills</span><span>186</span></li>
+                        <li><span>Digs</span><span>142</span></li>
+                        <li><span>Aces</span><span>31</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="two-col">
+                <div class="panel">
+                    <p class="section-title">Academics</p>
+                    <ul class="rows">
+                        <li><span>Graduation year</span><span>2028</span></li>
+                        <li><span>Intended major</span><span>Kinesiology</span></li>
+                        <li><span>Honors</span><span>Example honor roll</span></li>
+                    </ul>
+                </div>
+                <div class="panel">
+                    <p class="section-title">Highlights</p>
+                    <ul class="bullets">
+                        <li>Fictional 2026 all-district honorable mention</li>
+                        <li>Fictional team leadership award</li>
+                        <li>Example peer mentoring program</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel">
+                <p class="section-title">Recruiting contact</p>
+                <ul class="rows">
+                    <li><span>Guardian</span><span>Taylor Rivers (fictional parent/guardian)</span></li>
+                    <li><span>Email</span><span>jordan.rivers.guardian@example.com</span></li>
+                    <li><span>Region</span><span>North Texas (example)</span></li>
+                </ul>
+            </div>
+
+            <footer class="footer-bar">
+                <span><strong>Example only</strong> — replace with approved athlete information before publishing.</span>
+                <span>Collegiate Bound Profiles · BytesByBlinken Media</span>
+            </footer>
+        </article>
+    </div>
+</body>
+</html>

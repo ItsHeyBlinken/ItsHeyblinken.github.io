@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Web design pricing for small businesses—productized website plans (Launch, Growth, Signature), Site Care subscriptions, activation bundles, and scoped commerce builds. Transparent investments, written scope, 48-hour replies.">
-    <meta name="keywords" content="web design pricing, small business web design pricing, custom web design cost, website development cost, web design agency rates, professional web design pricing, web design packages, site care pricing, ecommerce website cost" />
+    <meta name="description" content="Web design pricing for small businesses and student-athletes—productized website plans, athlete recruiting profiles, Site Care subscriptions, activation bundles, and scoped commerce builds.">
+    <meta name="keywords" content="web design pricing, small business web design pricing, athlete recruiting profile pricing, student athlete website cost, custom web design cost, website development cost, web design packages, site care pricing, ecommerce website cost" />
     <meta name="author" content="BytesByBlinken">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta property="og:title" content="Web Design Pricing for Small Businesses | BytesByBlinken Media">
-    <meta property="og:description" content="Productized website plans, Site Care subscriptions, activation bundles, and commerce builds—predictable web design pricing for small businesses.">
+    <meta property="og:description" content="Productized website plans, athlete recruiting profiles, Site Care subscriptions, activation bundles, and commerce builds with transparent pricing.">
     <meta property="og:image" content="https://builtbyblinken.com/images/Logo.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -37,7 +37,7 @@
       "@context": "https://schema.org",
       "@type": "PriceSpecification",
       "name": "Web Design Agency Pricing - BytesByBlinken Media",
-      "description": "Project investments for custom web design, Site Care, and scoped ecommerce solutions",
+      "description": "Project investments for custom web design, athlete recruiting profiles, Site Care, and scoped ecommerce solutions",
       "url": "https://builtbyblinken.com/pricing.html",
       "isPartOf": {
         "@type": "WebSite",
@@ -79,6 +79,56 @@
             "@type": "Service",
             "name": "Signature Website Development",
             "serviceType": "Web Design"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "The MVP Athlete Recruiting Profile",
+          "priceCurrency": "USD",
+          "priceSpecification": [
+            {
+              "@type": "UnitPriceSpecification",
+              "name": "Initial setup",
+              "price": "249",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "UnitPriceSpecification",
+              "name": "Monthly service",
+              "price": "25",
+              "priceCurrency": "USD",
+              "billingDuration": "P1M"
+            }
+          ],
+          "itemOffered": {
+            "@type": "Service",
+            "name": "The MVP Athlete Recruiting Profile",
+            "serviceType": "Athlete Recruiting Profile Website"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "The All-Star Athlete Recruiting Profile",
+          "priceCurrency": "USD",
+          "priceSpecification": [
+            {
+              "@type": "UnitPriceSpecification",
+              "name": "Initial setup",
+              "price": "299",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "UnitPriceSpecification",
+              "name": "Monthly service",
+              "price": "45",
+              "priceCurrency": "USD",
+              "billingDuration": "P1M"
+            }
+          ],
+          "itemOffered": {
+            "@type": "Service",
+            "name": "The All-Star Athlete Recruiting Profile",
+            "serviceType": "Athlete Recruiting Profile Website"
           }
         }
       ]
@@ -130,15 +180,16 @@
         <!-- Pricing Categories Navigation -->
         <div class="flex justify-center mb-10 md:mb-12">
             <div class="inline-flex flex-wrap justify-center items-center gap-1 p-1.5 bg-secondary/60 backdrop-blur-sm border border-white/10 rounded-xl shadow-inner max-w-full overflow-x-auto" role="tablist" aria-label="Pricing categories">
-                <button type="button" class="pricing-nav-btn active" data-target="website-design" role="tab">Website plans</button>
-                <button type="button" class="pricing-nav-btn" data-target="maintenance" role="tab">Hosting &amp; Site Care</button>
-                <button type="button" class="pricing-nav-btn" data-target="bundles" role="tab">Activation bundles</button>
-                <button type="button" class="pricing-nav-btn" data-target="ecommerce" role="tab">Commerce plans</button>
+                <button id="pricing-tab-website-design" type="button" class="pricing-nav-btn active" data-target="website-design" role="tab" aria-controls="website-design" aria-selected="true" tabindex="0">Website plans</button>
+                <button id="pricing-tab-athlete-profiles" type="button" class="pricing-nav-btn" data-target="athlete-profiles" role="tab" aria-controls="athlete-profiles" aria-selected="false" tabindex="-1">Athlete profiles</button>
+                <button id="pricing-tab-maintenance" type="button" class="pricing-nav-btn" data-target="maintenance" role="tab" aria-controls="maintenance" aria-selected="false" tabindex="-1">Hosting &amp; Site Care</button>
+                <button id="pricing-tab-bundles" type="button" class="pricing-nav-btn" data-target="bundles" role="tab" aria-controls="bundles" aria-selected="false" tabindex="-1">Activation bundles</button>
+                <button id="pricing-tab-ecommerce" type="button" class="pricing-nav-btn" data-target="ecommerce" role="tab" aria-controls="ecommerce" aria-selected="false" tabindex="-1">Commerce plans</button>
             </div>
         </div>
 
         <!-- Website Design Only Section -->
-        <section id="website-design" class="pricing-section active py-12 md:py-14 border-t border-white/10">
+        <section id="website-design" class="pricing-section active py-12 md:py-14 border-t border-white/10" role="tabpanel" aria-labelledby="pricing-tab-website-design" tabindex="0">
             <div class="text-center mb-10 md:mb-12 max-w-3xl mx-auto">
                 <span class="eyebrow eyebrow-center justify-center">01 · Website plans</span>
                 <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-light font-semibold mt-4 leading-tight">
@@ -295,10 +346,75 @@
             </div>
         </section>
 
-        <!-- Maintenance & Support Section -->
-        <section id="maintenance" class="pricing-section py-12 md:py-14 border-t border-white/10 hidden">
+        <!-- Athlete Recruiting Profiles Section -->
+        <section id="athlete-profiles" class="pricing-section py-12 md:py-14 border-t border-white/10 hidden" role="tabpanel" aria-labelledby="pricing-tab-athlete-profiles" tabindex="0" hidden>
             <div class="text-center mb-10 md:mb-12 max-w-3xl mx-auto">
-                <span class="eyebrow eyebrow-center justify-center">02 · Hosting &amp; Site Care</span>
+                <span class="eyebrow eyebrow-center justify-center">02 · Athlete profiles</span>
+                <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-light font-semibold mt-4 leading-tight">
+                    All-In recruiting profiles for the <span class="text-accent">complete athlete story</span>.
+                </h2>
+                <p class="text-muted mt-6 leading-relaxed text-base md:text-lg">A sport-agnostic, mobile-first website that brings athletic achievements, academics, highlights, statistics, and guardian-approved recruiting contact details into one link. Both plans include managed hosting, SSL, domain management, and scheduled content updates.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-3 mt-7">
+                    <a href="./athlete-recruiting.html" class="btn-ghost">Learn why a recruiting profile matters</a>
+                    <a href="./Recruiting-Template/index.html" class="btn-ghost">View the sample profile <i class="fas fa-arrow-right text-xs" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mt-10 md:mt-12 max-w-4xl mx-auto">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">The MVP</h3>
+                        <p class="pricing-subtitle"><strong class="text-light font-medium">Starter:</strong> the core recruiting presence for athletes beginning their outreach.</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$249</span>
+                        <span class="period"><strong class="text-light font-medium">Initial setup</strong> + $25/month · month-to-month service</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check" aria-hidden="true"></i><span class="pricing-feature-text"><strong class="text-light font-medium">One complete profile:</strong> athletics, academics, stats, contact, and a link to your supplied PDF packet</span></li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i><span class="pricing-feature-text"><strong class="text-light font-medium">Up to 3 videos</strong> organized into relevant highlight categories</span></li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i><span class="pricing-feature-text"><strong class="text-light font-medium">Quarterly update:</strong> one defined, non-rolling content request per quarter</span></li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i><span class="pricing-feature-text"><strong class="text-light font-medium">Domain included for year one;</strong> $60/year after</span></li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i><span class="pricing-feature-text">Managed hosting and SSL included while subscribed</span></li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:services@bytesbyblinken.com?subject=Athlete%20profile%20inquiry%20%E2%80%94%20The%20MVP" class="btn-primary">Ask about The MVP</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card pricing-popular">
+                    <div class="popular-tag">Most popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">The All-Star</h3>
+                        <p class="pricing-subtitle"><strong class="text-light font-medium">Recommended:</strong> more highlights and a monthly rhythm for active recruiting seasons.</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price">$299</span>
+                        <span class="period"><strong class="text-light font-medium">Initial setup</strong> + $45/month · month-to-month service</span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check" aria-hidden="true"></i><span class="pricing-feature-text"><strong class="text-light font-medium">Everything in The MVP,</strong> with expanded media and update capacity</span></li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i><span class="pricing-feature-text"><strong class="text-light font-medium">Up to 5 videos</strong> organized into configurable highlight categories</span></li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i><span class="pricing-feature-text"><strong class="text-light font-medium">Monthly update:</strong> one defined, non-rolling content request per month</span></li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i><span class="pricing-feature-text"><strong class="text-light font-medium">Domain included</strong> while subscribed</span></li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i><span class="pricing-feature-text"><strong class="text-light font-medium">Custom PDF recruiting packet</strong> designed to match the profile</span></li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="mailto:services@bytesbyblinken.com?subject=Athlete%20profile%20inquiry%20%E2%80%94%20The%20All-Star" class="btn-primary">Ask about The All-Star</a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-muted text-xs text-center mt-7 max-w-2xl mx-auto">An included update covers one defined request for copy, statistics, photos, or video/PDF link swaps. Unused requests do not roll over. Redesigns, new sections, and larger changes are scoped separately.</p>
+        </section>
+
+        <!-- Maintenance & Support Section -->
+        <section id="maintenance" class="pricing-section py-12 md:py-14 border-t border-white/10 hidden" role="tabpanel" aria-labelledby="pricing-tab-maintenance" tabindex="0" hidden>
+            <div class="text-center mb-10 md:mb-12 max-w-3xl mx-auto">
+                <span class="eyebrow eyebrow-center justify-center">03 · Hosting &amp; Site Care</span>
                 <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-light font-semibold mt-4 leading-tight">
                     Infrastructure to stay online—or <span class="text-accent">care that keeps improving</span>.
                 </h2>
@@ -406,9 +522,9 @@
         </section>
 
         <!-- Website + Maintenance Bundles Section -->
-        <section id="bundles" class="pricing-section py-12 md:py-14 border-t border-white/10 hidden">
+        <section id="bundles" class="pricing-section py-12 md:py-14 border-t border-white/10 hidden" role="tabpanel" aria-labelledby="pricing-tab-bundles" tabindex="0" hidden>
             <div class="text-center mb-10 md:mb-12 max-w-3xl mx-auto">
-                <span class="eyebrow eyebrow-center justify-center">03 · Activation bundles</span>
+                <span class="eyebrow eyebrow-center justify-center">04 · Activation bundles</span>
                 <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-light font-semibold mt-4 leading-tight">
                     Website plan + <span class="text-accent">a year of Site Care</span>, in one motion.
                 </h2>
@@ -491,9 +607,9 @@
         </section>
 
         <!-- E-commerce Website Packages Section -->
-        <section id="ecommerce" class="pricing-section py-12 md:py-14 border-t border-white/10 hidden">
+        <section id="ecommerce" class="pricing-section py-12 md:py-14 border-t border-white/10 hidden" role="tabpanel" aria-labelledby="pricing-tab-ecommerce" tabindex="0" hidden>
             <div class="text-center mb-10 md:mb-12 max-w-3xl mx-auto">
-                <span class="eyebrow eyebrow-center justify-center">04 · Commerce plans</span>
+                <span class="eyebrow eyebrow-center justify-center">05 · Commerce plans</span>
                 <h2 class="font-display text-3xl md:text-4xl lg:text-5xl text-light font-semibold mt-4 leading-tight">
                     E-commerce websites scoped like <span class="text-accent">a custom system</span>.
                 </h2>
@@ -654,29 +770,60 @@
             const crossLinks = document.querySelectorAll('[data-target-tab]');
 
             function setActiveTab(targetId) {
-                navButtons.forEach(btn => btn.classList.remove('active'));
-                const targetButton = document.querySelector(`.pricing-nav-btn[data-target="${targetId}"]`);
-                if (targetButton) {
-                    targetButton.classList.add('active');
-                }
+                const targetButton = Array.from(navButtons).find(
+                    button => button.getAttribute('data-target') === targetId
+                );
+                if (!targetButton) return;
 
-                pricingSections.forEach(section => {
-                    section.classList.add('hidden');
-                    section.classList.remove('active');
+                navButtons.forEach(btn => {
+                    const isActive = btn === targetButton;
+                    btn.classList.toggle('active', isActive);
+                    btn.setAttribute('aria-selected', String(isActive));
+                    btn.tabIndex = isActive ? 0 : -1;
                 });
 
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    targetSection.classList.remove('hidden');
-                    targetSection.classList.add('active');
-                }
+                pricingSections.forEach(section => {
+                    const isActive = section.id === targetId;
+                    section.classList.toggle('hidden', !isActive);
+                    section.classList.toggle('active', isActive);
+                    section.hidden = !isActive;
+                });
             }
 
-            navButtons.forEach(button => {
+            function activateRelativeTab(currentIndex, key) {
+                const buttons = Array.from(navButtons);
+                let nextIndex;
+
+                if (key === 'Home') {
+                    nextIndex = 0;
+                } else if (key === 'End') {
+                    nextIndex = buttons.length - 1;
+                } else if (key === 'ArrowRight' || key === 'ArrowDown') {
+                    nextIndex = (currentIndex + 1) % buttons.length;
+                } else if (key === 'ArrowLeft' || key === 'ArrowUp') {
+                    nextIndex = (currentIndex - 1 + buttons.length) % buttons.length;
+                } else {
+                    return;
+                }
+
+                const nextButton = buttons[nextIndex];
+                const targetId = nextButton.getAttribute('data-target');
+                setActiveTab(targetId);
+                nextButton.focus();
+                window.location.hash = targetId;
+            }
+
+            navButtons.forEach((button, index) => {
                 button.addEventListener('click', function() {
                     const targetId = this.getAttribute('data-target');
                     setActiveTab(targetId);
                     window.location.hash = targetId;
+                });
+                button.addEventListener('keydown', function(event) {
+                    if (['ArrowRight', 'ArrowDown', 'ArrowLeft', 'ArrowUp', 'Home', 'End'].includes(event.key)) {
+                        event.preventDefault();
+                        activateRelativeTab(index, event.key);
+                    }
                 });
             });
 
@@ -699,7 +846,10 @@
             // Initial state from URL hash
             if (window.location.hash) {
                 const targetId = window.location.hash.substring(1);
-                if (document.getElementById(targetId)) {
+                const hasMatchingTab = Array.from(navButtons).some(
+                    button => button.getAttribute('data-target') === targetId
+                );
+                if (hasMatchingTab) {
                     setActiveTab(targetId);
                 } else {
                     setActiveTab('website-design');
