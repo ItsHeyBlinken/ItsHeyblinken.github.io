@@ -44,7 +44,7 @@ A shared set of tokens and patterns lives in `style.css` so all four main pages 
   - **The MVP:** $249 setup + $25/month; domain included year one then $60/year; up to 3 videos; one non-rolling content request per quarter; link to a supplied PDF.
   - **The All-Star:** $299 setup + $45/month; domain included while subscribed; up to 5 videos; one non-rolling content request per month; custom matching PDF.
 - Both subscriptions are month-to-month and include managed hosting and SSL. Larger requests are scoped separately.
-- Public sample demo: `./Recruiting-Template/` (fictional Jordan Rivers volleyball profile with SVG placeholders only). The real Skittles Softball profile may remain live on its own domain for her recruiting use, but must not be linked from the agency site as a product demo.
+- Public sample demo: `./Recruiting-Template/index.html` (fictional Jordan Rivers volleyball profile with SVG placeholders only). Mobile nav uses a dedicated panel (not desktop-link toggling). The real Skittles Softball profile may remain live on its own domain for her recruiting use, but must not be linked from the agency site as a product demo.
 - The reusable sport-agnostic React/TypeScript/Tailwind scaffold lives outside this repo at sibling folder `../Athlete-Recruiting-Profile-Template/`. It contains fictional placeholder data only and has not been installed, built, tested, initialized as Git, or deployed.
 
 ## Conventions worth preserving

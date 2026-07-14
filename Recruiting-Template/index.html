@@ -18,84 +18,86 @@
 </head>
 <body class="overflow-x-hidden">
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300" id="navbar">
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex-shrink-0">
-                    <a href="#hero" class="flex items-center space-x-3">
-                        <img src="assets/stills/placeholders/logo-placeholder.svg" alt="Example athlete logo" class="h-10 w-10 object-cover rounded-full">
-                        <h2 class="text-2xl font-display font-bold text-gray-900">Jordan Rivers</h2>
-                    </a>
-                </div>
+            <div class="flex justify-between items-center h-16 gap-3">
+                <a href="#hero" class="flex min-w-0 items-center gap-2 sm:gap-3">
+                    <img src="assets/stills/placeholders/logo-placeholder.svg" alt="" class="h-9 w-9 sm:h-10 sm:w-10 object-cover rounded-full flex-shrink-0">
+                    <span class="text-lg sm:text-2xl font-display font-bold text-gray-900 truncate">Jordan Rivers</span>
+                </a>
 
-                <ul class="hidden md:flex space-x-8" id="nav-menu">
-                    <li>
-                        <a href="#about" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">About</a>
-                    </li>
-                    <li>
-                        <a href="#athletics" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Athletics</a>
-                    </li>
-                    <li>
-                        <a href="#academics" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Academics</a>
-                    </li>
-                    <li>
-                        <a href="#videos" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Videos</a>
-                    </li>
-                    <li>
-                        <a href="#stats" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Stats</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Contact</a>
-                    </li>
-                </ul>
+                <nav class="hidden md:block" aria-label="Primary">
+                    <ul class="flex items-center gap-6 lg:gap-8">
+                        <li><a href="#about" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">About</a></li>
+                        <li><a href="#athletics" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Athletics</a></li>
+                        <li><a href="#academics" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Academics</a></li>
+                        <li><a href="#videos" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Videos</a></li>
+                        <li><a href="#stats" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Stats</a></li>
+                        <li><a href="#contact" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Contact</a></li>
+                    </ul>
+                </nav>
 
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button class="flex flex-col justify-center items-center w-6 h-6 space-y-1" id="hamburger" aria-label="Open menu">
-                        <span class="block w-6 h-0.5 bg-gray-700 transition-all duration-300"></span>
-                        <span class="block w-6 h-0.5 bg-gray-700 transition-all duration-300"></span>
-                        <span class="block w-6 h-0.5 bg-gray-700 transition-all duration-300"></span>
-                    </button>
-                </div>
+                <button type="button" class="md:hidden inline-flex h-11 w-11 items-center justify-center rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" id="hamburger" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu">
+                    <span class="sr-only">Menu</span>
+                    <span class="hamburger-lines flex flex-col justify-center gap-1.5" aria-hidden="true">
+                        <span class="block h-0.5 w-5 bg-current transition-transform duration-200"></span>
+                        <span class="block h-0.5 w-5 bg-current transition-opacity duration-200"></span>
+                        <span class="block h-0.5 w-5 bg-current transition-transform duration-200"></span>
+                    </span>
+                </button>
             </div>
         </div>
-    </nav>
+
+        <div id="mobile-nav" class="md:hidden hidden border-t border-gray-100 bg-white shadow-lg" hidden>
+            <nav aria-label="Mobile primary" class="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+                <ul class="flex flex-col">
+                    <li><a href="#about" class="mobile-nav-link block rounded-lg px-3 py-3 text-base font-medium text-gray-800 hover:bg-primary/10 hover:text-primary">About</a></li>
+                    <li><a href="#athletics" class="mobile-nav-link block rounded-lg px-3 py-3 text-base font-medium text-gray-800 hover:bg-primary/10 hover:text-primary">Athletics</a></li>
+                    <li><a href="#academics" class="mobile-nav-link block rounded-lg px-3 py-3 text-base font-medium text-gray-800 hover:bg-primary/10 hover:text-primary">Academics</a></li>
+                    <li><a href="#videos" class="mobile-nav-link block rounded-lg px-3 py-3 text-base font-medium text-gray-800 hover:bg-primary/10 hover:text-primary">Videos</a></li>
+                    <li><a href="#stats" class="mobile-nav-link block rounded-lg px-3 py-3 text-base font-medium text-gray-800 hover:bg-primary/10 hover:text-primary">Stats</a></li>
+                    <li><a href="#contact" class="mobile-nav-link block rounded-lg px-3 py-3 text-base font-medium text-gray-800 hover:bg-primary/10 hover:text-primary">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="mobile-nav-backdrop" class="fixed inset-0 z-40 bg-black/30 md:hidden hidden" hidden aria-hidden="true"></div>
 
     <!-- Hero Section -->
     <section class="min-h-screen bg-gradient-to-br from-primary/10 to-secondary/10 pt-16 flex items-center" id="hero">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="mb-8 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-center text-sm font-medium text-amber-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full">
+            <div class="mb-6 sm:mb-8 rounded-lg border border-amber-200 bg-amber-50 px-3 sm:px-4 py-3 text-center text-xs sm:text-sm font-medium text-amber-950">
                 Example demo only — fictional athlete data. Replace all content before publishing a real profile.
             </div>
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8">
-                    <div class="space-y-4">
-                        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Fictional example athlete</p>
-                        <h1 class="text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-tight">Jordan Rivers</h1>
-                        <p class="text-xl text-gray-700 font-medium">Volleyball Player • Class of 2028</p>
-                        <p class="text-lg text-gray-600">Outside Hitter / Defensive Specialist</p>
+            <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+                <div class="space-y-6 sm:space-y-8">
+                    <div class="space-y-3 sm:space-y-4">
+                        <p class="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-primary">Fictional example athlete</p>
+                        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-tight">Jordan Rivers</h1>
+                        <p class="text-base sm:text-xl text-gray-700 font-medium">Volleyball Player • Class of 2028</p>
+                        <p class="text-sm sm:text-lg text-gray-600">Outside Hitter / Defensive Specialist</p>
                     </div>
 
-                    <div class="grid grid-cols-3 gap-6">
-                        <div class="text-center bg-white rounded-lg p-4 shadow-sm">
-                            <div class="text-3xl font-bold text-primary">9'8"</div>
-                            <div class="text-sm text-gray-600 font-medium">Approach Jump</div>
+                    <div class="grid grid-cols-3 gap-2 sm:gap-4 md:gap-6">
+                        <div class="text-center bg-white rounded-lg p-2.5 sm:p-4 shadow-sm">
+                            <div class="text-xl sm:text-3xl font-bold text-primary">9'8"</div>
+                            <div class="text-[0.65rem] sm:text-sm text-gray-600 font-medium leading-tight mt-1">Approach Jump</div>
                         </div>
-                        <div class="text-center bg-white rounded-lg p-4 shadow-sm">
-                            <div class="text-3xl font-bold text-primary">7'6"</div>
-                            <div class="text-sm text-gray-600 font-medium">Standing Reach</div>
+                        <div class="text-center bg-white rounded-lg p-2.5 sm:p-4 shadow-sm">
+                            <div class="text-xl sm:text-3xl font-bold text-primary">7'6"</div>
+                            <div class="text-[0.65rem] sm:text-sm text-gray-600 font-medium leading-tight mt-1">Standing Reach</div>
                         </div>
-                        <div class="text-center bg-white rounded-lg p-4 shadow-sm">
-                            <div class="text-3xl font-bold text-primary">3.9</div>
-                            <div class="text-sm text-gray-600 font-medium">Weighted GPA</div>
+                        <div class="text-center bg-white rounded-lg p-2.5 sm:p-4 shadow-sm">
+                            <div class="text-xl sm:text-3xl font-bold text-primary">3.9</div>
+                            <div class="text-[0.65rem] sm:text-sm text-gray-600 font-medium leading-tight mt-1">Weighted GPA</div>
                         </div>
                     </div>
 
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#videos" class="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200">
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                        <a href="#videos" class="inline-flex items-center justify-center min-h-[44px] px-6 sm:px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200">
                             Watch Highlights
                         </a>
-                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200">
+                        <a href="#contact" class="inline-flex items-center justify-center min-h-[44px] px-6 sm:px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200">
                             Recruiting Contact
                         </a>
                     </div>
@@ -112,10 +114,10 @@
     </section>
 
     <!-- About Section -->
-    <section class="py-20 bg-cream" id="about">
+    <section class="py-12 sm:py-16 md:py-20 bg-cream" id="about">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">About Jordan</h2>
+            <div class="text-center mb-10 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-4">About Jordan</h2>
                 <div class="w-24 h-1 bg-primary mx-auto"></div>
             </div>
 
@@ -142,10 +144,10 @@
     </section>
 
     <!-- Athletics Section -->
-    <section class="py-20 bg-gradient-to-br from-secondary/10 to-accent/10" id="athletics">
+    <section class="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-secondary/10 to-accent/10" id="athletics">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Athletics</h2>
+            <div class="text-center mb-10 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-4">Athletics</h2>
                 <div class="w-24 h-1 bg-primary mx-auto"></div>
             </div>
 
@@ -204,27 +206,27 @@
     </section>
 
     <!-- Academics Section -->
-    <section class="py-20 bg-cream" id="academics">
+    <section class="py-12 sm:py-16 md:py-20 bg-cream" id="academics">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Academics</h2>
+            <div class="text-center mb-10 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-4">Academics</h2>
                 <div class="w-24 h-1 bg-primary mx-auto"></div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 text-center border border-primary/20">
-                    <h3 class="text-lg font-semibold text-primary mb-2">GPA</h3>
-                    <div class="text-4xl font-bold text-primary mb-2">3.9</div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 mb-10 sm:mb-16">
+                <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-6 sm:p-8 text-center border border-primary/20">
+                    <h3 class="text-base sm:text-lg font-semibold text-primary mb-2">GPA</h3>
+                    <div class="text-3xl sm:text-4xl font-bold text-primary mb-2">3.9</div>
                     <p class="text-primary font-medium">Weighted</p>
                 </div>
-                <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 text-center border border-primary/20">
-                    <h3 class="text-lg font-semibold text-primary mb-2">Graduation Year</h3>
-                    <div class="text-4xl font-bold text-primary mb-2">2028</div>
+                <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-6 sm:p-8 text-center border border-primary/20">
+                    <h3 class="text-base sm:text-lg font-semibold text-primary mb-2">Graduation Year</h3>
+                    <div class="text-3xl sm:text-4xl font-bold text-primary mb-2">2028</div>
                     <p class="text-primary font-medium">Example class</p>
                 </div>
-                <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 text-center border border-primary/20">
-                    <h3 class="text-lg font-semibold text-primary mb-2">Test Scores</h3>
-                    <div class="text-4xl font-bold text-primary mb-2">—</div>
+                <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-6 sm:p-8 text-center border border-primary/20">
+                    <h3 class="text-base sm:text-lg font-semibold text-primary mb-2">Test Scores</h3>
+                    <div class="text-3xl sm:text-4xl font-bold text-primary mb-2">—</div>
                     <p class="text-primary font-medium">Add when available</p>
                 </div>
             </div>
@@ -259,25 +261,25 @@
     </section>
 
     <!-- Videos Section -->
-    <section class="py-20 bg-gradient-to-br from-accent/10 to-cream/50" id="videos">
+    <section class="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-accent/10 to-cream/50" id="videos">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Highlight Videos</h2>
+            <div class="text-center mb-10 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-4">Highlight Videos</h2>
                 <div class="w-24 h-1 bg-primary mx-auto"></div>
-                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Placeholder cards only — no real highlight footage is included in this demo.</p>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto text-sm sm:text-base px-1">Placeholder cards only — no real highlight footage is included in this demo.</p>
             </div>
 
-            <div class="flex flex-wrap justify-center gap-3 sm:gap-4 mb-12">
-                <button class="px-5 sm:px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200 active" data-category="all">
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12">
+                <button type="button" class="min-h-[44px] px-4 sm:px-6 py-2.5 sm:py-3 bg-primary text-white text-sm sm:text-base font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200 active" data-category="all">
                     All Videos
                 </button>
-                <button class="px-5 sm:px-6 py-3 bg-gray-100 text-gray-700 font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-200" data-category="attacking">
+                <button type="button" class="min-h-[44px] px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-100 text-gray-700 text-sm sm:text-base font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-200" data-category="attacking">
                     Attacking
                 </button>
-                <button class="px-5 sm:px-6 py-3 bg-gray-100 text-gray-700 font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-200" data-category="defense">
+                <button type="button" class="min-h-[44px] px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-100 text-gray-700 text-sm sm:text-base font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-200" data-category="defense">
                     Defense
                 </button>
-                <button class="px-5 sm:px-6 py-3 bg-gray-100 text-gray-700 font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-200" data-category="serving">
+                <button type="button" class="min-h-[44px] px-4 sm:px-6 py-2.5 sm:py-3 bg-gray-100 text-gray-700 text-sm sm:text-base font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-200" data-category="serving">
                     Serving
                 </button>
             </div>
@@ -289,20 +291,20 @@
     </section>
 
     <!-- Statistics Section -->
-    <section class="py-20 bg-cream" id="stats">
+    <section class="py-12 sm:py-16 md:py-20 bg-cream" id="stats">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Statistics</h2>
+            <div class="text-center mb-7 sm:mb-12">
+                <h2 class="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-4">Statistics</h2>
                 <div class="w-24 h-1 bg-primary mx-auto mb-4"></div>
-                <p class="text-lg text-gray-600 font-medium">Fictional example statistics</p>
+                <p class="text-base sm:text-lg text-gray-600 font-medium">Fictional example statistics</p>
             </div>
 
-            <div class="flex justify-center mb-12">
-                <div class="bg-gray-100 rounded-lg p-1 flex space-x-1">
-                    <button class="px-6 py-3 bg-primary text-white font-semibold rounded-md transition-colors duration-200 active" data-tab="school">
+            <div class="flex justify-center mb-8 sm:mb-12 px-1">
+                <div class="bg-gray-100 rounded-lg p-1 flex w-full max-w-md sm:w-auto sm:max-w-none">
+                    <button type="button" class="flex-1 sm:flex-none min-h-[44px] px-3 sm:px-6 py-3 bg-primary text-white text-sm sm:text-base font-semibold rounded-md transition-colors duration-200 active" data-tab="school">
                         School Season
                     </button>
-                    <button class="px-6 py-3 text-gray-700 font-semibold rounded-md hover:bg-white transition-colors duration-200" data-tab="club">
+                    <button type="button" class="flex-1 sm:flex-none min-h-[44px] px-3 sm:px-6 py-3 text-gray-700 text-sm sm:text-base font-semibold rounded-md hover:bg-white transition-colors duration-200" data-tab="club">
                         Club Season
                     </button>
                 </div>
@@ -355,18 +357,18 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="py-20 bg-gradient-to-br from-primary/5 to-secondary/5" id="contact">
+    <section class="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-primary/5 to-secondary/5" id="contact">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-display font-bold text-gray-900 mb-4">Recruiting Contact</h2>
+            <div class="text-center mb-10 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl font-display font-bold text-gray-900 mb-4">Recruiting Contact</h2>
                 <div class="w-24 h-1 bg-primary mx-auto"></div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8">
+            <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+                <div class="space-y-6 sm:space-y-8">
                     <div>
-                        <h3 class="text-2xl font-display font-semibold text-gray-900 mb-4">Interested in this example profile?</h3>
-                        <p class="text-lg text-gray-700 leading-relaxed font-medium">
+                        <h3 class="text-xl sm:text-2xl font-display font-semibold text-gray-900 mb-3 sm:mb-4">Interested in this example profile?</h3>
+                        <p class="text-base sm:text-lg text-gray-700 leading-relaxed font-medium">
                             College coaches would normally use a guardian-approved recruiting email. The details below are fictional placeholders only—do not use them for real outreach.
                         </p>
                     </div>
@@ -380,7 +382,7 @@
                             </div>
                             <div>
                                 <h4 class="text-lg font-semibold text-gray-900">Guardian email (example)</h4>
-                                <p class="text-primary font-medium">jordan.rivers.guardian@example.com</p>
+                                <p class="text-primary font-medium break-all">jordan.rivers.guardian@example.com</p>
                             </div>
                         </div>
 
@@ -411,11 +413,11 @@
                     </div>
                 </div>
 
-                <div class="space-y-4">
-                    <a href="mailto:services@bytesbyblinken.com?subject=Athlete%20recruiting%20profile%20demo%20inquiry" class="w-full inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200 text-lg">
+                <div class="space-y-3 sm:space-y-4">
+                    <a href="mailto:services@bytesbyblinken.com?subject=Athlete%20recruiting%20profile%20demo%20inquiry" class="w-full inline-flex items-center justify-center min-h-[48px] px-6 sm:px-8 py-3.5 sm:py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors duration-200 text-base sm:text-lg">
                         Ask about this template
                     </a>
-                    <a href="recruiting-packet.html" class="w-full inline-flex items-center justify-center px-8 py-4 bg-white text-primary font-semibold rounded-lg border-2 border-primary hover:bg-primary hover:text-white transition-colors duration-200 text-lg">
+                    <a href="recruiting-packet.html" class="w-full inline-flex items-center justify-center min-h-[48px] px-6 sm:px-8 py-3.5 sm:py-4 bg-white text-primary font-semibold rounded-lg border-2 border-primary hover:bg-primary hover:text-white transition-colors duration-200 text-base sm:text-lg text-center">
                         Preview recruiting packet (PDF-style)
                     </a>
                 </div>
@@ -424,23 +426,23 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-900 text-white py-10 sm:py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0 text-center md:text-left">
-                    <div class="flex items-center justify-center md:justify-start space-x-3 mb-3">
-                        <img src="assets/stills/placeholders/logo-placeholder.svg" alt="Example athlete logo" class="h-8 w-8 object-cover rounded-full">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-3 mb-3">
+                        <img src="assets/stills/placeholders/logo-placeholder.svg" alt="" class="h-8 w-8 object-cover rounded-full">
                         <h3 class="text-xl font-display font-bold text-white">Jordan Rivers</h3>
                     </div>
-                    <p class="text-gray-300">&copy; 2026 BytesByBlinken Media. Example demo template.</p>
+                    <p class="text-gray-300 text-sm sm:text-base">&copy; 2026 BytesByBlinken Media. Example demo template.</p>
                 </div>
-                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-200">About</a>
-                    <a href="#athletics" class="text-gray-300 hover:text-white transition-colors duration-200">Athletics</a>
-                    <a href="#academics" class="text-gray-300 hover:text-white transition-colors duration-200">Academics</a>
-                    <a href="#videos" class="text-gray-300 hover:text-white transition-colors duration-200">Videos</a>
-                    <a href="#stats" class="text-gray-300 hover:text-white transition-colors duration-200">Stats</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-200">Contact</a>
+                <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm sm:text-base">
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-200 py-1">About</a>
+                    <a href="#athletics" class="text-gray-300 hover:text-white transition-colors duration-200 py-1">Athletics</a>
+                    <a href="#academics" class="text-gray-300 hover:text-white transition-colors duration-200 py-1">Academics</a>
+                    <a href="#videos" class="text-gray-300 hover:text-white transition-colors duration-200 py-1">Videos</a>
+                    <a href="#stats" class="text-gray-300 hover:text-white transition-colors duration-200 py-1">Stats</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-200 py-1">Contact</a>
                 </div>
             </div>
         </div>

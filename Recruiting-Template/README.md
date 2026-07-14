@@ -9,7 +9,7 @@ Static example recruiting profile for **Jordan Rivers**, a fictional volleyball 
 - Hero with key metrics and CTAs
 - About, athletics, academics, highlight placeholders, statistics, and guardian-first contact
 - On-screen PDF-style recruiting packet preview (no file download)
-- Responsive layout for coaches on phones and tablets
+- Mobile-first responsive layout for coaches on phones and tablets, including a dedicated mobile nav panel
 
 ## Technology Stack
 
