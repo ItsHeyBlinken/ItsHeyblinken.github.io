@@ -4,6 +4,8 @@
 
 ## Session log
 
+- **2026-09-10 — Fix Recent work header styling:** `main { text-align: center }` was centering the split Recent work heading (title stacked as one run-on line, CTA stranded on the right). Left-aligned `#recent-work`, widened the intro to `max-w-3xl`, and added `word-spacing` on `.font-display` / `.eyebrow` so Fraunces headings and tracked labels keep visible word gaps.
+
 - **2026-09-10 — Remove retail/e-commerce templates from the public catalog:** Dropped Vinyl Vault and ShopSmart from `templates.html` (section, filter, counts 18→16 / 4→3 categories). Updated templates meta/JSON-LD. Homepage: replaced Recent work Vinyl Vault card with GreenThumb landscaping, removed E-commerce industry pill, stats 18+→16+. Demo files stay under `Site Templates/` and are not deleted.
 
 - **2026-09-10 — Archive athlete profiles from the public site:** Removed all public mentions and links. **`index.html`:** specialty block, industry pill, and JSON-LD athlete service. **`templates.html`:** specialty promo. **`sitemap.xml`:** dropped `/athlete-recruiting.html`. **`robots.txt`:** disallow athlete page and `Recruiting-Template/`. **`athlete-recruiting.html`:** `noindex, nofollow`. Files kept in repo as an archive, not deleted.

@@ -547,6 +547,7 @@ footer p {
 .font-display {
     font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
     letter-spacing: -0.02em;
+    word-spacing: 0.18em;
     font-feature-settings: "ss01", "ss02";
 }
 
@@ -556,6 +557,7 @@ footer p {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.22em;
+    word-spacing: 0.35em;
     color: var(--highlight-color);
     display: inline-flex;
     align-items: center;
