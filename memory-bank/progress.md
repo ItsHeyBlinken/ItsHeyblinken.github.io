@@ -4,6 +4,8 @@
 
 ## Session log
 
+- **2026-09-10 — Remove retail/e-commerce templates from the public catalog:** Dropped Vinyl Vault and ShopSmart from `templates.html` (section, filter, counts 18→16 / 4→3 categories). Updated templates meta/JSON-LD. Homepage: replaced Recent work Vinyl Vault card with GreenThumb landscaping, removed E-commerce industry pill, stats 18+→16+. Demo files stay under `Site Templates/` and are not deleted.
+
 - **2026-09-10 — Archive athlete profiles from the public site:** Removed all public mentions and links. **`index.html`:** specialty block, industry pill, and JSON-LD athlete service. **`templates.html`:** specialty promo. **`sitemap.xml`:** dropped `/athlete-recruiting.html`. **`robots.txt`:** disallow athlete page and `Recruiting-Template/`. **`athlete-recruiting.html`:** `noindex, nofollow`. Files kept in repo as an archive, not deleted.
 
 - **2026-09-10 — Hide athlete pricing + fix Starter card layout:** Removed the Athlete profiles tab, section, tab JS, and athlete JSON-LD offers from `pricing.html` so the page is Website Starter only. Pointed `athlete-recruiting.html` CTA to `#athlete-pricing` on that page. Widened the Starter card (`max-w-5xl`, `.pricing-starter`) with a two-column feature grid and no popular-scale / ribbon treatment.
