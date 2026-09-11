@@ -67,6 +67,35 @@
     margin-top: 0.5rem;
 }
 
+.pricing-price-dual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 1.5rem;
+    flex-wrap: wrap;
+}
+
+.pricing-price-dual > div {
+    text-align: center;
+}
+
+.pricing-price-plus {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--muted-color);
+    line-height: 1;
+}
+
+.pricing-price-note {
+    margin: 0;
+    padding: 0 1.5rem 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--muted-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
 .pricing-features {
     padding: 1.5rem;
     flex-grow: 1;
@@ -144,6 +173,46 @@
 
 .pricing-action .btn-primary:hover::before {
     width: 100%;
+}
+
+/* Single Website Starter offer — wider card, no scale treatment */
+.pricing-starter {
+    border-color: rgba(99, 102, 241, 0.35);
+    box-shadow:
+        0 20px 25px -5px rgba(0, 0, 0, 0.25),
+        0 10px 10px -5px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(99, 102, 241, 0.2);
+    background-image: linear-gradient(180deg, rgba(99, 102, 241, 0.06) 0%, rgba(31, 41, 55, 0) 28%);
+}
+
+.pricing-starter:hover {
+    transform: none;
+    border-color: rgba(99, 102, 241, 0.45);
+}
+
+.pricing-starter .pricing-header {
+    background-color: rgba(99, 102, 241, 0.08);
+    border-bottom-color: rgba(99, 102, 241, 0.16);
+}
+
+.pricing-starter .pricing-subtitle {
+    max-width: 36rem;
+}
+
+.pricing-starter .pricing-features ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.pricing-starter .pricing-features li {
+    padding: 0.55rem 0;
+}
+
+@media (max-width: 768px) {
+    .pricing-starter .pricing-features ul {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Popular Plan Styles — stronger agency treatment */

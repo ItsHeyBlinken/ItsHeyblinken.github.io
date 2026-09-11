@@ -36,16 +36,12 @@ A shared set of tokens and patterns lives in `style.css` so all four main pages 
 - **Coolify (VPS):** pulls from the GitHub repo and serves the site — **not GitHub Pages.** Flow: push to GitHub → Coolify fetches/builds or deploys as configured.
 - Deploys verified with **no Tailwind CDN console warnings** in the browser.
 
-## Athlete recruiting specialty offering (added 2026-07-14)
+## Athlete recruiting — archived (2026-09-10)
 
-- `athlete-recruiting.html` is the agency-styled value page for Collegiate Bound Profiles.
-- The offering is promoted from `index.html` and `templates.html` but is intentionally excluded from the standard 18-template filter counts.
-- `pricing.html#athlete-profiles` contains the separate two-tier pricing model:
-  - **The MVP:** $249 setup + $25/month; domain included year one then $60/year; up to 3 videos; one non-rolling content request per quarter; link to a supplied PDF.
-  - **The All-Star:** $299 setup + $45/month; domain included while subscribed; up to 5 videos; one non-rolling content request per month; custom matching PDF.
-- Both subscriptions are month-to-month and include managed hosting and SSL. Larger requests are scoped separately.
-- Public sample demo: `./Recruiting-Template/index.html` (fictional Jordan Rivers volleyball profile with SVG placeholders only). Mobile nav uses a dedicated panel (not desktop-link toggling). The real Skittles Softball profile may remain live on its own domain for her recruiting use, but must not be linked from the agency site as a product demo.
-- The reusable sport-agnostic React/TypeScript/Tailwind scaffold lives outside this repo at sibling folder `../Athlete-Recruiting-Profile-Template/`. It contains fictional placeholder data only and has not been installed, built, tested, initialized as Git, or deployed.
+- Not part of the public agency offer. Do not link it from Home, Templates, or Pricing.
+- Files kept in repo: `athlete-recruiting.html` (`noindex, nofollow`) and `Recruiting-Template/` (already `noindex`).
+- Removed from `sitemap.xml`. `robots.txt` disallows `/athlete-recruiting.html` and `/Recruiting-Template/`.
+- Sibling scaffold `../Athlete-Recruiting-Profile-Template/` remains outside this repo and is unused.
 
 ## Conventions worth preserving
 
@@ -57,7 +53,7 @@ A shared set of tokens and patterns lives in `style.css` so all four main pages 
 ## Open / watch
 
 - Athlete page layout: `#athlete-process` and `#athlete-pricing` have scoped spacing overrides in `style.css` so the popular-card `scale()` treatment does not cover the plan disclaimer. Prefer keeping those overrides page-scoped rather than changing global `.pricing-popular` in `pricing.css`.
-- **`pricing.html`** uses agency-style tier names (Launch / Growth / Signature), Site Care / Activation bundles / Commerce plans tabs, "Request a quote" CTAs, and "starting at" framing for ecommerce; **keep copy and JSON-LD prices aligned when tiers change.** A feature comparison table now lives inside the `#website-design` tab — its values mirror the per-tier card features and prices, update both when tiers change.
+- **`pricing.html` (2026-09-10 pivot):** Primary and only offer is **Website Starter — $250 one-time setup + $50/month**. The monthly fee covers hosting, SSL, maintenance, technical support, and small content updates (hours, phone, service copy, a few images). New pages, features, redesigns, e-commerce, and ongoing SEO campaigns are quoted separately. Launch / Growth / Signature, Site Care, activation bundles, commerce packages, and Athlete profiles were removed from the public site. Primary CTA is **Let's Build Your Site** → `mailto:services@bytesbyblinken.com`. Keep visible copy and JSON-LD aligned when this offer changes.
 - After HTML edits that add or change Tailwind classes, run **`npm run build:css`** and commit `tailwind-built.css` if not using a CI build step. The 2026-07-14 athlete launch intentionally deferred this manual build, so generated CSS still needs regeneration before release.
 - Adding new top-level HTML pages that use Tailwind requires adding them to `content` in `tailwind.config.js` and rebuilding.
 - Homepage `Recent work` section links to **3 specific live demos** under `Site Templates/`: `Pixel Perfect`, `5 Real Estate`, and `Vinyl Vault`. If those template paths move, update those three cards in `index.html`.

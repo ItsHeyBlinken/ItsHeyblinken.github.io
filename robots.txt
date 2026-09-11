@@ -5,13 +5,16 @@ Allow: /
 Allow: /index.html
 Allow: /templates.html
 Allow: /pricing.html
-Allow: /athlete-recruiting.html
 Allow: /sitemap.xml
 Allow: /robots.txt
 Allow: /images/
 Allow: /style.css
 Allow: /style1.css
 Allow: /pricing.css
+
+# Archived athlete offering — keep files, do not index or promote
+Disallow: /athlete-recruiting.html
+Disallow: /Recruiting-Template/
 
 # Block ALL template files completely to prevent indexing conflicts
 Disallow: /Site Templates/
